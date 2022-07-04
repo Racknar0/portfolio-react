@@ -130,3 +130,11 @@
     transform: scale(1.05);
     color: #cbec13;
   }
+
+
+  .tippy{
+    background-color: #000000;
+    border: 3px solid #cbec13;
+    border-radius: 10px;
+    font-family: var(--fuente1);
+  }

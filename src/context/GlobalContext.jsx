@@ -16,14 +16,16 @@ export const GlobalContextProvider = ({children}) => {
             image: "./img/projects/halconerp.jpg",
             linkDemo: "https://halconerp.com",
             linkGithub: "privado",
+            descripcion: 'Proyecto desarrollado bajo las tecnologías REACT-REDUX, BOOTSTRAP, conexión a bases de datos mediante API, consumos REST trabajo en conjunto con el equipo de desarrolladores HALCON',
         },
         {
 
-            title: "Virtual Reality Website",
+            title: "JS Virtual Reality Website",
             subtitle: "Desarrollado para la empresa Virtua State",
             image: "./img/projects/virtual.jpg",
             linkDemo: "https://virtuasite.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/virtua-state-web"
+            linkGithub: "https://github.com/Racknar0/virtua-state-web",
+            descripcion: 'Proyecto desarrollado bajo las tecnologías JAVASCRIPT, BOOTSTRAP, css con su respectivo sistema responsivo.',
         },
         {
 
@@ -31,23 +33,26 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Proyecto Full Stack NodeJS para la empresa APV",
             image: "./img/projects/FullStack-APV.jpg",
             linkDemo: "https://mern-apv.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/APV-Full-Stack-NodeJS"
+            linkGithub: "https://github.com/Racknar0/APV-Full-Stack-NodeJS",
+            descripcion: 'Este proyecto esta construido su Backend con NodeJS, y su front end por aparte construidos con REACT y TAILWIND.',
         },
         {
 
-            title: "Viajes, MongoDB",
+            title: "FULL STACK - Viajes",
             subtitle: "Projecto para agregar reseñas hacia MongoDB",
             image: "./img/projects/node_viajes.jpg",
             linkDemo: "https://agile-river-91298.herokuapp.com/",
-            linkGithub: "https://github.com/Racknar0/Node-Express-Viajes"
+            linkGithub: "https://github.com/Racknar0/Node-Express-Viajes",
+            descripcion: 'Este proyecto esta construido su Backend con NodeJS, Express, Heroku y su front end por aparte construidos con JAVASCRIPT y PUG HTML, Y BOOTSRAP.',
         },
         {
 
-            title: "React Ecommerce - Celulares - Firebase",
+            title: "FULL STACK - Ecommerce Celulares",
             subtitle: "Proyecto react conectado a Firebase",
             image: "./img/projects/react-ecommerce.jpg",
             linkDemo: "https://ecommerce-cels.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/react-ecomerce-celulares"
+            linkGithub: "https://github.com/Racknar0/react-ecomerce-celulares",
+            descripcion: 'Este proyecto esta construido su Front con REACT, BOOTSTRAP, conexión a bases de datos mediante Firebase utilizando herramientas del navegador como localStorage, Firebase, etc.',
         },
         {
 
@@ -55,16 +60,18 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Html, CSS3, Bootstrap, Sass, Gulp",
             image: "./img/projects/guitarraweb.jpg",
             linkDemo: "https://guitarla1.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/guitaLA"
+            linkGithub: "https://github.com/Racknar0/guitaLA",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, BOOTSTRAP, SASS, GULP realizando cambios en las variables, utilizando diferentes tipos de elementos como mixins de Boostrap, haciendo muchos tipos de modificaciones.',
         },
 
         {
 
-            title: "React Cotizar Cryptos", 
+            title: "API Cotizar Cryptos", 
             subtitle: "Cotizar tus cryptos favoritos",
             image: "./img/projects/cotizarCryptos.jpg",
             linkDemo: "https://react-api-cryptos.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/React-API-Cryptos"
+            linkGithub: "https://github.com/Racknar0/React-API-Cryptos",
+            descripcion: 'Proyecto creado usando las tecnologías REACT, BOOTSTRAP conetando a una API para calclular los precios de las Cryptos.',
         },
         {
 
@@ -72,7 +79,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "React Planificador de Gastos Semanal",
             image: "./img/projects/planificadorgastos.jpg",
             linkDemo: "https://react-control-gastos-1.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/react-control-gastos"
+            linkGithub: "https://github.com/Racknar0/react-control-gastos",
+            descripcion: 'Proyecto creado usando las tecnologías REACT, y Styled Components.',
         },
         {
 
@@ -80,7 +88,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Buscador React Dragon Ball",
             image: "./img/projects/dragonBall.jpg",
             linkDemo: "https://db-app1.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/React-DragonBall"
+            linkGithub: "https://github.com/Racknar0/React-DragonBall",
+            descripcion: 'Proyecto creado usando las tecnologías REACT, y BOOTSTRAP , REAC-ROUTER-DOM, REACT-REDUCER.',
         },
 
         {
@@ -89,7 +98,26 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "CRM Realizado en JavaScript",
             image: "./img/projects/crm-coder.jpg",
             linkDemo: "https://crm-coder.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/crm_js_coderhouse/tree/master"
+            linkGithub: "https://github.com/Racknar0/crm_js_coderhouse/tree/master",
+            descripcion: 'CRUD realizado en JAVASCRIPT vanilla.',
+        },
+        {
+
+            title: "Meeti Website",
+            subtitle: "Html, CSS3, Bootstrap, Sass",
+            image: "./img/projects/meeti.jpg",
+            linkDemo: "https://meeti11.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/meeti",
+            descripcion: 'Proyecto diseñado usando las tecnologías HTML, SCC, BOOSTRAP, SASS realizando cambios en las variables, utilizando diferentes tipos de elementos como mixins de Boostrap, haciendo muchos tipos de modificaciones.',
+        },
+        {
+
+            title: "Tienda Muebles Website",
+            subtitle: "Html, CSS3, Bootstrap, Sass",
+            image: "./img/projects/tiendamuebles.jpg",
+            linkDemo: "https://tienda-muebles1.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/tiendamuebles",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, BOOSTRAP, SASS realizando cambios en las variables, utilizando diferentes tipos de elementos como mixins de Boostrap, haciendo muchos tipos de modificaciones.',
         },
         {
 
@@ -97,7 +125,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "React Landig Simple TakeOff",
             image: "./img/projects/takeOff.jpg",
             linkDemo: "https://takeoff-media-prueba.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/pruebaTakeOff/tree/master"
+            linkGithub: "https://github.com/Racknar0/pruebaTakeOff/tree/master",
+            descripcion: 'Landing Simple realizada para TakeOffMedia para testear tecnologías.',
         },
 
         {
@@ -106,7 +135,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Landig E-Partner CSS3 - SASS - HTML5 - JS",
             image: "./img/projects/e-partner.jpg",
             linkDemo: "https://epartner.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/ePartner-test-landing"
+            linkGithub: "https://github.com/Racknar0/ePartner-test-landing",
+            descripcion: 'Landing Simple realizada para E-Partner para testear tecnologías.',
         },
 
         {
@@ -115,7 +145,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Proyecto desarrollado en react PWA",
             image: "./img/projects/pwa-imgfinder.jpg",
             linkDemo: "https://react-img-finder.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/ReactAPI-Gallery-App"
+            linkGithub: "https://github.com/Racknar0/ReactAPI-Gallery-App",
+            descripcion: 'Aplicativo desarrollado bajo REACT, para buscar imagenes sin derechos de autor.',
         },
         {
 
@@ -123,7 +154,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Bootstrap",
             image: "./img/projects/letras.jpg",
             linkDemo: "https://api-buscar-cancion.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/FetchAPI-Buscar_Cancion"
+            linkGithub: "https://github.com/Racknar0/FetchAPI-Buscar_Cancion",
+            descripcion: 'Aplicativo desarrollado bajo JAVASCRIPT, para buscar letras de las canciones.',
         },
 
 
@@ -133,7 +165,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Html, CSS3, Bootstrap, Sass, Gulp",
             image: "./img/projects/udemy.jpg",
             linkDemo: "https://udemy.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/udemy"
+            linkGithub: "https://github.com/Racknar0/udemy",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, BOOSTRAP, SASS realizando cambios en las variables, utilizando diferentes tipos de elementos como mixins de Boostrap, haciendo muchos tipos de modificaciones.',
         },
         {
 
@@ -141,7 +174,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Tailwind",
             image: "./img/projects/pixabay.jpg",
             linkDemo: "https://api-pixabayy.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/PixabayAPI"
+            linkGithub: "https://github.com/Racknar0/PixabayAPI",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, JAVASCRIPT poniendo en practica Prototypes de JS.',
         },
         {
 
@@ -149,7 +183,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "CSS3, Bootstrap, Sass",
             image: "./img/projects/podcastfm.jpg",
             linkDemo: "https://podcastfm01.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/podcastfm"
+            linkGithub: "https://github.com/Racknar0/podcastfm",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, BOOSTRAP, SASS realizando cambios en las variables, utilizando diferentes tipos de elementos como mixins de Boostrap, haciendo muchos tipos de modificaciones.',
         },
         {
 
@@ -157,7 +192,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Html, CSS3, Bootstrap",
             image: "./img/projects/landcoder.jpg",
             linkDemo: "https://landing-coder.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/landing_01"
+            linkGithub: "https://github.com/Racknar0/landing_01",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC6, BOOSTRAP',
         },
         {
 
@@ -165,7 +201,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Proyecto Para agendar Citas Veterinarias",
             image: "./img/projects/react-citas.jpg",
             linkDemo: "https://react-citas-veterinaria-2.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/REACT-Citas-Veterinaria"
+            linkGithub: "https://github.com/Racknar0/REACT-Citas-Veterinaria",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC6, BOOSTRAP',
         },
         {
 
@@ -173,23 +210,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Bootstrap",
             image: "./img/projects/restaurante.jpg",
             linkDemo: "https://rest-api-restaurante.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/API-JSON_Restaurante"
-        },
-        {
-
-            title: "Meeti Website",
-            subtitle: "Html, CSS3, Bootstrap, Sass",
-            image: "./img/projects/meeti.jpg",
-            linkDemo: "https://meeti11.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/meeti"
-        },
-        {
-
-            title: "Tienda Muebles Website",
-            subtitle: "Html, CSS3, Bootstrap, Sass",
-            image: "./img/projects/tiendamuebles.jpg",
-            linkDemo: "https://tienda-muebles1.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/tiendamuebles"
+            linkGithub: "https://github.com/Racknar0/API-JSON_Restaurante",
+            descripcion: 'Para usar la aplicación se deberá instalar json server y apuntar hacia db.json : http://localhost:4000/clientes json-server --watch db.json --port 4000 Ejecutar live server en la carpeta de descarga',
         },
         {
 
@@ -197,7 +219,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "Open with Firefox!",
             image: "./img/projects/pwa-citas.jpg",
             linkDemo: "https://pwa-citas.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/PWA-Citas"
+            linkGithub: "https://github.com/Racknar0/PWA-Citas",
+            descripcion: 'Recuerda abrir con firefox e instalarla en la parte superior del navegador, luego de visitada funciona sin internet',
         },
 
         {
@@ -206,7 +229,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, CSS3, Bootstrap",
             image: "./img/projects/crm.jpg",
             linkDemo: "",
-            linkGithub: "https://github.com/Racknar0/CRM-PROYECTO-CRUD-REST"
+            linkGithub: "https://github.com/Racknar0/CRM-PROYECTO-CRUD-REST",
+            descripcion: 'Recuerda abrir con firefox e instalarla en la parte superior del navegador, luego de visitada funciona sin internet',
         },
         {
 
@@ -214,7 +238,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, skeleton",
             image: "./img/projects/carritojs.jpg",
             linkDemo: "https://carritojs11.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/carritoJS"
+            linkGithub: "https://github.com/Racknar0/carritoJS",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, JAVASCRIPT poniendo en practica Variables, Arreglos, Funciones, DOM Scripting, eventos.',
         },
 
         {
@@ -223,7 +248,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Bootstrap",
             image: "./img/projects/clima.jpg",
             linkDemo: "https://api-clima1.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/FetchAPI-Clima"
+            linkGithub: "https://github.com/Racknar0/FetchAPI-Clima",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, JAVASCRIPT poniendo en practica Prototypes de JS.',
         },
         {
 
@@ -231,7 +257,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Skeleton",
             image: "./img/projects/buscador carros.jpg",
             linkDemo: "https://buscardor-carros.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/buscadorCarrosJS"
+            linkGithub: "https://github.com/Racknar0/buscadorCarrosJS",
+            descripcion: 'Proyecto creado usando las tecnologías JAVASCRIPT "Funciones de alto nivel" Vanilla ,TAILWIND ,SCC3 ,HTML',
         },
         {
 
@@ -239,7 +266,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Skeleton",
             image: "./img/projects/cotizadorseguros.jpg",
             linkDemo: "https://prototypesjs.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/PrototypeJS_Cotizador"
+            linkGithub: "https://github.com/Racknar0/PrototypeJS_Cotizador",
+            descripcion: 'Proyecto creado usando las tecnologías JAVASCRIPT "Funciones de alto nivel" Vanilla ,TAILWIND ,SCC3 ,HTML',
         },
         {
 
@@ -247,7 +275,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Bootstrap",
             image: "./img/projects/gastosemanal.jpg",
             linkDemo: "https://poo-js.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/AdminPresupuestoJS"
+            linkGithub: "https://github.com/Racknar0/AdminPresupuestoJS",
+            descripcion: 'Proyecto creado usando las tecnologías HTML, SCC, JAVASCRIPT poniendo en practica Prototypes de JS',
         },
         {
 
@@ -255,7 +284,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Tailwind",
             image: "./img/projects/validatorJs.jpg",
             linkDemo: "https://jsvalidator.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/JSsimuladorEnvioEmail"
+            linkGithub: "https://github.com/Racknar0/JSsimuladorEnvioEmail",
+            descripcion: 'Proyecto creado usando las tecnologías JAVASCRIPT Vanilla ,TAILWIND ,SCC3 ,HTML',
         },
         {
 
@@ -263,7 +293,8 @@ export const GlobalContextProvider = ({children}) => {
             subtitle: "JavaScript, Html, CSS3, Skeleton",
             image: "./img/projects/localstorage.jpg",
             linkDemo: "https://js-tweet-localstorage.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/TweetLocalStorage"
+            linkGithub: "https://github.com/Racknar0/TweetLocalStorage",
+            descripcion: 'Un Proyecto con diseño simple pero usando LocalStorage en JAVASCRIPT',
         },
 
 

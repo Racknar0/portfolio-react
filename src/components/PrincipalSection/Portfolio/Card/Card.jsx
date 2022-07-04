@@ -1,18 +1,26 @@
 import React from 'react';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css'; // optional
+
 
 const Card = ({proyecto}) => {
 
-    const {title, subtitle, image, linkDemo, linkGithub } = proyecto;
+    const {title, subtitle, image, linkDemo, linkGithub, descripcion } = proyecto;
 
+    const JSXContent = () => (
+        <Tippy className="tippy" content={<span>{descripcion}</span>}>
+          <img
+                src={image}
+                alt="validatorImg"
+            />
+        </Tippy>
+      );
 
     return (
         <div className="col-md-6 col-lg-4 d-flex justify-content-center align-items-center mb-5">
             <div className="card">
                 <div className="image">
-                    <img
-                        src={image}
-                        alt="validatorImg"
-                    />
+                    <JSXContent />
                 </div>
                 <div className="content">
                     <h2>{title}</h2>

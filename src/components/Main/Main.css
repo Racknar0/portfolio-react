@@ -29,7 +29,7 @@ body
 .button
 {
   color: #cbec13;
-  background: none;
+  background: #000;
   border-radius: 7px;
 }
 .button:hover
