@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useContext, useEffect } from 'react';
+import { GlobalContext } from './context/GlobalContext';
+
+import Main from './components/Main/Main';
+import Preload from './components/Preload/Preload';
+
 import './App.css';
 
+
+
 function App() {
+
+  const { preload, setPreload } = useContext(GlobalContext);
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      setPreload(false);
+    }, 4400);
+
+  }, []);
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+      <>
+      {preload ? <Preload /> : <Main /> }
+      </>
+
   );
 }
 

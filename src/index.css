@@ -1,8 +1,17 @@
+:root {
+  --fuente1: 'Montserrat', sans-serif;
+  --fuente2: "Titillium Web", sans-serif;
+
+  --verde: #cbec13;
+  --verdeOscuro: #8ba10f;
+  --negro: #000;
+  --gris: #919191;
+  --blanco: #ffffff;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

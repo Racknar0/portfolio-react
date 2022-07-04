@@ -1,0 +1,132 @@
+.contenedorAbout {
+    background-color: var(--negro);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .titleAbout {
+    font-size: 5rem;
+    font-family: var(--fuente1) !important;
+    font-weight: bold;
+    margin-bottom: 6rem;
+  }
+ 
+  
+
+  
+  .borderx {
+    border-bottom: 5px solid var(--verde);
+  }
+  .about__text1 {
+    font-weight: bold;
+    color: var(--gris);
+    font-family: var(--fuente1) !important;
+  }
+  .about__text2 {
+    color: var(--blanco);
+    font-family: var(--fuente1);
+    font-size: 14px;
+  }
+
+  .pedirInfo{
+    color: var(--verde);
+    font-family: var(--fuente1);
+    font-size: 14px;
+  }
+
+  .btn-success {
+    background-color: var(--verde) !important;
+    color: var(--negro) !important;
+    border-radius: 10px !important;
+  }
+  .btn-success:hover {
+    color: var(--verde) !important;
+    background-color: var(--negro) !important;
+    border-color: var(--verde) !important;
+  }
+  .btn-success:active {
+    color: var(--negro);
+    background-color: #4ef700;
+    border-color: var(--negro);
+  }
+  .skill {
+    width: 60px !important;
+    height: 60px !important;
+    background-size: cover;
+    
+  }
+  @media (min-width: 768px) {
+    .skill {
+      width: 80px !important;
+      height: 80px !important;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .skill {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+  .skill1 {
+    background-image: url('../../../img/iconsskills/html.png');
+  }
+  .skill1a {
+    background-image: url('../../../img/iconsskills/react.png');
+  }
+  .skill2 {
+    background-image: url('../../../img/iconsskills/css.png');
+  }
+  .skill3 {
+    background-image: url('../../../img/iconsskills/bootstrap.png');
+  }
+  .skill4 {
+    background-image: url('../../../img/iconsskills/sass.png');
+  }
+  .skill5 {
+    background-image: url('../../../img/iconsskills/javascript.png');
+  }
+  .skill6 {
+    background-image: url('../../../img/iconsskills/git.png');
+  }
+  .skill7 {
+    background-image: url('../../../img/iconsskills/github.png');
+  }
+  .skill8 {
+    background-image: url('../../../img/iconsskills/wordpress.png');
+  }
+  .skill9 {
+    background-image: url('../../../img/iconsskills/mysql_original_wordmark_logo_icon_146417.png');
+  }
+  .skill10 {
+    background-image: url('../../../img/iconsskills/photoshop.png');
+  }
+  .skill11 {
+    background-image: url('../../../img/iconsskills/ssh.png');
+  }
+  .skill12 {
+    background-image: url('../../../img/iconsskills/lua.png');
+  }
+  .skill13 {
+    background-image: url('../../../img/iconsskills/visualStudio.png');
+  }
+  .skill14 {
+    background-image: url('../../../img/iconsskills/visualStudio.png');
+  }
+  .skill15 {
+    background-image: url('../../../img/iconsskills/windows.png');
+  }
+  .skill16 {
+    background-image: url('../../../img/iconsskills/linux.png');
+  }
+  .skill17 {
+    background-image: url('../../../img/iconsskills/apache.png');
+  }
+  .gridSkills > div:hover {
+    filter: grayscale();
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
