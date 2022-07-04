@@ -46,7 +46,7 @@ const Header = () => {
                         <div className="col-md-10">
                             <div className="row">
                                 <div className="col-md-4">
-                                    <img className="imagen mb-5 mb-md-0" src="img/camilotorres1.png" alt=""/>
+                                    <img className="imagen mb-5 mb-md-0" src="img/camilotorres_new.png" alt=""/>
                                 </div>
                                 <div className="col-md-8 d-flex flex-column justify-content-center">
                                     <div>
