@@ -9,7 +9,7 @@ const Header = () => {
     <div>
         <header id="header" className="header">
             <div className="gridHead">
-                <div className="py-5">
+                <div className="pt-5">
                     <div className="border-top border-bottom py-4 animacion">
                         <div className="navbar navbar-expand-md container navbar-dark">
                             <a className="text-decoration-none" href="/">

@@ -10,15 +10,36 @@ footer {
   
   .simplescrollup__button {
     position: fixed;
-    bottom: 3rem;
-    right: 3rem;
+    bottom: 2rem;
+    right: 2rem;
     transition: 1s all;
     z-index: 10000;
+    width: 160px;
+    font-size: 15px !important;
+    font-weight: bold !important;
   }
+
+
+
   .simplescrollup__button--show {
     transform: translateX(0);
   }
   .simplescrollup__button--hide {
+    transform: translateX(100px);
+  }
+  
+  
+  .simplescrollup__button2 {
+    position: fixed;
+    bottom: 5rem;
+    right: 2.5rem;
+    transition: 1s all;
+    z-index: 10000;
+  }
+  .simplescrollup__button2--show {
+    transform: translateX(0);
+  }
+  .simplescrollup__button2--hide {
     transform: translateX(100px);
   }
   

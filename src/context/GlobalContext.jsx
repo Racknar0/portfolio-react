@@ -11,6 +11,22 @@ export const GlobalContextProvider = ({children}) => {
 
         {
 
+            title: "ERP 'Aeronautica Civil'",
+            subtitle: "App desarrollada para la Aeronautica Civil de Colombia",
+            image: "./img/projects/halconerp.jpg",
+            linkDemo: "https://halconerp.com",
+            linkGithub: "privado",
+        },
+        {
+
+            title: "Virtual Reality Website",
+            subtitle: "Desarrollado para la empresa Virtua State",
+            image: "./img/projects/virtual.jpg",
+            linkDemo: "https://virtuasite.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/virtua-state-web"
+        },
+        {
+
             title: "MERN Full Stack NodeJS",
             subtitle: "Proyecto Full Stack NodeJS para la empresa APV",
             image: "./img/projects/FullStack-APV.jpg",
@@ -19,12 +35,29 @@ export const GlobalContextProvider = ({children}) => {
         },
         {
 
-            title: "React Citas Veterinarias", 
-            subtitle: "Proyecto Para agendar Citas Veterinarias",
-            image: "./img/projects/react-citas.jpg",
-            linkDemo: "https://react-citas-veterinaria-2.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/REACT-Citas-Veterinaria"
+            title: "Viajes, MongoDB",
+            subtitle: "Projecto para agregar reseñas hacia MongoDB",
+            image: "./img/projects/node_viajes.jpg",
+            linkDemo: "https://agile-river-91298.herokuapp.com/",
+            linkGithub: "https://github.com/Racknar0/Node-Express-Viajes"
         },
+        {
+
+            title: "React Ecommerce - Celulares - Firebase",
+            subtitle: "Proyecto react conectado a Firebase",
+            image: "./img/projects/react-ecommerce.jpg",
+            linkDemo: "https://ecommerce-cels.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/react-ecomerce-celulares"
+        },
+        {
+
+            title: "Guitarras Website",
+            subtitle: "Html, CSS3, Bootstrap, Sass, Gulp",
+            image: "./img/projects/guitarraweb.jpg",
+            linkDemo: "https://guitarla1.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/guitaLA"
+        },
+
         {
 
             title: "React Cotizar Cryptos", 
@@ -49,14 +82,7 @@ export const GlobalContextProvider = ({children}) => {
             linkDemo: "https://db-app1.netlify.app/",
             linkGithub: "https://github.com/Racknar0/React-DragonBall"
         },
-        {
 
-            title: "Virtual Reality Website",
-            subtitle: "Desarrollado para la empresa Virtua State",
-            image: "./img/projects/virtual.jpg",
-            linkDemo: "https://virtuasite.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/virtua-state-web"
-        },
         {
 
             title: "CRM CoderHouse",
@@ -73,14 +99,7 @@ export const GlobalContextProvider = ({children}) => {
             linkDemo: "https://takeoff-media-prueba.netlify.app/",
             linkGithub: "https://github.com/Racknar0/pruebaTakeOff/tree/master"
         },
-        {
 
-            title: "React Ecommerce - Celulares - Firebase",
-            subtitle: "Proyecto react conectado a Firebase",
-            image: "./img/projects/react-ecommerce.jpg",
-            linkDemo: "https://ecommerce-cels.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/react-ecomerce-celulares"
-        },
         {
 
             title: "Landing E-Partner",
@@ -89,14 +108,7 @@ export const GlobalContextProvider = ({children}) => {
             linkDemo: "https://epartner.netlify.app/",
             linkGithub: "https://github.com/Racknar0/ePartner-test-landing"
         },
-        {
 
-            title: "Viajes, MongoDB",
-            subtitle: "Projecto para agregar reseñas hacia MongoDB",
-            image: "./img/projects/node_viajes.jpg",
-            linkDemo: "https://agile-river-91298.herokuapp.com/",
-            linkGithub: "https://github.com/Racknar0/Node-Express-Viajes"
-        },
         {
 
             title: "React PWA ImgFinder",
@@ -107,28 +119,14 @@ export const GlobalContextProvider = ({children}) => {
         },
         {
 
-            title: "Firefox Progressive Web App Citas",
-            subtitle: "Open with Firefox!",
-            image: "./img/projects/pwa-citas.jpg",
-            linkDemo: "https://pwa-citas.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/PWA-Citas"
+            title: "API Buscar Canciones",
+            subtitle: "JavaScript, Html, CSS3, Bootstrap",
+            image: "./img/projects/letras.jpg",
+            linkDemo: "https://api-buscar-cancion.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/FetchAPI-Buscar_Cancion"
         },
-        {
 
-            title: "Guitarras Website",
-            subtitle: "Html, CSS3, Bootstrap, Sass, Gulp",
-            image: "./img/projects/guitarraweb.jpg",
-            linkDemo: "https://guitarla1.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/guitaLA"
-        },
-        {
 
-            title: "CRM - CRUD REST API",
-            subtitle: "JavaScript, CSS3, Bootstrap",
-            image: "./img/projects/crm.jpg",
-            linkDemo: "",
-            linkGithub: "https://github.com/Racknar0/CRM-PROYECTO-CRUD-REST"
-        },
         {
 
             title: "Udemy Website",
@@ -163,6 +161,14 @@ export const GlobalContextProvider = ({children}) => {
         },
         {
 
+            title: "React Citas Veterinarias", 
+            subtitle: "Proyecto Para agendar Citas Veterinarias",
+            image: "./img/projects/react-citas.jpg",
+            linkDemo: "https://react-citas-veterinaria-2.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/REACT-Citas-Veterinaria"
+        },
+        {
+
             title: "REST API Restaurant",
             subtitle: "JavaScript, Html, CSS3, Bootstrap",
             image: "./img/projects/restaurante.jpg",
@@ -187,20 +193,30 @@ export const GlobalContextProvider = ({children}) => {
         },
         {
 
+            title: "Firefox Progressive Web App Citas",
+            subtitle: "Open with Firefox!",
+            image: "./img/projects/pwa-citas.jpg",
+            linkDemo: "https://pwa-citas.netlify.app/",
+            linkGithub: "https://github.com/Racknar0/PWA-Citas"
+        },
+
+        {
+
+            title: "CRM - CRUD REST API",
+            subtitle: "JavaScript, CSS3, Bootstrap",
+            image: "./img/projects/crm.jpg",
+            linkDemo: "",
+            linkGithub: "https://github.com/Racknar0/CRM-PROYECTO-CRUD-REST"
+        },
+        {
+
             title: "Carrito JavaScript Vanilla",
             subtitle: "JavaScript, Html, CSS3, skeleton",
             image: "./img/projects/carritojs.jpg",
             linkDemo: "https://carritojs11.netlify.app/",
             linkGithub: "https://github.com/Racknar0/carritoJS"
         },
-        {
 
-            title: "API Buscar Canciones",
-            subtitle: "JavaScript, Html, CSS3, Bootstrap",
-            image: "./img/projects/letras.jpg",
-            linkDemo: "https://api-buscar-cancion.netlify.app/",
-            linkGithub: "https://github.com/Racknar0/FetchAPI-Buscar_Cancion"
-        },
         {
 
             title: "API Clima",

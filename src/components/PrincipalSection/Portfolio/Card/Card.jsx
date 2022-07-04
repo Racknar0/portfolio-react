@@ -21,7 +21,10 @@ const Card = ({proyecto}) => {
                     {linkDemo !== '' ? (
                         <>
                             <a href={linkDemo} target="_blank" rel="noreferrer" ><p className='link_demo'>{'-> DEMO <-'}</p></a>
-                            <a href={linkGithub} target="_blank" rel="noreferrer" ><p className="git">Github</p></a>
+                            {linkGithub !== 'privado' ? 
+                            (<a href={linkGithub} target="_blank" rel="noreferrer" ><p className="git">Github</p></a>) 
+                            : 
+                            (<p className="git">{'-> Github PRIVADO <-'}</p>)}
                         </>
                         
                     ) : (

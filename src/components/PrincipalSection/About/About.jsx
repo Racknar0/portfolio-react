@@ -34,7 +34,7 @@ Con una formación académica en informática y una amplia comprensión para pro
                 </div>
                 <div><a className="btn btn-success fw-bold text-uppercase fs-4 py-3 px-5"
                         href="https://drive.google.com/drive/folders/12D-1WjynkJlOfeCI728nnwe9u_tROXrG?usp=sharing"
-                        target="_blank" rel='noreferrer'>Download Curriculum</a>
+                        target="_blank" rel='noreferrer'>Descargar Curriculum</a>
                 </div>
             </div>
             <div className="col-md-6 mt-5 pt-5 mt-md-0 pt-md-0">
