@@ -1,8 +1,9 @@
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import PrincipalSection from '../PrincipalSection/PrincipalSection'
-
+import Particles from "react-tsparticles";
 import './Main.css'
+import ParticlesBackground from '../Particles/ParticlesBackground'
 
 const Main = () => {
   return (
@@ -18,6 +19,7 @@ const Main = () => {
       <Header />
       <PrincipalSection />
       <Footer />
+
     </div>
   )
 }

@@ -171,3 +171,14 @@
     border-color: transparent;
   }
 }
+
+.containerGridSup{
+  padding-top: 15rem;
+}
+
+@media (min-width: 768px) {
+  .containerGridSup{
+    padding-top: 0rem;
+  }
+    
+}

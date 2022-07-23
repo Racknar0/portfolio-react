@@ -41,12 +41,12 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="container">
+                <div className="container containerGridSup">
                     <div className="row justify-content-center">
                         <div className="col-md-10">
                             <div className="row">
                                 <div className="col-md-4">
-                                    <img className="imagen mb-5 mb-md-0" src="img/camilotorres_new.png" alt=""/>
+                                    <img className="imagen mb-5 mb-md-0" src="img/camilotorres_new1.png" alt=""/>
                                 </div>
                                 <div className="col-md-8 d-flex flex-column justify-content-center">
                                     <div>
