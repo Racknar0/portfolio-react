@@ -26,11 +26,9 @@ function App() {
   return (
 
 
-      <>{/* 
-      {preload ? <Preload /> : <Main /> } */}
+      <>
+      {preload ? <Preload /> : <Main /> }
       
-      <Main />
-
       </>
 
   );
