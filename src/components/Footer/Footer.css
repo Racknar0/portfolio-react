@@ -11,10 +11,10 @@ footer {
   .simplescrollup__button {
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
+    right: 0;
     transition: 1s all;
     z-index: 10000;
-    width: 160px;
+    min-width: 160px;
     font-size: 15px !important;
     font-weight: bold !important;
   }

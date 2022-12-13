@@ -1,40 +1,44 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '../../../context/GlobalContext';
 import './About.css'
 
 
 const About = () => {
+
+
+    
+    const { lang } = useContext(GlobalContext);
+
   return (
     <div id="about" className="contenedorAbout"
     /* data-aos="fade-up" data-aos-duration="1000" */>
     <div className="container-xl">
-        <h2 className="text-white titleAbout text-center"><span className="borderx">Acerca de Mi</span></h2>
+        <h2 className="text-white titleAbout text-center"><span className="borderx">{lang.aboutMe}</span></h2>
 
         <div className="row pt-5 justify-content-around align-items-start">
             <div className="col-md-6">
                 <div>
-                    <p className="about__text1 fs-1 mb-5 text-center text-md-start">¿Quien soy?</p>
+                    <p className="about__text1 fs-1 mb-5 text-center text-md-start">{lang.whoAmI}</p>
                 </div>
                 <div>
-                    <p className="text-white fw-bold fs-1">Mi nombre es Jonathan Torres, un desarrollador apasionado por el desarrollo web y de software.
+                    <p className="text-white fw-bold fs-1">{lang.whoAmI2}
                     </p>
                 </div>
                 <div>
-                    <p className="about__text2 mb-5">Desarrollador Front End con un Tecnólogo en Electrónica e instrumental industrial, estudiante de ingeniería en sistemas y Estudiante en desarrollo web Full Stack.
-Con una formación académica en informática y una amplia comprensión para programar y el desarrollo autodidacta, Como una persona adaptable con un alto nivel de habilidad en varias tecnologías de programación front end, sería una adición práctica y con conocimientos a cualquier organización TI. 
-                    </p>
+                    <p className="about__text2 mb-5">{lang.describe}</p>
                 </div>
                 <div className="mb-5">
-                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">Nombre:</span> Jonathan Camilo
+                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">{lang.name}</span> Jonathan Camilo
                         Torres</p>
-                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">Carrera #1:</span> Ingeniería de sistemas</p>
-                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">Carrera #2:</span> Estudiante de desarrollo web full stack</p>
-                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">Carrera #3:</span> Tecnólogo en electronica</p>
-                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">Correo: </span>
+                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">{lang.bachelor}</span> {lang.systems_engineering}</p>
+                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">{lang.course1}</span> {lang.full_stack_web_development}</p>
+                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">{lang.course2}</span> Tecnólogo en electronica</p>
+                    <p className="about__text2 fs-3"><span className="pedirInfo fw-bold">{lang.email} </span>
                         Racknarow1@gmail.com</p>
                 </div>
                 <div><a className="btn btn-success fw-bold text-uppercase fs-4 py-3 px-5"
                         href="https://drive.google.com/drive/folders/12D-1WjynkJlOfeCI728nnwe9u_tROXrG?usp=sharing"
-                        target="_blank" rel='noreferrer'>Descargar Curriculum</a>
+                        target="_blank" rel='noreferrer'>{lang.dowunload_cv}</a>
                 </div>
             </div>
             <div className="col-md-6 mt-5 pt-5 mt-md-0 pt-md-0">

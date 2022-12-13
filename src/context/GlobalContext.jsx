@@ -1,11 +1,26 @@
 import { useEffect } from "react";
 import { createContext, useState } from "react";
+import es from "../languages/es";
+import en from "../languages/en";
 
 export const GlobalContext = createContext([]) 
 
 export const GlobalContextProvider = ({children}) => {
     // Estados y funciones
     const [preload, setPreload] = useState(true)
+    const [langSelector, setLangSelector] = useState('en')
+    const [lang , setLang] = useState({})
+
+    useEffect(() => {
+        if(langSelector === 'es'){
+            setLang(es)
+        } 
+
+        if(langSelector === 'en'){
+            setLang(en)
+        }
+
+    }, [langSelector])
 
     const proyectos = [
 
@@ -309,7 +324,11 @@ export const GlobalContextProvider = ({children}) => {
         value={{
             preload,
             setPreload,
-            proyectos
+            proyectos,
+            lang,
+            setLang,
+            langSelector,
+            setLangSelector,
         }}
         >
             
