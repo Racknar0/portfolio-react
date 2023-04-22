@@ -56,13 +56,24 @@ export const proyectos = [
     },
     
     {
-        title: 'Guitarras Website',
+        title: 'Guitarras Website SASS',
         subtitle: 'Html, CSS3, Bootstrap, Sass, Gulp',
         image: './img/projects/guitarraweb.jpg',
         linkDemo: 'https://guitarla1.netlify.app/',
         linkGithub: 'https://github.com/Racknar0/guitaLA',
         descripcion:
             'Proyecto creado usando las tecnologías HTML, SCC, BOOTSTRAP, SASS, GULP realizando cambios en las variables, utilizando diferentes tipos de elementos como mixins de Boostrap, haciendo muchos tipos de modificaciones.',
+    },
+    
+    
+    {
+        title: 'Guitarras Website FULL STACK',
+        subtitle: 'PostgreSQL, NextJS, React, NodeJS',
+        image: './img/projects/guitarrawebFULLSTACK.jpg',
+        linkDemo: 'https://guitar-la-next-js-eight.vercel.app/',
+        linkGithub: 'https://github.com/Racknar0/GuitarLA-NextJS',
+        descripcion:
+            'Version mejorada del proyecto anterior, este proyecto esta construido su Backend con NodeJS,PostgreSQL, Express y su front end por aparte construidos con REACT, SASS.',
     },
     {
         title: 'FULL STACK - Ecommerce Celulares',
