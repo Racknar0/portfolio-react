@@ -2,6 +2,7 @@ import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import store from '@/store';
 import '@/styles/globals.scss';
+
 export default function App({ Component, pageProps }) {
 
     return (
