@@ -1,0 +1,12 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/************** ( 'FOOTER' ) **************/
+.footer {
+    background-color: $negro;
+
+    h3 {
+        color: $blanco;
+        font-weight: bold;
+    }
+}

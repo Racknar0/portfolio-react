@@ -1,0 +1,88 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/************** ( 'TITLE SERVICES' ) **************/
+
+.contenedor_services {
+    background-color: $negro;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tittle_services {
+        font-size: 5rem;
+        font-family: $fuentePrimary;
+        font-weight: bold;
+        margin-bottom: 10rem;
+    }
+    .services_text_1 {
+        font-weight: bold;
+        color: $gris;
+        font-family: $fuentePrimary;
+    }
+
+    .grid_services {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        .container_services {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            &:hover {
+                /* border-bottom: 4px solid var(--verde) */
+                border-bottom: 4px solid;
+                border-image: linear-gradient(to right, $verde, $blanco);
+                border-image-slice: 2;
+                margin: auto;
+            }
+
+            @include tablet {
+                padding-top: 8rem;
+            }
+
+            @include desktop {
+                height: 400px;
+            }
+
+            @include desktopxl {
+                padding-top: 0rem;
+                height: 350px;
+            }
+
+
+            i {
+                color: $gris;
+                font-size: 8rem;
+
+                &:hover {
+                    color: $verde;
+                    transform: scale(1.1);
+                }
+            }
+
+            & p:first-of-type {
+                color: $blanco;
+                font-weight: bold;
+                padding-top: 1rem;
+
+                &:hover {
+                    color: $verde;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        & p:nth-of-type(2) {
+            color: $grisClaro;
+            font-size: 15px;
+        }
+    }
+}
+

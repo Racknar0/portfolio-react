@@ -1,0 +1,67 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.main_container_contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .title_contact {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-bottom: 6rem;
+    }
+
+    .contact_subtitle {
+        color: $gris;
+        font-weight: bold;
+    }
+
+    .grid_contact {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        .container_contact_01 {
+            .link_contact {
+                text-decoration: none;
+
+                .container_contact {
+                    height: 240px;
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+
+                    .icono_contact {
+                        color: $grisClaro;
+                        font-size: 8rem;
+                    }
+
+                    .icono_contact_texto {
+                        color: $blanco;
+                        font-weight: bold;
+                        padding-top: 1rem;
+                    }
+
+                    .icono_contact_texto_2 {
+                        color: $blanco;
+                    }
+                }
+            }
+
+            &:hover .icono_contact {
+                transform: scale(1.05);
+                color: #cbec13 !important;
+            }
+
+            &:hover .icono_contact_texto {
+                transform: scale(1.05);
+                color: #cbec13 !important;
+            }
+
+
+            &:hover .icono_contact_texto_2 {
+                transform: scale(1.05);
+                color: #cbec13 !important;
+            }
+        }
+    }
+}
+

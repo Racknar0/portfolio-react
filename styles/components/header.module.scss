@@ -1,0 +1,167 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+/************** ( 'NAV' ) **************/
+
+.header {
+    background-image: url('../../public/img/wallpaper.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    .gridHead {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 80%;
+        height: 100vh;
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40% 60%;
+            height: 100vh;
+        }
+
+        /************** ( 'NAVBAR' ) **************/
+        .animacion {
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-timing-function: ease;
+            animation-name: animarImagen1;
+
+            .navbar {
+                padding-bottom: 0;
+            }
+
+            .text-brand {
+                color: $blanco;
+                font-size: 2.7rem;
+                font-family: $fuentePrimary;
+                font-weight: 600;
+            }
+
+            .navbar-toggler {
+                color: $verde;
+
+                .navbar-toggler-icon {
+                    color: $verde;
+                }
+            }
+
+            .logoverde {
+                color: $verde;
+            }
+
+            .nav_link {
+                font-family: $fuentePrimary;
+                text-decoration: none;
+                color: $blanco;
+                font-size: 20px;
+                margin-top: 10px;
+
+                @include tablet {
+                    margin-top: 0;
+                }
+
+                &:hover {
+                    color: $verde;
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                }
+            }
+
+            .separator_navLink {
+                color: $verde;
+                font-weight: bold;
+            }
+        }
+
+        /************** ( 'PRESENTATION' ) **************/
+        .containerGridSup {
+            padding-top: 15rem;
+
+            .imagen {
+                width: 200px;
+                display: block;
+                margin: 0 auto;
+                padding-top: 6rem;
+
+                @include telefono {
+                    width: 250px;
+                    display: block;
+                    padding-top: 2rem;
+                }
+
+                @include tablet {
+                    width: min(100%, 90rem);
+                }
+            }
+
+            @include tablet {
+                padding-top: 0rem;
+            }
+
+            .txt1 {
+                font-family: $fuentePrimary;
+                font-size: 2rem;
+            }
+
+            .txt2 {
+                color: $verde;
+                font-weight: 900;
+                font-family: $fuenteSecondary;
+                font-size: 3rem;
+
+                span {
+                    display: block;
+                    /* font-family: monospace; */
+                    white-space: nowrap;
+                    border-right: 4px solid;
+                    width: 17ch; /* numero de caracteres */
+
+                    animation: typing 2s steps(17),
+                        blink 5s infinite step-end alternate;
+                    overflow: hidden;
+                }
+
+                @include desktop {
+                    font-size: 5rem;
+                }
+            }
+
+            .txt3 {
+                color: var(--verde);
+                font-family: var(--fuente1);
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@keyframes animarImagen1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    30% {
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

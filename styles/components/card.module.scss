@@ -1,0 +1,94 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.tippy {
+    background-color: $negro;
+    border: 3px solid $verde;
+    border-radius: 10px;
+    font-family: $fuentePrimary;
+}
+
+.card_container {
+    .card {
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background-color: $blanco;
+        margin: 30px 10px;
+        padding: 20px 15px;
+
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 20px $negro;
+        transition: 0.3s ease-in-out;
+        border-radius: 35px;
+
+        &:hover {
+            height: 280px;
+
+            .content {
+                margin-top: 45px;
+                visibility: visible;
+                opacity: 1;
+                transition-delay: 0.2s;
+            }
+        }
+
+        .image {
+            position: relative;
+            width: 260px;
+            height: 260px;
+
+            top: -40%;
+            /* left: 8px; */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+
+            img {
+                max-width: 100%;
+                border-radius: 15px;
+            }
+        }
+
+        .content {
+            position: relative;
+            top: -140px;
+            padding: 10px 15px;
+            color: #111;
+            text-align: center;
+
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+
+            h2 {
+                margin-bottom: 0;
+                font-family: $fuenteSecondary;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-family: v$fuentePrimary;
+                font-size: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: $linkPortfolioCard;
+
+                .link_demo {
+                    color: $linkDemo;
+                }
+
+                .git {
+                    color: $linkGit;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+

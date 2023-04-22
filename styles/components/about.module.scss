@@ -1,0 +1,159 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.contenedorAbout {
+    background-color: $negro;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+
+    h2 {
+        font-size: 5rem;
+        font-family: $fuentePrimary;
+        font-weight: bold;
+        margin-bottom: 6rem;
+
+        span {
+            border-bottom: 5px solid $verde;
+        }
+    }
+
+    .about_text_1 {
+        font-weight: bold;
+        color: $gris;
+        font-family: $fuentePrimary;
+    }
+    .about_text_2 {
+        color: $blanco;
+        font-family: $fuentePrimary;
+        font-size: 14px;
+
+        span {
+            color: $verde;
+            font-family: $fuentePrimary;
+            font-size: 14px;
+        }
+    }
+
+    .btn_success {
+        background-color: $verde;
+        color: $negro;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: $verde;
+            color: $negro;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+        &:active {
+            background-color: $verde;
+            color: $negro;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    }
+
+    .grid_skills {
+        .skill {
+            width: 60px;
+            height: 60px;
+            background-size: 90%;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+            @include tablet {
+                width: 80px;
+                height: 80px;
+            }
+
+            @include desktopxl {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+
+        
+        /* .grid_skills > div:hover {
+            filter: grayscale(0);
+            transform: scale(1.1);
+            transition: 0.5s;
+        } */
+
+        .skill1 {
+            background-image: url('../../public/img/iconsskills/react\ .png');
+        }
+        .skill1a {
+            background-image: url('../../public/img/iconsskills/redux.png');
+        }
+        .skill2 {
+            background-image: url('../../public/img/iconsskills/css.png');
+        }
+        .skill3 {
+            background-image: url('../../public/img/iconsskills/bootstrap.png');
+        }
+        .skill4 {
+            background-image: url('../../public/img/iconsskills/sass.png');
+        }
+        .skill5 {
+            background-image: url('../../public/img/iconsskills/javascript.png');
+        }
+        .skill6 {
+            background-image: url('../../public/img/iconsskills/git.png');
+        }
+        .skill7 {
+            background-image: url('../../public/img/iconsskills/github.png');
+        }
+        .skill8 {
+            background-image: url('../../public/img/iconsskills/wordpress.png');
+        }
+        .skill9 {
+            background-image: url('../../public/img/iconsskills/mysql_original_wordmark_logo_icon_146417.png');
+        }
+        .skill10 {
+            background-image: url('../../public/img/iconsskills/photoshop.png');
+        }
+        .skill11 {
+            background-image: url('../../public/img/iconsskills/mongodb-original.svg');
+        }
+        .skill12 {
+            background-image: url('../../public/img/iconsskills/html.png');
+        }
+        .skill13 {
+            background-image: url('../../public/img/iconsskills/nodejs-original.svg');
+        }
+        .skill14 {
+            background-image: url('../../public/img/iconsskills/visualStudio.png');
+        }
+        .skill15 {
+            background-image: url('../../public/img/iconsskills/windows.png');
+        }
+        .skill16 {
+            background-image: url('../../public/img/iconsskills/linux.png');
+        }
+        .skill17 {
+            background-image: url('../../public/img/iconsskills/typescript-original.svg');
+        }
+        .skill18 {
+            background-image: url('../../public/img/iconsskills/nextjs.svg');
+            background-color: $blanco;
+            border-radius: 50%;
+        }
+
+        a {
+            div {
+                &:hover {
+                    filter: hue-rotate(90deg);
+                    transform: scale(1.3);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+}
+

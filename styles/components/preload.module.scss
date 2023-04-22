@@ -1,0 +1,47 @@
+@import '../base/variables';
+
+.preloadContainer {
+    background-color: $negro;
+    height: 100vh;
+    overflow: hidden;
+
+    .bg_reload {
+        top: 10px;
+        left: 10px;
+    }
+
+    path {
+        animation: draw 4.5s infinite;
+    }
+}
+
+@keyframes draw {
+    50% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* .preloadContainer {
+    background: linear-gradient(51deg, #aaff00, #000000);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 31s ease infinite;
+    -moz-animation: AnimationName 31s ease infinite;
+    animation: AnimationName 31s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+} */
