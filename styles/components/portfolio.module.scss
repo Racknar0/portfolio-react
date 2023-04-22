@@ -3,13 +3,18 @@
 
 /************** ( 'PORTFOLIO' ) **************/
 
+
+
+
+
 .contenedor_portfolio {
-  background-color: $negro;
-  min-height: 100vh;
+  background-color: $negro;/* 
+  min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+  margin-bottom: 4rem;
 
   h2 {
     font-size: 5rem;
@@ -23,9 +28,67 @@
     color: $gris;
     font-family: $fuentePrimary;
   }
+    .grid_services {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    
+  }
+}
 
-  .grid_services {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+.collapsed {
+  border: 1px solid #fcfcfc;
+  border-radius: 20px;
+  animation: collapse .2s ease-in-out;
+  overflow: hidden;
+  
+  // Altura del elemento colapsado
+  height: 400px;
+}
+
+.expanded {
+  animation: expand .2s ease-in-out;
+  overflow: hidden;
+  
+  // Altura del elemento expandido
+  height: 100%;
+}
+
+.button_expand{
+  background-color: $verde;
+  color: $negro;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  padding: .5rem 2rem;
+  font-size: 1.5rem;
+  font-family: $fuentePrimary;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover{
+    background-color: $blanco;
+    color: $negro;
+  }
+}
+
+
+@keyframes collapse {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 400px;
+  }
+}
+
+@keyframes expand {
+  0% {
+    height: 400px;
+  }
+  100% {
+    height: 100%;
   }
 }
