@@ -1,7 +1,7 @@
 import { START_LOADER, STOP_LOADER } from '@/types/loaderActions';
 
 const initialState = {
-    preload: false,
+    preload: true,
 };
 
 export function loaderReducer(state = initialState, action) {
