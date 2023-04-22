@@ -8,6 +8,25 @@ export const proyectos = [
         descripcion:
             'Proyecto desarrollado bajo las tecnologías REACT-REDUX, BOOTSTRAP, conexión a bases de datos mediante API, consumos REST trabajo en conjunto con el equipo de desarrolladores HALCON',
     },
+    
+    {
+        title: 'HTML Canvas Game Alien Escape',
+        subtitle: 'JavaScript, Html, CSS3',
+        image: './img/projects/alienescape.jpg',
+        linkDemo: 'https://alien-escape-game.netlify.app/',
+        linkGithub: 'https://github.com/Racknar0/JAVASCRIPT-CANVAS_Game-BomberSkull',
+        descripcion:
+            'Juego de alien escape, usando la API de canvas, usando las tecnologías JAVASCRIPT Vanilla ,SCC3 ,HTML',
+    },
+    {
+        title: 'FULL STACK - Quiosco app',
+        subtitle: 'MYSQL, NextJS, React, NodeJS',
+        image: './img/projects/quiosco.jpg',
+        linkDemo: 'https://netx-js-react-quiosco-9mhi15mfc-racknar0.vercel.app/',
+        linkGithub: 'https://github.com/Racknar0/NetxJs-React-Quiosco',
+        descripcion:
+            'Proyecto full stack creado utilizando MYSQL, NextJS, React, NodeJS',
+    },
     {
         title: 'JS Virtual Reality Website',
         subtitle: 'Desarrollado para la empresa Virtua State',
@@ -35,15 +54,7 @@ export const proyectos = [
         descripcion:
             'Este proyecto esta construido su Backend con NodeJS, Express, Heroku y su front end por aparte construidos con JAVASCRIPT y PUG HTML, Y BOOTSRAP.',
     },
-    {
-        title: 'FULL STACK - Ecommerce Celulares',
-        subtitle: 'Proyecto react conectado a Firebase',
-        image: './img/projects/react-ecommerce.jpg',
-        linkDemo: 'https://ecommerce-cels.netlify.app/',
-        linkGithub: 'https://github.com/Racknar0/react-ecomerce-celulares',
-        descripcion:
-            'Este proyecto esta construido su Front con REACT, BOOTSTRAP, conexión a bases de datos mediante Firebase utilizando herramientas del navegador como localStorage, Firebase, etc.',
-    },
+    
     {
         title: 'Guitarras Website',
         subtitle: 'Html, CSS3, Bootstrap, Sass, Gulp',
@@ -53,7 +64,25 @@ export const proyectos = [
         descripcion:
             'Proyecto creado usando las tecnologías HTML, SCC, BOOTSTRAP, SASS, GULP realizando cambios en las variables, utilizando diferentes tipos de elementos como mixins de Boostrap, haciendo muchos tipos de modificaciones.',
     },
+    {
+        title: 'FULL STACK - Ecommerce Celulares',
+        subtitle: 'Proyecto react conectado a Firebase',
+        image: './img/projects/react-ecommerce.jpg',
+        linkDemo: 'https://ecommerce-cels.netlify.app/',
+        linkGithub: 'https://github.com/Racknar0/react-ecomerce-celulares',
+        descripcion:
+            'Este proyecto esta construido su Front con REACT, BOOTSTRAP, conexión a bases de datos mediante Firebase utilizando herramientas del navegador como localStorage, Firebase, etc.',
+    },
 
+    {
+        title: 'Movie search APP',
+        subtitle: 'JavaScript, Html, CSS3',
+        image: './img/projects/dbmovierack.jpg',
+        linkDemo: 'https://db-movie-rack.netlify.app/',
+        linkGithub: 'https://github.com/Racknar0/JAVASCRIPT-DB_Movies_Rack',
+        descripcion:
+            'App simple de busqueda de peliculas simulando una app movil, usando la API de themoviedb, usando las tecnologías JAVASCRIPT Vanilla ,SCC3 ,HTML',
+    },
     {
         title: 'API Cotizar Cryptos',
         subtitle: 'Cotizar tus cryptos favoritos',
@@ -137,6 +166,15 @@ export const proyectos = [
         linkGithub: 'https://github.com/Racknar0/ReactAPI-Gallery-App',
         descripcion:
             'Aplicativo desarrollado bajo REACT, para buscar imagenes sin derechos de autor.',
+    },
+    {
+        title: 'CSS Minigame',
+        subtitle: 'Html, CSS3',
+        image: './img/projects/cssminigame.jpg',
+        linkDemo: 'https://css-minigame-1.netlify.app/',
+        linkGithub: 'https://github.com/Racknar0/CSS-Minigame-1',
+        descripcion:
+            'Juego de CSS, usando las tecnologías HTML, SCC3',
     },
     {
         title: 'API Buscar Canciones',
@@ -250,13 +288,13 @@ export const proyectos = [
             'Proyecto creado usando las tecnologías JAVASCRIPT "Funciones de alto nivel" Vanilla ,TAILWIND ,SCC3 ,HTML',
     },
     {
-        title: 'APP Filtro Carros',
+        title: 'Cotizado de Seguros',
         subtitle: 'JavaScript, Html, CSS3, Skeleton',
         image: './img/projects/cotizadorseguros.jpg',
         linkDemo: 'https://prototypesjs.netlify.app/',
         linkGithub: 'https://github.com/Racknar0/PrototypeJS_Cotizador',
         descripcion:
-            'Proyecto creado usando las tecnologías JAVASCRIPT "Funciones de alto nivel" Vanilla ,TAILWIND ,SCC3 ,HTML',
+            'Proyecto creado usando las tecnologías JAVASCRIPT "Prototypes" Vanilla ,SKELETON ,SCC3 ,HTML',
     },
     {
         title: 'POO Gasto Semanal',
@@ -277,12 +315,12 @@ export const proyectos = [
             'Proyecto creado usando las tecnologías JAVASCRIPT Vanilla ,TAILWIND ,SCC3 ,HTML',
     },
     {
-        title: 'Tweet Local Storage JS',
-        subtitle: 'JavaScript, Html, CSS3, Skeleton',
-        image: './img/projects/localstorage.jpg',
-        linkDemo: 'https://js-tweet-localstorage.netlify.app/',
-        linkGithub: 'https://github.com/Racknar0/TweetLocalStorage',
+        title: 'Poke App Battles',
+        subtitle: 'JavaScript, Html, CSS3',
+        image: './img/projects/pokebatle.jpg',
+        linkDemo: 'https://pokeapp-battles.netlify.app/',
+        linkGithub: 'https://github.com/Racknar0/JAVASCRIPT-PokkeApp_Batles',
         descripcion:
-            'Un Proyecto con diseño simple pero usando LocalStorage en JAVASCRIPT',
+            'App simple de batallas pokemon, usando la API de pokemon, usando las tecnologías JAVASCRIPT Vanilla ,SCC3 ,HTML',
     },
 ];
