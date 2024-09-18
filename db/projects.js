@@ -10,6 +10,15 @@ export const proyectos = [
             'Este proyecto esta construido en su backend con C# , Phyton y su front end por aparte construidos con REACT, NEXTJS, BOOTSTRAP realiza analisis de datos de un cubo de datos, y genera reportes en graficas, dichos analisis son realizados por medio de Phyton y C#.',
     },
     {
+        title: "TP Improve Teleperformance",
+        subtitle: 'App desarrollada para la empresa Teleperformance',
+        image: './img/projects/tpimprove.jpg',
+        linkDemo: 'https://youtu.be/HjFcAX9JCmY',
+        linkGithub: 'privado',
+        descripcion:
+            'Este proyecto esta construido en su backend con C# , Phyton y su front end por aparte construidos con REACT, NEXTJS, BOOTSTRAP realiza analisis de datos de un cubo de datos, y genera reportes en graficas, dichos analisis son realizados por medio de Phyton y C#.',
+    },
+    {
         title: "ERP 'Aeronautica Civil'",
         subtitle: 'App desarrollada para la Aeronautica Civil de Colombia',
         image: './img/projects/halconerp.jpg',
