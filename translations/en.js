@@ -13,7 +13,7 @@ const en = {
     aboutMe: 'About me',
     whoAmI: 'Who am I?',
     whoAmI2: 'My name is Jonathan Torres, a passionate developer of web and software development.',
-    describe: 'Front End Developer with a Technician in Electronics and industrial instrumentation, Full Stack developer. With an academic training in computer science and a wide understanding to program and self-taught development, As a person adaptable with a high level of skill in several front end programming technologies, it would be a practical addition and with knowledge to any IT organization.',
+    describe: 'I am a full-stack software developer with 4 years of experience specializing in the MERN stack (MongoDB, Express, React, Node.js). Throughout my career, I have worked on key projects for renowned companies such as the Civil Aeronautics of Colombia, Teleperformance, Metro de Medellín, and Banco Itaú. My focus is on creating efficient and scalable solutions, with a strong commitment to quality and performance. I am always looking for new opportunities to keep learning and contribute to the development of innovative applications.',
     name: 'Name:',
     bachelor: "Bachelor's degree:",
     course1: 'Course #1:',

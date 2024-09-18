@@ -15,12 +15,15 @@ const Main = () => {
 
     useEffect(() => {
         if (selectorLanguage) {
-            dispatch(setLangEs());
-        } else {
             dispatch(setLangEn());
+        } else {
+            
+            dispatch(setLangEs());
         }
     }, [selectorLanguage]);
 
+
+    console.log(lang);
 
     return (
         <div className={`${styles.main_container}`}>

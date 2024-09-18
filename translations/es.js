@@ -12,7 +12,7 @@ const es = {
     aboutMe: 'Sobre mí',
     whoAmI: '¿Quién soy?',
     whoAmI2: 'Mi nombre es Jonathan Torres, un desarrollador apasionado por el desarrollo web y de software.',
-    describe: 'Desarrollador Front End con un Tecnólogo en Electrónica e instrumental industrial, desarrollador web full stack. Con una formación académica en informática y una amplia comprensión para programar y el desarrollo autodidacta, Como una persona adaptable con un alto nivel de habilidad en varias tecnologías de programación front end, sería una adición práctica y con conocimientos a cualquier organización TI.',
+    describe: 'Soy desarrollador de software full-stack con +4 años de experiencia especializado en el stack MERN (MongoDB, Express, React, Node.js). A lo largo de mi carrera, he trabajado en proyectos clave para empresas de renombre como la Aeronáutica Civil de Colombia, Teleperformance, Metro de Medellín y el Banco Itaú. Mi enfoque está en crear soluciones eficientes y escalables, con un fuerte compromiso hacia la calidad y el rendimiento. Estoy siempre en búsqueda de nuevas oportunidades para seguir aprendiendo y aportar valor en el desarrollo de aplicaciones innovadoras.',
     name: 'Nombre:',
     bachelor: 'Carrera #1:',
     course1: 'Carrera #2:',

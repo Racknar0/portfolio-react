@@ -84,7 +84,7 @@
    }
 
    .toggle:checked + .slider::after {
-    content: 'ES';
+    content: 'EN';
     background-color: #282828;
     border-color: #df0000;
     transform: translateX(25px) rotate(360deg);
@@ -97,7 +97,7 @@
    }
    
    .slider::after {
-    content: 'EN';
+    content: 'ES';
     width: 30px;
     color: #ffffff;
     font-weight: bold;

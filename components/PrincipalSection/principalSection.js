@@ -8,8 +8,8 @@ const PrincipalSection = () => {
     return (
         <div className={styles.principalSection}>
             <About />
-            <Services />
             <Portfolio />
+            <Services />
             <Contact />
         </div>
     );

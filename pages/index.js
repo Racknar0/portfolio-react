@@ -16,12 +16,15 @@ export default function Home() {
 
     
     return (
+        // <>
+        //     {preload ? (
+        //         <Preload />
+        //     ) : (
+        //         <Main />
+        //         )}
+        // </>
         <>
-            {preload ? (
-                <Preload />
-            ) : (
-                <Main />
-                )}
+            <Main />
         </>
     );
 }
