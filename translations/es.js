@@ -2,7 +2,7 @@ const es = {
     home: 'Inicio',
     about: 'Información',
     services: 'Servicios',
-    portfolio: 'Portafolio',
+    portfolio: 'Proyectos',
     contact: 'Contacto',
 
     //PRESENTACION
@@ -12,7 +12,7 @@ const es = {
     aboutMe: 'Sobre mí',
     whoAmI: '¿Quién soy?',
     whoAmI2: 'Mi nombre es Jonathan Torres, un desarrollador apasionado por el desarrollo web y de software.',
-    describe: 'Soy desarrollador de software full-stack con +4 años de experiencia especializado en el stack MERN (MongoDB, Express, React, Node.js). A lo largo de mi carrera, he trabajado en proyectos clave para empresas de renombre como la Aeronáutica Civil de Colombia, Teleperformance, Metro de Medellín y el Banco Itaú. Mi enfoque está en crear soluciones eficientes y escalables, con un fuerte compromiso hacia la calidad y el rendimiento. Estoy siempre en búsqueda de nuevas oportunidades para seguir aprendiendo y aportar valor en el desarrollo de aplicaciones innovadoras.',
+    describe: 'Soy desarrollador de software full-stack con más de 4 años de experiencia especializado en el stack MERN (MongoDB, Express, React, Node.js). He trabajado en proyectos clave para empresas como la Aeronáutica Civil de Colombia, Teleperformance, Metro de Medellín y Banco Itaú. Mi enfoque está en crear soluciones eficientes y escalables, con un fuerte compromiso hacia la calidad y el rendimiento. Además, disfruto enseñar desarrollo y he compartido mis conocimientos en diferentes tecnologías con mis compañeros de trabajo. Siempre busco nuevas oportunidades para aprender y aportar valor en el desarrollo de aplicaciones innovadoras.',
     name: 'Nombre:',
     bachelor: 'Carrera #1:',
     course1: 'Carrera #2:',

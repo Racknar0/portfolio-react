@@ -1,22 +1,76 @@
 export const proyectos = [
     
     {
-        title: "TP Improve Teleperformance",
-        subtitle: 'App desarrollada para la empresa Teleperformance',
-        image: './img/projects/tpimprove.jpg',
-        linkDemo: 'https://youtu.be/HjFcAX9JCmY',
-        linkGithub: 'privado',
-        descripcion:
-            'Este proyecto esta construido en su backend con C# , Phyton y su front end por aparte construidos con REACT, NEXTJS, BOOTSTRAP realiza analisis de datos de un cubo de datos, y genera reportes en graficas, dichos analisis son realizados por medio de Phyton y C#.',
+        title: "Plataforma E-commerce 'Tienda Naranja' - Banco Itaú",
+        subtitle: "Desarrollo de una solución integral para el e-commerce de Banco Itaú",
+        image: "./img/projects/tienda_naranja.jpg",
+        linkDemo: "https://youtu.be/3N8l3kD-8-0",
+        linkGithub: "privado",
+        descripcion: 
+            "La plataforma 'Tienda Naranja' fue desarrollada para Banco Itaú utilizando Next.js en el frontend, con estilos gestionados mediante SCSS y almacenamiento de estados con Redux. El backend está construido con Node.js y Express, apoyado en MySQL como base de datos, utilizando Prisma como ORM para facilitar la interacción con la base de datos."
     },
     {
-        title: "TP Improve Teleperformance",
-        subtitle: 'App desarrollada para la empresa Teleperformance',
-        image: './img/projects/tpimprove.jpg',
-        linkDemo: 'https://youtu.be/HjFcAX9JCmY',
-        linkGithub: 'privado',
-        descripcion:
-            'Este proyecto esta construido en su backend con C# , Phyton y su front end por aparte construidos con REACT, NEXTJS, BOOTSTRAP realiza analisis de datos de un cubo de datos, y genera reportes en graficas, dichos analisis son realizados por medio de Phyton y C#.',
+        title: "Desarrollo de la Plataforma Web 'Biozonos Site'",
+        subtitle: "Proyecto desarrollado para la empresa Biozonos",
+        image: "./img/projects/biozonos.jpg",
+        linkDemo: "https://youtu.be/28_mjw8b4JM",
+        linkGithub: "privado",
+        descripcion: 
+            "El proyecto 'Biozonos Site' fue creado para la empresa Biozonos, implementando una arquitectura moderna con Next.js en el frontend, estilos gestionados mediante SCSS, y Redux para el manejo eficiente del estado de la aplicación. Además de optimizar la experiencia de usuario, la plataforma está diseñada para ser altamente escalable, soportando integración con servicios externos y una carga eficiente de recursos. Se puso un especial énfasis en la optimización SEO y en la implementación de prácticas de desarrollo ágil para garantizar tiempos de respuesta rápidos y una experiencia fluida en todos los dispositivos."
+    },
+    {
+        title: "Plataforma de Microcertificaciones - Universidad Minuto de Dios",
+        subtitle: "Desarrollo de plataforma de venta de programas educativos para la Universidad Minuto de Dios",
+        image: "./img/projects/mirocertificaciones.jpg",
+        linkDemo: "https://youtu.be/tIVpe4wFxYw",
+        linkGithub: "privado",
+        descripcion: 
+            "El proyecto de Microcertificaciones para la Universidad Minuto de Dios fue desarrollado utilizando Drupal en el backend, mientras que el frontend se construyó con TWIG templating, Webpack para la gestión de módulos, SCSS para los estilos, y JavaScript para interacciones dinámicas. Esta plataforma permite la compra de programas como Micromasters y Microbachelors, ofreciendo a los usuarios una interfaz intuitiva para explorar y adquirir certificados especializados. Se implementaron funcionalidades para la gestión eficiente de productos y optimización del flujo de compra, garantizando una experiencia de usuario fluida y segura."
+    },
+    {
+        title: "Portal Corporativo 'Ariadna Communications Group'",
+        subtitle: "Desarrollo del portal principal para Ariadna Communications Group",
+        image: "./img/projects/ariadna.jpg",
+        linkDemo: "https://youtu.be/HcgtHywpZO0",
+        linkGithub: "privado",
+        descripcion: 
+            "El portal principal de Ariadna Communications Group fue desarrollado utilizando Drupal para el backend, y en el frontend se emplearon tecnologías como TWIG templating, Webpack para la modularización, SCSS para los estilos y JavaScript para proporcionar interactividad avanzada. Esta plataforma sirve como el núcleo digital de la empresa, permitiendo la gestión y presentación de sus servicios de manera eficiente y optimizada. Se implementaron diversas funcionalidades enfocadas en la escalabilidad, rendimiento y experiencia de usuario, asegurando que el portal pueda adaptarse a las necesidades de una empresa líder en comunicaciones."
+    },
+    {
+        title: "Sitio Web 'Tari' - Alicorp Perú",
+        subtitle: "Plataforma desarrollada para la empresa Alicorp Perú",
+        image: "./img/projects/tari.jpg",
+        linkDemo: "https://youtu.be/l0UFP2VH3nU",
+        linkGithub: "privado",
+        descripcion: 
+            "El sitio web 'Tari' de Alicorp Perú fue desarrollado con Drupal en el backend y tecnologías como TWIG templating, Webpack, SCSS, y JavaScript en el frontend. Esta plataforma está diseñada para mostrar los productos de la línea Tari de manera atractiva, y permite a los usuarios ser redirigidos fácilmente a Amazon para realizar sus compras. Se implementaron funcionalidades orientadas a la experiencia de usuario, facilitando la navegación y mejorando la conversión mediante un flujo de compra intuitivo."
+    },
+    {
+        title: "Plataforma de Aforo - Metro de Medellín",
+        subtitle: "Aplicación desarrollada para Icomedios y el Metro de Medellín",
+        image: "./img/projects/aforo_metro.jpg",
+        linkDemo: "https://youtu.be/SJdSC0cgwAg",
+        linkGithub: "privado",
+        descripcion: 
+            "El proyecto 'Aforo Metro de Medellín' fue desarrollado con Django en el backend y Jinja en el frontend, complementado con Webpack, SCSS y JavaScript. Esta aplicación es el núcleo del negocio de compra y gestión de espacios publicitarios en el Metro de Medellín y otras ubicaciones estratégicas. Se diseñó con una lógica empresarial robusta que gestiona flujos de ventas, optimiza la asignación de espacios, y permite un control preciso sobre las campañas publicitarias. El sistema ofrece una interfaz amigable para los usuarios, mientras maneja operaciones complejas de negocio en segundo plano."
+    },
+    {
+        title: "Plataforma de Análisis de Datos 'TP Improve' - Teleperformance",
+        subtitle: "Aplicación desarrollada para la empresa Teleperformance",
+        image: "./img/projects/tpimprove.jpg",
+        linkDemo: "https://youtu.be/HjFcAX9JCmY",
+        linkGithub: "privado",
+        descripcion: 
+            "El proyecto 'TP Improve' fue desarrollado para Teleperformance, integrando un backend robusto en C# y Python, con un frontend construido en React, Next.js y Bootstrap. Esta plataforma realiza análisis avanzados de datos provenientes de un cubo de datos, permitiendo la generación de reportes visuales en forma de gráficos. La lógica de análisis se ejecuta utilizando Python y C#, proporcionando resultados precisos y útiles para la toma de decisiones basada en datos. La plataforma está diseñada para ser eficiente, escalable y fácil de usar, facilitando la interpretación de grandes volúmenes de información."
+    },
+    {
+        title: "Sitio Web de Realidad Virtual - Virtua State",
+        subtitle: "Desarrollado para la empresa Virtua State",
+        image: "./img/projects/virtual.jpg",
+        linkDemo: "https://virtuasite.netlify.app/",
+        linkGithub: "https://github.com/Racknar0/virtua-state-web",
+        descripcion: 
+            "El proyecto 'JS Virtual Reality Website' fue desarrollado para Virtua State, una empresa especializada en la venta de modelos 3D. Utilizando tecnologías de JavaScript puro, Bootstrap y CSS, se creó un sitio web con un diseño completamente responsivo que garantiza una experiencia de usuario óptima en diversos dispositivos. La plataforma permite a los usuarios explorar y adquirir modelos en 3D de manera intuitiva, destacando la funcionalidad y el atractivo visual en la presentación de productos."
     },
     {
         title: "ERP 'Aeronautica Civil'",
@@ -44,15 +98,6 @@ export const proyectos = [
         linkGithub: 'https://github.com/Racknar0/NetxJs-React-Quiosco',
         descripcion:
             'Proyecto full stack creado utilizando MYSQL, NextJS, React, NodeJS',
-    },
-    {
-        title: 'JS Virtual Reality Website',
-        subtitle: 'Desarrollado para la empresa Virtua State',
-        image: './img/projects/virtual.jpg',
-        linkDemo: 'https://virtuasite.netlify.app/',
-        linkGithub: 'https://github.com/Racknar0/virtua-state-web',
-        descripcion:
-            'Proyecto desarrollado bajo las tecnologías JAVASCRIPT, BOOTSTRAP, css con su respectivo sistema responsivo.',
     },
     {
         title: 'MERN Full Stack NodeJS',

@@ -28,9 +28,9 @@ const Card = ({ proyecto }) => {
                             <a href={linkDemo} target="_blank" rel="noreferrer" ><p className={`${styles.link_demo}`}>{'-> DEMO <-'}</p></a>
                             {
                                 linkGithub !== 'privado' ?
-                                (<a href={linkGithub} target="_blank" rel="noreferrer" ><p className="git">Github</p></a>) 
+                                (<a href={linkGithub} target="_blank" rel="noreferrer" ><p className="git">Código</p></a>) 
                                 : 
-                                (<p className="git">{'-> Github PRIVADO <-'}</p>)
+                                (<p className="git">{'-> Código PRIVADO <-'}</p>)
                             }
                         </>
                         

@@ -29,7 +29,7 @@ const Portfolio = () => {
                 <h2 className="text-white text-center">
                     <span>{lang.portfolio}</span>
                 </h2>
-                <p className={`${styles.portfolio_text_1} fs-1 text-center mt-5 pt-5`} >
+                <p className={`${styles.portfolio_text_1} fs-1 text-center pt-5`} >
                     {lang.portfolio1}
                 </p>
 
@@ -37,7 +37,7 @@ const Portfolio = () => {
                     className={`${styles.button_expand}`}
                     onClick={handleExpand}
                 >
-                    {isExpanded ? 'Ver menos' : 'Ver más'}
+                    {isExpanded ? 'Ver menos' : 'Ver todo'}
                 </button>
 
                 <div className={`${isExpanded ? styles.expanded : styles.collapsed}`} >
