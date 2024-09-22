@@ -41,7 +41,7 @@ const es = {
     seo1: 'Se optimizará su aplicativo con una estrategia inteligente de SEO  para impulsar el indexamiento en motores de búsqueda para generar clientes potenciales.',
 
     //PORTFOLIO
-    portfolio1: 'En esta sección encontrarás algunos proyectos y micro-proyectos desarrollados por mí.',
+    portfolio1: 'En esta sección encontrarás algunos proyectos en los que he trabajado a lo largo de mi carrera.',
 
     //CONTACT
     contact1: 'Si desea contactarme, puede hacerlo a través de los siguientes medios:',

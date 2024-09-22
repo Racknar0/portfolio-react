@@ -19,8 +19,8 @@ export const proyectos = [
             "El proyecto 'Biozonos Site' fue creado para la empresa Biozonos, implementando una arquitectura moderna con Next.js en el frontend, estilos gestionados mediante SCSS, y Redux para el manejo eficiente del estado de la aplicación. Además de optimizar la experiencia de usuario, la plataforma está diseñada para ser altamente escalable, soportando integración con servicios externos y una carga eficiente de recursos. Se puso un especial énfasis en la optimización SEO y en la implementación de prácticas de desarrollo ágil para garantizar tiempos de respuesta rápidos y una experiencia fluida en todos los dispositivos."
     },
     {
-        title: "Plataforma de Microcertificaciones - Universidad Minuto de Dios",
-        subtitle: "Desarrollo de plataforma de venta de programas educativos para la Universidad Minuto de Dios",
+        title: "Plataforma de Microcertificaciones - Uniminuto",
+        subtitle: "Plataforma vennta de programas para la Universidad Minuto de Dios",
         image: "./img/projects/mirocertificaciones.jpg",
         linkDemo: "https://youtu.be/tIVpe4wFxYw",
         linkGithub: "privado",

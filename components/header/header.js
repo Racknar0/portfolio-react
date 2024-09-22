@@ -1,4 +1,5 @@
 import styles from '@/styles/components/header.module.scss';
+import Image from 'next/image';
 import { useSelector } from 'react-redux';
 
 const Header = () => {
@@ -58,6 +59,24 @@ const Header = () => {
                                         </div>
                                         <div className="d-flex justify-content-center">
                                             <h2 className={`text-center text-white ${styles.txt3}`}> - Software{' '} <i className="fa-solid fa-up"></i> Developer - </h2>
+                                        </div>
+                                        <div className={styles.icons_container}>
+                                        <div className='icon_container'>
+                                                <a href="https://www.linkedin.com/in/camilotorresz/" target="_blank" rel="noopener noreferrer">
+                                                    <Image src="./icons/linkedin.svg" alt="html5" width={40} height={40} />
+                                                </a>
+                                            </div>
+                                            <div className='icon_container'>
+                                                <a href="https://www.youtube.com/@rackDev_" target="_blank" rel="noopener noreferrer">
+                                                    <Image src="./icons/youtube.svg" alt="html5" width={40} height={40} />
+                                                </a>
+                                            </div>
+                                            <div className='icon_container'>
+                                                <a href="https://www.tiktok.com/@rackdev" target="_blank" rel="noopener noreferrer">
+                                                    <Image src="./icons/tiktok.svg" alt="html5" width={40} height={40} />
+                                                </a>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>

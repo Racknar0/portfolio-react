@@ -135,7 +135,24 @@
                 font-family: var(--fuente1);
                 font-size: 2rem;
             }
+
+            .icons_container {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 1rem;
+
+                a {
+                    display: inline-block;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.3s;
+                    }
+                }
+            }
         }
+        
     }
 }
 
