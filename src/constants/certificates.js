@@ -18,9 +18,12 @@ export const CERTIFICATES_DATA = {
       en: "Live courses and bootcamps focused on hands-on projects, simulated teamwork, and professional-level personalized mentoring."
     },
     stats: {
-      coursesCount: 10,
+      coursesCount: 8,
       completedPercentage: "100%",
-      hoursCount: "180h"
+      hoursCount: {
+        es: "22 meses",
+        en: "22 months"
+      }
     },
     paths: [
       {
@@ -31,102 +34,101 @@ export const CERTIFICATES_DATA = {
         },
         courses: [
           {
-            title: "Desarrollo Web Integrado",
-            date: "Mar 2023",
-            duration: "40h",
-            skills: ["HTML5", "CSS3", "Sass (SCSS)", "Bootstrap", "Git/GitHub"],
-            credentialUrl: "https://coderhouse.com/",
+            title: "Desarrollo Web",
+            date: "Mar 2022",
+            duration: {
+              es: "2.5 meses",
+              en: "2.5 months"
+            },
+            skills: ["HTML5", "CSS3", "Sass (SCSS)", "Bootstrap", "Git/GitHub", "Web Performance"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER Desarrollo Web.png",
             score: "Top 10%",
             highlight: true
           },
           {
-            title: "JavaScript Avanzado y Lógica Asíncrona",
-            date: "Jun 2023",
-            duration: "36h",
-            skills: ["ES6+", "Promises/Async-Await", "DOM Manipulation", "Fetch APIs", "AJAX"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
+            title: "JavaScript",
+            date: "May 2022",
+            duration: {
+              es: "2.25 meses",
+              en: "2.25 months"
+            },
+            skills: ["ES6+", "Promises/Async-Await", "DOM Manipulation", "Fetch APIs", "AJAX", "Local Storage"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER JavascriptCoder.png",
             highlight: true
           },
           {
-            title: "React JS: Arquitectura de SPA",
-            date: "Sep 2023",
-            duration: "38h",
-            skills: ["React JS", "State Managers", "Routing", "Firebase Integration"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
+            title: "React Js",
+            date: "Jun 2022",
+            duration: {
+              es: "1.75 meses",
+              en: "1.75 months"
+            },
+            skills: ["React JS", "Context API", "React Hooks", "SPA Architecture", "Conditional Rendering", "Components"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER ReacrCoder.png",
             highlight: true
           },
           {
-            title: "Programación Backend & NoSQL",
-            date: "Dec 2023",
-            duration: "42h",
-            skills: ["Node.js", "Express.js", "MongoDB", "Mongoose ORM", "Websockets (Socket.io)"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
-            highlight: true
-          },
-          {
-            title: "Proyecto Final Full Stack: E-Commerce Corporativo",
-            date: "Jan 2024",
-            duration: "24h",
-            skills: ["Full Stack Architecture", "Deployment (Vercel/Heroku)", "Secure APIs", "SQL & NoSQL Integration"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
+            title: "Programación Backend",
+            date: "Feb 2023",
+            duration: {
+              es: "6 meses",
+              en: "6 months"
+            },
+            skills: ["Node.js", "Express.js", "MongoDB", "Mongoose ORM", "MVC Architecture", "Websockets (Socket.io)", "JWT Authentication", "APIs REST"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER D Backend.png",
             highlight: true
           }
         ]
       },
       {
-        id: "design",
+        id: "specializations",
         title: {
-          es: "Diseño & Herramientas",
-          en: "Design & Tools"
+          es: "Especialidades & Lenguajes",
+          en: "Specializations & Languages"
         },
         courses: [
           {
-            title: "Diseño UX/UI Inicial",
-            date: "Apr 2023",
-            duration: "24h",
-            skills: ["Figma", "User Personas", "Wireframing", "UI Prototyping"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Aprobado",
+            title: "Java Inicial",
+            date: "Oct 2022",
+            duration: {
+              es: "2 meses",
+              en: "2 months"
+            },
+            skills: ["Java OOP", "Control Structures", "Data Types", "Arrays & Collections", "Algorithm Logic"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER java_inicial.png",
             highlight: false
           },
           {
-            title: "Diseño UX/UI Avanzado",
-            date: "Jul 2023",
-            duration: "28h",
-            skills: ["Design Systems", "Usability Testing", "High-Fi Mockups", "Interactive Prototypes"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Product Management y Metodologías Ágiles",
-            date: "Nov 2023",
-            duration: "30h",
-            skills: ["Scrum/Kanban", "Product Roadmap", "KPIs & Analytics", "User Stories"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Marketing Digital & SEO",
-            date: "Aug 2023",
-            duration: "22h",
-            skills: ["SEO Audits", "Google Search Console", "Google Analytics 4", "Semrush"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Optimización de Conversión (CRO)",
+            title: "SQL",
             date: "Sep 2023",
-            duration: "18h",
-            skills: ["A/B Testing", "Heatmaps (Hotjar)", "User Journeys", "Landing Optimization"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Aprobado",
+            duration: {
+              es: "3.25 meses",
+              en: "3.25 months"
+            },
+            skills: ["SQL", "Relational Databases", "Joins & Subqueries", "Data Modeling", "DML / DDL Queries", "MySQL / PostgreSQL Basics"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER SQL.png",
+            highlight: false
+          },
+          {
+            title: "C#",
+            date: "Oct 2023",
+            duration: {
+              es: "2.25 meses",
+              en: "2.25 months"
+            },
+            skills: [".NET Basics", "C# OOP", "Data Types", "Collections", "Console Applications"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER C#.png",
+            highlight: false
+          },
+          {
+            title: "Angular",
+            date: "Feb 2024",
+            duration: {
+              es: "2.25 meses",
+              en: "2.25 months"
+            },
+            skills: ["Angular 16/17+", "TypeScript", "Components & Modules", "RxJS Observables", "Pipes & Directives", "Routing"],
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER Angular.png",
             highlight: false
           }
         ]

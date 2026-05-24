@@ -195,7 +195,11 @@ const Certificates = ({ lang }) => {
                 </div>
                 <div>
                   <div className="text-neutral-400 mb-0.5">{lang === "es" ? "Estudio" : "Study"}</div>
-                  <div className="font-bold text-white text-base">{platform.stats.hoursCount}</div>
+                  <div className="font-bold text-white text-base">
+                    {typeof platform.stats.hoursCount === "object"
+                      ? platform.stats.hoursCount[lang || "es"]
+                      : platform.stats.hoursCount}
+                  </div>
                 </div>
               </div>
 
@@ -311,7 +315,11 @@ const Certificates = ({ lang }) => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-neutral-400">{content.stats.hours}</span>
-                      <span className="font-bold text-white">{activePlatformData.stats.hoursCount}</span>
+                      <span className="font-bold text-white">
+                        {typeof activePlatformData.stats.hoursCount === "object"
+                          ? activePlatformData.stats.hoursCount[lang || "es"]
+                          : activePlatformData.stats.hoursCount}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -410,7 +418,9 @@ const Certificates = ({ lang }) => {
                               </span>
                               <span className="flex items-center gap-1">
                                 <FiClock className="text-[10px]" />
-                                {course.duration}
+                                {typeof course.duration === "object"
+                                  ? course.duration[lang || "es"]
+                                  : course.duration}
                               </span>
                               <span className="flex items-center gap-1 text-emerald-400">
                                 <FiCheck className="text-[10px]" />
