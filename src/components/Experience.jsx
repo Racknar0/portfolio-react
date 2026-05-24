@@ -102,7 +102,7 @@ const Experience = ({ lang }) => {
         {t.title}
       </motion.h1>
 
-      <div className="relative max-w-5xl mx-auto px-4 lg:px-8">
+      <div className="relative w-full mx-auto">
         {/* Línea central brillante de la línea de tiempo */}
         <motion.div 
           initial={{ scaleY: 0 }}
@@ -123,7 +123,7 @@ const Experience = ({ lang }) => {
                 className="relative flex flex-col md:flex-row items-start md:justify-between w-full pl-10 md:pl-0"
               >
                 {/* Columna Izquierda (Solo Desktop) */}
-                <div className={`hidden md:flex md:w-[44%] items-start ${isEven ? 'justify-end' : 'justify-start pt-6'}`}>
+                <div className={`hidden md:flex md:w-[47%] items-start ${isEven ? 'justify-end' : 'justify-start pt-6'}`}>
                   {isEven ? (
                     <motion.div
                       initial={{ opacity: 0, scale: 0.95, y: 30 }}
@@ -150,7 +150,7 @@ const Experience = ({ lang }) => {
                 </div>
 
                 {/* Columna Derecha */}
-                <div className="w-full md:w-[44%] flex flex-col justify-center">
+                <div className="w-full md:w-[47%] flex flex-col justify-center">
                   {isEven ? (
                     <>
                       {/* Año móvil */}
