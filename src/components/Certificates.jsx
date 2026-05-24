@@ -364,19 +364,19 @@ const Certificates = ({ lang }) => {
                   {filteredCourses.length > 0 ? (
                     activePlatform === "platzi" && searchTerm.trim() === "" ? (
                       /* Render the Learning Road! */
-                      <div className="relative w-full max-w-4xl mx-auto px-2 py-4">
+                      <div className="relative w-full max-w-3xl mx-auto px-2 py-4">
                         {/* Winding path line */}
                         <div className="absolute left-[30px] md:left-1/2 top-0 bottom-0 w-1 -translate-x-1/2 bg-gradient-to-b from-[#00BFB2] via-[#00BFB2]/60 to-purple-900/10 shadow-[0_0_8px_rgba(0,191,178,0.3)] pointer-events-none" />
 
                         {filteredCourses.map((course, idx) => (
                           <div
                             key={idx}
-                            className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-12 ${
+                            className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-8 ${
                               idx % 2 === 0 ? "md:flex-row-reverse" : ""
                             }`}
                           >
                             {/* Spacer */}
-                            <div className="hidden md:block w-1/2 px-12" />
+                            <div className="hidden md:block w-1/2 px-8" />
 
                             {/* Node on line */}
                             <div
@@ -404,10 +404,12 @@ const Certificates = ({ lang }) => {
                             </div>
 
                             {/* Card content */}
-                            <div className="w-full md:w-1/2 pl-16 md:pl-0 md:px-12 z-20">
+                            <div className={`w-full md:w-1/2 pl-14 z-20 ${
+                              idx % 2 === 0 ? "md:pl-0 md:pr-10" : "md:pl-10 md:pr-0"
+                            }`}>
                               <motion.div
                                 whileHover={{ y: -5, scale: 1.01 }}
-                                className="glass-panel p-5 relative border border-white/5 bg-neutral-950/40 rounded-2xl hover:border-white/15 transition-all duration-300"
+                                className="glass-panel p-4 relative border border-white/5 bg-neutral-950/40 rounded-2xl hover:border-white/15 transition-all duration-300"
                                 style={{
                                   boxShadow: `0 4px 20px -5px ${activePlatformData.glowColor}`,
                                   borderColor: `${activePlatformData.color}20`
@@ -415,7 +417,7 @@ const Certificates = ({ lang }) => {
                               >
                                 <div>
                                   <div className="flex items-start justify-between gap-3 mb-2">
-                                    <h3 className="font-semibold text-white text-sm sm:text-base leading-snug group-hover:text-purple-300 transition-colors duration-300">
+                                    <h3 className="font-semibold text-white text-xs sm:text-sm leading-snug group-hover:text-purple-300 transition-colors duration-300">
                                       {course.title}
                                     </h3>
                                     <span
@@ -430,7 +432,7 @@ const Certificates = ({ lang }) => {
                                     </span>
                                   </div>
 
-                                  <div className="flex flex-wrap gap-4 text-xs text-neutral-400 mb-3.5 font-light">
+                                  <div className="flex flex-wrap gap-3 text-[11px] text-neutral-400 mb-2.5 font-light">
                                     <span className="flex items-center gap-1">
                                       <FiCalendar className="text-[10px]" />
                                       {course.date}
@@ -445,7 +447,7 @@ const Certificates = ({ lang }) => {
                                     </span>
                                   </div>
 
-                                  <div className="flex flex-wrap gap-1.5 mb-4">
+                                  <div className="flex flex-wrap gap-1.5 mb-3">
                                     {course.skills.map((skill, sIdx) => (
                                       <span
                                         key={sIdx}
@@ -461,7 +463,7 @@ const Certificates = ({ lang }) => {
                                   href={course.credentialUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="w-full py-2 px-4 rounded-lg bg-neutral-950 border border-white/5 text-xs text-neutral-300 hover:text-white hover:bg-neutral-950 hover:border-white/20 transition-all flex items-center justify-center gap-1.5 font-medium cursor-pointer"
+                                  className="w-full py-1.5 px-3 rounded-lg bg-neutral-950 border border-white/5 text-[11px] text-neutral-300 hover:text-white hover:bg-neutral-900 hover:border-white/20 transition-all flex items-center justify-center gap-1.5 font-medium cursor-pointer"
                                 >
                                   {content.viewCredential}
                                   <FiExternalLink className="text-[10px] text-purple-400" />
@@ -499,12 +501,12 @@ const Certificates = ({ lang }) => {
                           return (
                             <div
                               key={stepIdx}
-                              className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-12 opacity-55 hover:opacity-80 transition-opacity duration-300 ${
+                              className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-8 opacity-55 hover:opacity-80 transition-opacity duration-300 ${
                                 stepIdx % 2 === 0 ? "md:flex-row-reverse" : ""
                               }`}
                             >
                               {/* Spacer */}
-                              <div className="hidden md:block w-1/2 px-12" />
+                              <div className="hidden md:block w-1/2 px-8" />
 
                               {/* Node on line */}
                               <div
@@ -520,13 +522,15 @@ const Certificates = ({ lang }) => {
                               </div>
 
                               {/* Card content */}
-                              <div className="w-full md:w-1/2 pl-16 md:pl-0 md:px-12 z-20">
+                              <div className={`w-full md:w-1/2 pl-14 z-20 ${
+                                stepIdx % 2 === 0 ? "md:pl-0 md:pr-10" : "md:pl-10 md:pr-0"
+                              }`}>
                                 <div
-                                  className="glass-panel p-5 relative border border-dashed border-white/10 bg-neutral-950/20 rounded-2xl"
+                                  className="glass-panel p-4 relative border border-dashed border-white/10 bg-neutral-950/20 rounded-2xl"
                                 >
                                   <div>
                                     <div className="flex items-start justify-between gap-3 mb-2">
-                                      <h3 className="font-semibold text-neutral-400 text-sm sm:text-base leading-snug">
+                                      <h3 className="font-semibold text-neutral-400 text-xs sm:text-sm leading-snug">
                                         {locked.title}
                                       </h3>
                                       <span
@@ -536,7 +540,7 @@ const Certificates = ({ lang }) => {
                                       </span>
                                     </div>
 
-                                    <div className="flex flex-wrap gap-4 text-xs text-neutral-500 mb-3.5 font-light">
+                                    <div className="flex flex-wrap gap-3 text-[11px] text-neutral-500 mb-2.5 font-light">
                                       <span className="flex items-center gap-1">
                                         <FiClock className="text-[10px]" />
                                         {locked.duration}
@@ -551,7 +555,7 @@ const Certificates = ({ lang }) => {
                                       {locked.skills.map((skill, sIdx) => (
                                         <span
                                           key={sIdx}
-                                          className="text-[9px] px-2 py-0.5 rounded bg-neutral-900/50 border border-white/5 text-neutral-300 font-medium"
+                                          className="text-[9px] px-2 py-0.5 rounded bg-neutral-900/50 border border-white/5 text-neutral-500 font-medium"
                                         >
                                           {skill}
                                         </span>
