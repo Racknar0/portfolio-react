@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiX, FiSearch, FiAward, FiClock, FiCalendar, FiExternalLink, FiBookOpen, FiCheck } from "react-icons/fi";
+import { FiX, FiSearch, FiAward, FiClock, FiCalendar, FiExternalLink, FiBookOpen, FiCheck, FiLock, FiPlus } from "react-icons/fi";
 import { CERTIFICATES_DATA } from "../constants/certificates";
 
 const Certificates = ({ lang }) => {
@@ -362,101 +362,306 @@ const Certificates = ({ lang }) => {
                 {/* Courses Grid Scroll Container */}
                 <div className="flex-grow overflow-y-auto p-6 scrollbar-thin">
                   {filteredCourses.length > 0 ? (
-                    <motion.div
-                      key={`${activePlatform}-${activePathId}`}
-                      variants={containerVariants}
-                      initial="hidden"
-                      animate="show"
-                      className="grid grid-cols-1 lg:grid-cols-2 gap-4"
-                    >
-                      {filteredCourses.map((course, idx) => (
-                        <motion.div
-                          key={idx}
-                          variants={itemVariants}
-                          className="glass-panel p-5 flex flex-col justify-between hover:border-white/15 transition-all duration-300 relative group overflow-hidden border border-white/5 bg-neutral-950/20"
-                          style={{
-                            boxShadow: course.highlight
-                              ? `0 4px 20px -5px ${activePlatformData.glowColor}`
-                              : "none",
-                            borderColor: course.highlight
-                              ? `${activePlatformData.color}25`
-                              : "rgba(255,255,255,0.05)"
-                          }}
-                        >
-                          {/* Top row */}
-                          <div>
-                            <div className="flex items-start justify-between gap-3 mb-2.5">
-                              <div className="flex gap-2">
-                                <div
-                                  className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
-                                  style={{ backgroundColor: `${activePlatformData.color}15` }}
-                                >
-                                  <FiAward style={{ color: activePlatformData.color }} className="text-base" />
-                                </div>
-                                <h3 className="font-semibold text-white text-sm sm:text-base leading-snug group-hover:text-purple-300 transition-colors duration-300">
-                                  {course.title}
-                                </h3>
+                    activePlatform === "platzi" && searchTerm.trim() === "" ? (
+                      /* Render the Learning Road! */
+                      <div className="relative w-full max-w-4xl mx-auto px-2 py-4">
+                        {/* Winding path line */}
+                        <div className="absolute left-[30px] md:left-1/2 top-0 bottom-0 w-1 -translate-x-1/2 bg-gradient-to-b from-[#00BFB2] via-[#00BFB2]/60 to-purple-900/10 shadow-[0_0_8px_rgba(0,191,178,0.3)] pointer-events-none" />
+
+                        {filteredCourses.map((course, idx) => (
+                          <div
+                            key={idx}
+                            className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-12 ${
+                              idx % 2 === 0 ? "md:flex-row-reverse" : ""
+                            }`}
+                          >
+                            {/* Spacer */}
+                            <div className="hidden md:block w-1/2 px-12" />
+
+                            {/* Node on line */}
+                            <div
+                              className="absolute left-[30px] md:left-1/2 w-12 h-12 rounded-full border-2 flex items-center justify-center -translate-x-1/2 z-10 bg-[#0c0718] transition-all duration-300 hover:scale-110 cursor-pointer group"
+                              style={{
+                                borderColor: activePlatformData.color,
+                                boxShadow: `0 0 12px ${activePlatformData.glowColor}`
+                              }}
+                            >
+                              <img
+                                src={course.badge || activePlatformData.logo}
+                                alt=""
+                                className="w-8 h-8 object-contain rounded-full"
+                              />
+                              {/* Step Number Badge */}
+                              <div
+                                className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-[9px] font-bold border border-white/10"
+                                style={{
+                                  backgroundColor: activePlatformData.color,
+                                  color: "#000"
+                                }}
+                              >
+                                {course.stepNumber}
                               </div>
-
-                              {/* Grade/Badge */}
-                              {course.score && (
-                                <span
-                                  className="text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full shrink-0 border"
-                                  style={{
-                                    backgroundColor: `${activePlatformData.color}15`,
-                                    color: activePlatformData.color,
-                                    borderColor: `${activePlatformData.color}35`
-                                  }}
-                                >
-                                  {course.score}
-                                </span>
-                              )}
                             </div>
 
-                            {/* Details meta */}
-                            <div className="flex flex-wrap gap-4 text-xs text-neutral-400 mb-4 font-light">
-                              <span className="flex items-center gap-1">
-                                <FiCalendar className="text-[10px]" />
-                                {course.date}
-                              </span>
-                              <span className="flex items-center gap-1">
-                                <FiClock className="text-[10px]" />
-                                {typeof course.duration === "object"
-                                  ? course.duration[lang || "es"]
-                                  : course.duration}
-                              </span>
-                              <span className="flex items-center gap-1 text-emerald-400">
-                                <FiCheck className="text-[10px]" />
-                                {content.completed}
-                              </span>
-                            </div>
+                            {/* Card content */}
+                            <div className="w-full md:w-1/2 pl-16 md:pl-0 md:px-12 z-20">
+                              <motion.div
+                                whileHover={{ y: -5, scale: 1.01 }}
+                                className="glass-panel p-5 relative border border-white/5 bg-neutral-950/40 rounded-2xl hover:border-white/15 transition-all duration-300"
+                                style={{
+                                  boxShadow: `0 4px 20px -5px ${activePlatformData.glowColor}`,
+                                  borderColor: `${activePlatformData.color}20`
+                                }}
+                              >
+                                <div>
+                                  <div className="flex items-start justify-between gap-3 mb-2">
+                                    <h3 className="font-semibold text-white text-sm sm:text-base leading-snug group-hover:text-purple-300 transition-colors duration-300">
+                                      {course.title}
+                                    </h3>
+                                    <span
+                                      className="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 border"
+                                      style={{
+                                        backgroundColor: `${activePlatformData.color}15`,
+                                        color: activePlatformData.color,
+                                        borderColor: `${activePlatformData.color}35`
+                                      }}
+                                    >
+                                      {course.score}
+                                    </span>
+                                  </div>
 
-                            {/* Skills Tag Cloud */}
-                            <div className="flex flex-wrap gap-1.5 mb-5">
-                              {course.skills.map((skill, sIdx) => (
-                                <span
-                                  key={sIdx}
-                                  className="text-[10px] px-2 py-0.5 rounded bg-neutral-900 border border-white/5 text-neutral-300 font-medium"
+                                  <div className="flex flex-wrap gap-4 text-xs text-neutral-400 mb-3.5 font-light">
+                                    <span className="flex items-center gap-1">
+                                      <FiCalendar className="text-[10px]" />
+                                      {course.date}
+                                    </span>
+                                    <span className="flex items-center gap-1">
+                                      <FiClock className="text-[10px]" />
+                                      {course.duration}
+                                    </span>
+                                    <span className="flex items-center gap-1 text-emerald-400 font-medium">
+                                      <FiCheck className="text-[10px]" />
+                                      {content.completed}
+                                    </span>
+                                  </div>
+
+                                  <div className="flex flex-wrap gap-1.5 mb-4">
+                                    {course.skills.map((skill, sIdx) => (
+                                      <span
+                                        key={sIdx}
+                                        className="text-[9px] px-2 py-0.5 rounded bg-neutral-900 border border-white/5 text-neutral-300 font-medium"
+                                      >
+                                        {skill}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+
+                                <a
+                                  href={course.credentialUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="w-full py-2 px-4 rounded-lg bg-neutral-950 border border-white/5 text-xs text-neutral-300 hover:text-white hover:bg-neutral-950 hover:border-white/20 transition-all flex items-center justify-center gap-1.5 font-medium cursor-pointer"
                                 >
-                                  {skill}
-                                </span>
-                              ))}
+                                  {content.viewCredential}
+                                  <FiExternalLink className="text-[10px] text-purple-400" />
+                                </a>
+                              </motion.div>
                             </div>
                           </div>
+                        ))}
 
-                          {/* Action button */}
-                          <a
-                            href={course.credentialUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full py-2 px-4 rounded-lg bg-neutral-900 border border-white/5 text-xs text-neutral-300 hover:text-white hover:bg-neutral-950 hover:border-white/20 transition-all flex items-center justify-center gap-1.5 font-medium cursor-pointer"
+                        {/* Motivational Locked Nodes */}
+                        {[
+                          {
+                            step: 59,
+                            title: lang === "es" ? "Próximo Objetivo: Backend Avanzado en NestJS" : "Next Goal: Advanced NestJS Backend",
+                            duration: "18h",
+                            skills: ["NestJS", "Microservices", "Redis", "Websockets"],
+                            text: lang === "es" ? "¡Espacio para tu próximo curso!" : "Space for your next course!"
+                          },
+                          {
+                            step: 60,
+                            title: lang === "es" ? "Especialización: Inteligencia Artificial para Developers" : "Specialization: IA for Developers",
+                            duration: "24h",
+                            skills: ["TensorFlow", "Python", "LLMs", "Vector DBs"],
+                            text: lang === "es" ? "En camino al siguiente nivel" : "On the way to the next level"
+                          },
+                          {
+                            step: 61,
+                            title: lang === "es" ? "Arquitectura de Software y DevOps" : "Software Architecture & DevOps",
+                            duration: "30h",
+                            skills: ["Docker", "Kubernetes", "AWS", "CI/CD Pipelines"],
+                            text: lang === "es" ? "Planificado para maestría" : "Planned for mastery"
+                          }
+                        ].map((locked, idx) => {
+                          const stepIdx = filteredCourses.length + idx;
+                          return (
+                            <div
+                              key={stepIdx}
+                              className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-12 opacity-55 hover:opacity-80 transition-opacity duration-300 ${
+                                stepIdx % 2 === 0 ? "md:flex-row-reverse" : ""
+                              }`}
+                            >
+                              {/* Spacer */}
+                              <div className="hidden md:block w-1/2 px-12" />
+
+                              {/* Node on line */}
+                              <div
+                                className="absolute left-[30px] md:left-1/2 w-12 h-12 rounded-full border-2 border-dashed flex items-center justify-center -translate-x-1/2 z-10 bg-[#080410] border-neutral-600 shadow-[0_0_8px_rgba(255,255,255,0.05)] animate-pulse"
+                              >
+                                <FiLock className="text-neutral-500 text-lg" />
+                                {/* Step Number Badge */}
+                                <div
+                                  className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-[9px] font-bold border border-white/10 bg-neutral-800 text-neutral-400"
+                                >
+                                  {locked.step}
+                                </div>
+                              </div>
+
+                              {/* Card content */}
+                              <div className="w-full md:w-1/2 pl-16 md:pl-0 md:px-12 z-20">
+                                <div
+                                  className="glass-panel p-5 relative border border-dashed border-white/10 bg-neutral-950/20 rounded-2xl"
+                                >
+                                  <div>
+                                    <div className="flex items-start justify-between gap-3 mb-2">
+                                      <h3 className="font-semibold text-neutral-400 text-sm sm:text-base leading-snug">
+                                        {locked.title}
+                                      </h3>
+                                      <span
+                                        className="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 border border-neutral-700 bg-neutral-800 text-neutral-400"
+                                      >
+                                        {lang === "es" ? "Por Iniciar" : "To Start"}
+                                      </span>
+                                    </div>
+
+                                    <div className="flex flex-wrap gap-4 text-xs text-neutral-500 mb-3.5 font-light">
+                                      <span className="flex items-center gap-1">
+                                        <FiClock className="text-[10px]" />
+                                        {locked.duration}
+                                      </span>
+                                      <span className="flex items-center gap-1 text-purple-400 font-medium">
+                                        <FiPlus className="text-[10px]" />
+                                        {locked.text}
+                                      </span>
+                                    </div>
+
+                                    <div className="flex flex-wrap gap-1.5">
+                                      {locked.skills.map((skill, sIdx) => (
+                                        <span
+                                          key={sIdx}
+                                          className="text-[9px] px-2 py-0.5 rounded bg-neutral-900/50 border border-white/5 text-neutral-300 font-medium"
+                                        >
+                                          {skill}
+                                        </span>
+                                      ))}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      /* Render standard Grid layout for other platforms or when searching */
+                      <motion.div
+                        key={`${activePlatform}-${activePathId}`}
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="show"
+                        className="grid grid-cols-1 lg:grid-cols-2 gap-4"
+                      >
+                        {filteredCourses.map((course, idx) => (
+                          <motion.div
+                            key={idx}
+                            variants={itemVariants}
+                            className="glass-panel p-5 flex flex-col justify-between hover:border-white/15 transition-all duration-300 relative group overflow-hidden border border-white/5 bg-neutral-950/20"
+                            style={{
+                              boxShadow: course.highlight
+                                ? `0 4px 20px -5px ${activePlatformData.glowColor}`
+                                : "none",
+                              borderColor: course.highlight
+                                ? `${activePlatformData.color}25`
+                                : "rgba(255,255,255,0.05)"
+                            }}
                           >
-                            {content.viewCredential}
-                            <FiExternalLink className="text-[10px] text-purple-400 group-hover:text-purple-300 transition-colors" />
-                          </a>
-                        </motion.div>
-                      ))}
-                    </motion.div>
+                            {/* Top row */}
+                            <div>
+                              <div className="flex items-start justify-between gap-3 mb-2.5">
+                                <div className="flex gap-2">
+                                  <div
+                                    className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
+                                    style={{ backgroundColor: `${activePlatformData.color}15` }}
+                                  >
+                                    <FiAward style={{ color: activePlatformData.color }} className="text-base" />
+                                  </div>
+                                  <h3 className="font-semibold text-white text-sm sm:text-base leading-snug group-hover:text-purple-300 transition-colors duration-300">
+                                    {course.title}
+                                  </h3>
+                                </div>
+
+                                {/* Grade/Badge */}
+                                {course.score && (
+                                  <span
+                                    className="text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full shrink-0 border"
+                                    style={{
+                                      backgroundColor: `${activePlatformData.color}15`,
+                                      color: activePlatformData.color,
+                                      borderColor: `${activePlatformData.color}35`
+                                    }}
+                                  >
+                                    {course.score}
+                                  </span>
+                                )}
+                              </div>
+
+                              {/* Details meta */}
+                              <div className="flex flex-wrap gap-4 text-xs text-neutral-400 mb-4 font-light">
+                                <span className="flex items-center gap-1">
+                                  <FiCalendar className="text-[10px]" />
+                                  {course.date}
+                                </span>
+                                <span className="flex items-center gap-1">
+                                  <FiClock className="text-[10px]" />
+                                  {typeof course.duration === "object"
+                                    ? course.duration[lang || "es"]
+                                    : course.duration}
+                                </span>
+                                <span className="flex items-center gap-1 text-emerald-400">
+                                  <FiCheck className="text-[10px]" />
+                                  {content.completed}
+                                </span>
+                              </div>
+
+                              {/* Skills Tag Cloud */}
+                              <div className="flex flex-wrap gap-1.5 mb-5">
+                                {course.skills.map((skill, sIdx) => (
+                                  <span
+                                    key={sIdx}
+                                    className="text-[10px] px-2 py-0.5 rounded bg-neutral-900 border border-white/5 text-neutral-300 font-medium"
+                                  >
+                                    {skill}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+
+                            {/* Action button */}
+                            <a
+                              href={course.credentialUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-full py-2 px-4 rounded-lg bg-neutral-900 border border-white/5 text-xs text-neutral-300 hover:text-white hover:bg-neutral-950 hover:border-white/20 transition-all flex items-center justify-center gap-1.5 font-medium cursor-pointer"
+                            >
+                              {content.viewCredential}
+                              <FiExternalLink className="text-[10px] text-purple-400 group-hover:text-purple-300 transition-colors" />
+                            </a>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )
                   ) : (
                     <motion.div
                       initial={{ opacity: 0 }}

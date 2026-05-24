@@ -26,7 +26,7 @@ export const translations = {
         technology: "Tecnología",
         career1: "Ingeniería de Sistemas",
         career2: "Desarrollo Web Full Stack",
-        career3: "Tecnología en Electrónica"
+        career3: "Tecnólogo en Electrónica"
       },
       content: "Desarrollador Full Stack Senior con más de 6 años de experiencia especializándome en arquitecturas de alto rendimiento bajo ecosistemas modernos de JavaScript (React, Next.js, Angular, React Native) y entornos robustos en C# y Python/Django. Cuento con una trayectoria de más de 20 proyectos a nivel laboral liderados y co-desarrollados junto a equipos de alto rendimiento para organizaciones de primer nivel como Banco Itaú (Tienda Naranja), American British Tobacco, Banco Confianza Perú, Uniminuto, la Aeronáutica Civil de Colombia, Teleperformance y el Metro de Medellín. Apasionado por la optimización de rendimiento, despliegues cloud (VPS/Linux), la integración de Inteligencia Artificial y la construcción de software escalable bajo buenas prácticas de Clean Code. Además, comparto mi conocimiento y pasión por la tecnología creando contenido educativo sobre desarrollo de software en mis canales de YouTube y TikTok."
     },
@@ -256,7 +256,7 @@ export const translations = {
         technology: "Technology",
         career1: "Systems Engineering",
         career2: "Full Stack Web Development",
-        career3: "Electronic Technology"
+        career3: "Electronics Technologist"
       },
       content: "Senior Full Stack Developer with over 6 years of experience specializing in high-performance architectures under modern JavaScript ecosystems (React, Next.js, Angular, React Native) and robust C# and Python/Django environments. I have a proven track record of over 20 professional projects led and co-developed with high-performance teams for top-tier organizations such as Banco Itaú (Tienda Naranja), American British Tobacco, Banco Confianza Perú, Uniminuto, the Civil Aeronautics of Colombia, Teleperformance, and Metro de Medellín. Passionate about performance optimization, cloud deployments (VPS/Linux), Artificial Intelligence integration, and building scalable software under Clean Code best practices. In addition, I share my knowledge and passion for technology by creating educational software development content on my YouTube and TikTok channels."
     },
