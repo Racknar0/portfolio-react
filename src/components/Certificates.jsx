@@ -65,6 +65,8 @@ const Certificates = ({ lang }) => {
 
   const handleClose = () => {
     setActivePlatform(null);
+    setActivePathId("");
+    setSearchTerm("");
   };
 
   const getFilteredCourses = () => {
@@ -361,6 +363,7 @@ const Certificates = ({ lang }) => {
                 <div className="flex-grow overflow-y-auto p-6 scrollbar-thin">
                   {filteredCourses.length > 0 ? (
                     <motion.div
+                      key={`${activePlatform}-${activePathId}`}
                       variants={containerVariants}
                       initial="hidden"
                       animate="show"
