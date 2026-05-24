@@ -230,7 +230,8 @@ export const translations = {
         home: "Inicio",
         technologies: "Tecnologías",
         experience: "Experiencia",
-        projects: "Proyectos"
+        projects: "Proyectos",
+        certifications: "Certificaciones"
       },
       address: "Disponible bajo solicitud",
       copyright: "© 2026 Jonathan Torres. Todos los derechos reservados.",
@@ -459,7 +460,8 @@ export const translations = {
         home: "Home",
         technologies: "Technologies",
         experience: "Experience",
-        projects: "Projects"
+        projects: "Projects",
+        certifications: "Certifications"
       },
       address: "Available upon request",
       copyright: "© 2026 Jonathan Torres. All rights reserved.",

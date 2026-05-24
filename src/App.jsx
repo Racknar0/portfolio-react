@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Technologies from "./components/Technologies";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -39,6 +40,8 @@ const App = () => {
           <Experience lang={lang} />
           <SectionDivider />
           <Projects lang={lang} />
+          <SectionDivider />
+          <Certificates lang={lang} />
           <SectionDivider />
           <Footer lang={lang} />
         </div>

@@ -70,6 +70,14 @@ const Footer = ({ lang }) => {
                   {t.navLinks.projects}
                 </a>
               </li>
+              <li>
+                <a 
+                  href="#certifications" 
+                  className="text-sm font-light text-neutral-400 hover:text-purple-400 transition-colors duration-300"
+                >
+                  {t.navLinks.certifications}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
