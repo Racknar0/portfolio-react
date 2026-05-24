@@ -19,7 +19,7 @@ const App = () => {
     <>
     <SplashCursor />
       <VantaBackground />
-      <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
+      <div className="relative z-10 overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
         <div className="container relative z-20 mx-auto px-8">
           <Navbar lang={lang} setLang={setLang} />
           <Hero lang={lang} />
