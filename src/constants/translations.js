@@ -9,6 +9,9 @@ import project7 from "../assets/projects/tpimprove.jpg";
 import project8 from "../assets/projects/virtual.jpg";
 import project9 from "../assets/projects/halconerp.jpg";
 import projectStlHub from "../assets/projects/stlhub.png";
+import brewery1 from "../assets/projects/brewery1.png";
+import brewery2 from "../assets/projects/brewery2.png";
+import confianza from "../assets/projects/confianza.png";
 
 export const translations = {
   es: {
@@ -133,6 +136,20 @@ export const translations = {
     projects: {
       title: "Proyectos",
       list: [
+        {
+          title: "Brewery Adventure Tour",
+          images: [brewery1, brewery2],
+          description: "Plataforma y ecosistema digital completo diseñado para la gestión y promoción de tours de cervecerías artesanales en los Estados Unidos. Incluye una aplicación móvil interactiva para el usuario final desarrollada en React Native y Expo Router, que permite búsquedas geolocalizadas de cervecerías y eventos cercanos en tiempo real utilizando la API de Google Maps y react-native-maps. El panel de administración web, desarrollado en React, Vite y Redux Toolkit con componentes de Material UI y Ant Design, facilita la administración de membresías, anuncios publicitarios y estadísticas financieras en tiempo real con Recharts. Todo el sistema está respaldado por una API REST en Node.js y Express con autenticación segura basada en JWT y sincronización asíncrona de datos.",
+          technologies: ["React Native", "Expo", "Zustand", "React", "Redux Toolkit", "Material UI", "Google Maps API", "Node.js", "Express", "JWT"],
+          link: "https://breweryadventuretour.com/"
+        },
+        {
+          title: "Financiera Confianza",
+          image: confianza,
+          description: "Portal principal y canal digital corporativo de la entidad financiera BBVA Microfinanzas en el Perú. Desarrollado con Next.js y React 19, implementa una interfaz moderna y rápida con componentes Radix UI accesibles y estilos fluidos con Sass (SCSS). El proyecto cuenta con un sistema de arrastrar y soltar interactivo usando DnD Kit para flujos personalizados, y el manejo del estado del carrito o productos se realiza mediante Zustand para una alta performance. Facilita búsquedas seguras de productos financieros, simuladores de créditos y un panel dinámico para el usuario.",
+          technologies: ["Next.js", "React 19", "Zustand", "Radix UI", "Sass (SCSS)", "DnD Kit", "Axios"],
+          link: "https://dev-confianza-front.ariadna.co/"
+        },
         {
           title: "Portal STLHUB",
           image: projectStlHub,
@@ -348,6 +365,20 @@ export const translations = {
     projects: {
       title: "Projects",
       list: [
+        {
+          title: "Brewery Adventure Tour",
+          images: [brewery1, brewery2],
+          description: "A comprehensive digital ecosystem designed for managing and promoting craft brewery tours in the United States. It features an interactive mobile application built with React Native and Expo Router, enabling real-time geolocalized searches for craft breweries and local events via Google Maps API and react-native-maps. The web administration dashboard, developed using React, Vite, and Redux Toolkit with Material UI and Ant Design components, provides business owners with real-time tools to manage tours, advertisement packages, and view business analytics using Recharts. The ecosystem is backed by a secure RESTful API built with Node.js, Express, and JWT authentication.",
+          technologies: ["React Native", "Expo", "Zustand", "React", "Redux Toolkit", "Material UI", "Google Maps API", "Node.js", "Express", "JWT"],
+          link: "https://breweryadventuretour.com/"
+        },
+        {
+          title: "Financiera Confianza",
+          image: confianza,
+          description: "The main corporate portal and digital channel for BBVA Microfinance institution in Peru. Built with Next.js and React 19, it implements a highly responsive and accessible user interface using Radix UI components and custom modular styling with Sass (SCSS). The platform integrates a drag-and-drop workflow using DnD Kit for personalized user interactions, with global state managed via Zustand for peak client-side performance. Includes secure financial product lookups, loan calculators, and a dynamic customer portal.",
+          technologies: ["Next.js", "React 19", "Zustand", "Radix UI", "Sass (SCSS)", "DnD Kit", "Axios"],
+          link: "https://dev-confianza-front.ariadna.co/"
+        },
         {
           title: "STLHUB Portal",
           image: projectStlHub,
