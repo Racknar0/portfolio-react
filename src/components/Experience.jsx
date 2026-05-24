@@ -91,7 +91,7 @@ const Experience = ({ lang }) => {
   const t = translations[lang].experience;
 
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div className="pb-8">
       <motion.h1 
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -50, opacity: 0 }}

@@ -5,7 +5,7 @@ const Projects = ({ lang }) => {
   const t = translations[lang].projects;
 
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="pb-8">
       <motion.h1
        whileInView={{y:0,opacity:1}}
        initial={{y:-100,opacity:0}}

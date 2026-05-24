@@ -28,7 +28,7 @@ const Hero = ({ lang }) => {
   const t = translations[lang].hero;
 
   return (
-    <div className="border-b border-neutral-900 pb-16 lg:mb-20">
+    <div className="pb-8">
       <motion.div 
         initial="hidden"
         animate="visible"
