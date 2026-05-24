@@ -3,6 +3,7 @@ import coderhouseLogo from "../assets/logos/coderhouse.svg";
 import linkedinLearningLogo from "../assets/logos/linkedin_learning.png";
 import freecodecampLogo from "../assets/logos/freecodecamp.svg";
 import minticLogo from "../assets/logos/mintic.svg";
+import udemyLogo from "../assets/logos/udemy.svg";
 
 export const CERTIFICATES_DATA = {
   coderhouse: {
@@ -625,6 +626,133 @@ export const CERTIFICATES_DATA = {
             skills: ["AWS Basics", "Microsoft Azure", "Virtual Machines", "Cloud Storage & Security"],
             credentialUrl: "https://www.mintic.gov.co/",
             score: "Aprobado",
+            highlight: false
+          }
+        ]
+      }
+    ]
+  },
+  udemy: {
+    id: "udemy",
+    title: "Udemy",
+    logo: udemyLogo,
+    color: "#A435F0", // Udemy Purple
+    glowColor: "rgba(164, 53, 240, 0.25)",
+    borderColor: "rgba(164, 53, 240, 0.2)",
+    description: {
+      es: "Cursos prácticos enfocados en especializaciones de desarrollo de software, lenguajes de programación, librerías y herramientas específicas.",
+      en: "Practical courses focused on software development specializations, programming languages, libraries, and specific tools."
+    },
+    stats: {
+      coursesCount: 15,
+      completedPercentage: "100%",
+      hoursCount: "220h"
+    },
+    paths: [
+      {
+        id: "webdev",
+        title: {
+          es: "Desarrollo Web",
+          en: "Web Development"
+        },
+        courses: [
+          {
+            title: "React - La Guía Completa: Hooks, Redux y Next.js",
+            date: "Oct 2023",
+            duration: "45h",
+            skills: ["ReactJS", "Hooks", "Redux Toolkit", "Next.js App Router", "Tailwind CSS"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: true
+          },
+          {
+            title: "Node: De Cero a Experto (Express, Sockets, MongoDB)",
+            date: "Nov 2023",
+            duration: "32h",
+            skills: ["Node.js", "Express.js", "MongoDB", "Websockets (Socket.io)", "JWT Authentication"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: true
+          },
+          {
+            title: "JavaScript Moderno: Guía para Dominar el Lenguaje",
+            date: "Aug 2023",
+            duration: "28h",
+            skills: ["ES6+", "Async-Await", "Callbacks", "Webpack", "Prototypes & OOP"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "CSS y Maquetación Web: Flexbox, Grid y Animaciones",
+            date: "Jul 2023",
+            duration: "20h",
+            skills: ["CSS Grid", "Flexbox", "Keyframes", "Responsive layouts", "Sass"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "Git y GitHub: Control de Versiones desde Cero",
+            date: "Jun 2023",
+            duration: "12h",
+            skills: ["Git Branches", "Merges & Rebase", "Pull Requests", "GitHub Workflows"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: false
+          }
+        ]
+      },
+      {
+        id: "frameworks",
+        title: {
+          es: "Frameworks & Devops",
+          en: "Frameworks & Devops"
+        },
+        courses: [
+          {
+            title: "Angular: De Cero a Experto (Angular 17+)",
+            date: "Dec 2023",
+            duration: "38h",
+            skills: ["Angular", "RxJS", "State Management", "Signals", "Directives & Pipes"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: true
+          },
+          {
+            title: "C# y .NET Core: Creación de Web APIs Empresariales",
+            date: "Jan 2024",
+            duration: "30h",
+            skills: ["C#", ".NET Core API", "Entity Framework", "SQL Server", "Clean Architecture"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: true
+          },
+          {
+            title: "Python y Django: Desarrollo Web Profesional",
+            date: "Feb 2024",
+            duration: "25h",
+            skills: ["Python OOP", "Django Admin", "Django Rest Framework", "SQLite/Postgres"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "Docker y Kubernetes: Contenedores y Orquestación",
+            date: "Mar 2024",
+            duration: "18h",
+            skills: ["Docker", "Images & Volumes", "Docker Compose", "Kubernetes Pods", "Deployments"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
+            highlight: true
+          },
+          {
+            title: "Estructuras de Datos y Algoritmos en JavaScript",
+            date: "Apr 2024",
+            duration: "15h",
+            skills: ["Big O Notation", "Sorting Algorithms", "Binary Trees", "Graphs", "Recursion"],
+            credentialUrl: "https://www.udemy.com/",
+            score: "100%",
             highlight: false
           }
         ]
