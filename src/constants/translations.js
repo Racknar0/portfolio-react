@@ -134,7 +134,7 @@ export const translations = {
       ]
     },
     projects: {
-      title: "Proyectos",
+      title: "Proyectos Destacados",
       list: [
         {
           title: "Brewery Adventure Tour",
@@ -364,7 +364,7 @@ export const translations = {
       ]
     },
     projects: {
-      title: "Projects",
+      title: "Featured Projects",
       list: [
         {
           title: "Brewery Adventure Tour",
