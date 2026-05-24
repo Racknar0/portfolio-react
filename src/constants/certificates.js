@@ -161,7 +161,7 @@ export const CERTIFICATES_DATA = {
               en: "2.25 months"
             },
             skills: [".NET Basics", "C# OOP", "Data Types", "Collections", "Console Applications"],
-            credentialUrl: "/CURSOS/CODERHOUSE/CODER C#.png",
+            credentialUrl: "/CURSOS/CODERHOUSE/CODER C-Sharp.png",
             highlight: false
           },
           {
