@@ -135,6 +135,97 @@ export const CERTIFICATES_DATA = {
       }
     ]
   },
+  mintic: {
+    id: "mintic",
+    title: "MinTIC",
+    logo: minticLogo,
+    color: "#E2001A", // MinTIC Colombian Flag Red/Accent
+    glowColor: "rgba(226, 0, 26, 0.25)",
+    borderColor: "rgba(226, 0, 26, 0.2)",
+    description: {
+      es: "Programa académico intensivo Misión TIC 2022 enfocado en programación avanzada, desarrollo de software y desarrollo web full-stack.",
+      en: "Intensive academic program Misión TIC 2022 focused on advanced programming, software engineering, and full-stack web development."
+    },
+    stats: {
+      coursesCount: 5,
+      completedPercentage: "100%",
+      hoursCount: {
+        es: "10 meses",
+        en: "10 months"
+      }
+    },
+    paths: [
+      {
+        id: "misiontic",
+        title: {
+          es: "Misión TIC 2022 (Diplomado Full Stack)",
+          en: "Misión TIC 2022 (Full Stack Diploma)"
+        },
+        courses: [
+          {
+            title: "Ciclo 1: Diplomado en Fundamentos de Programación en Python",
+            date: "Jul 2022",
+            duration: {
+              es: "2.5 meses",
+              en: "2.5 months"
+            },
+            skills: ["Python", "Programming Logic", "Data Types", "Conditionals & Loops", "Functions & Algorithms"],
+            credentialUrl: "/CURSOS/mintic/DiplomadoPython.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Ciclo 2: Diplomado en Programación Básica en Java",
+            date: "Sep 2022",
+            duration: {
+              es: "2.5 meses",
+              en: "2.5 months"
+            },
+            skills: ["Java OOP", "Class Hierarchy", "Interfaces & Inheritance", "GUI Design (Swing)", "Unit Testing"],
+            credentialUrl: "/CURSOS/mintic/Diplomado Java.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Ciclo 3: Diplomado en Desarrollo de software",
+            date: "Nov 2022",
+            duration: {
+              es: "2.5 meses",
+              en: "2.5 months"
+            },
+            skills: ["Java Web", "JavaScript", "HTML/CSS", "Relational Databases (SQL)", "MVC Architecture", "APIs REST"],
+            credentialUrl: "/CURSOS/mintic/DiplomadoDesarrollo Software.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Ciclo 4: Diplomado en Desarrollo de aplicaciones Web",
+            date: "Dec 2022",
+            duration: {
+              es: "2.5 meses",
+              en: "2.5 months"
+            },
+            skills: ["ReactJS", "Node.js", "Express.js", "NoSQL Databases (MongoDB)", "Git/GitHub", "Web Deployment"],
+            credentialUrl: "/CURSOS/mintic/DiplomadoDesarrollo Web.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Programa Completo: Habilidades de Programación con énfasis en Desarrollo Web",
+            date: "Dec 2022",
+            duration: {
+              es: "10 meses",
+              en: "10 months"
+            },
+            skills: ["Full Stack Development", "Python", "Java", "ReactJS", "Node.js", "SQL & NoSQL", "Software Architecture", "Team Project"],
+            credentialUrl: "/CURSOS/mintic/C - Programa formacion general Desarrollo Web.png",
+            score: "Graduado",
+            highlight: true
+          }
+        ]
+      }
+    ]
+  },
   platzi: {
     id: "platzi",
     title: "Platzi",
@@ -511,124 +602,6 @@ export const CERTIFICATES_DATA = {
             credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
             score: "Certificado",
             highlight: true
-          }
-        ]
-      }
-    ]
-  },
-  mintic: {
-    id: "mintic",
-    title: "MinTIC",
-    logo: minticLogo,
-    color: "#E2001A", // MinTIC Colombian Flag Red/Accent
-    glowColor: "rgba(226, 0, 26, 0.25)",
-    borderColor: "rgba(226, 0, 26, 0.2)",
-    description: {
-      es: "Programas de formación especial en desarrollo de software, ciencia de datos y competencias digitales de la Presidencia de la República de Colombia.",
-      en: "Special training programs in software development, data science, and digital skills by the Ministry of ICT of Colombia."
-    },
-    stats: {
-      coursesCount: 9,
-      completedPercentage: "100%",
-      hoursCount: "880h"
-    },
-    paths: [
-      {
-        id: "misiontic",
-        title: {
-          es: "Misión TIC 2022",
-          en: "Mision TIC Bootcamp"
-        },
-        courses: [
-          {
-            title: "Ciclo 1: Fundamentos de Programación en Python",
-            date: "Oct 2021",
-            duration: "200h",
-            skills: ["Python", "Programming Logic", "Data Types", "Conditionals & Loops"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Ciclo 2: Programación Básica y OOP en Java",
-            date: "Dec 2021",
-            duration: "200h",
-            skills: ["Java OOP", "Class Hierarchy", "Interfaces & Inheritance", "GUI Design (Swing)"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: true
-          },
-          {
-            title: "Ciclo 3: Desarrollo de Aplicaciones Web",
-            date: "Feb 2022",
-            duration: "200h",
-            skills: ["JavaScript", "ReactJS", "Node.js", "Express.js", "SQL Databases (MySQL)"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: true
-          },
-          {
-            title: "Ciclo 4: Desarrollo de Aplicaciones Móviles y Cloud",
-            date: "Apr 2022",
-            duration: "200h",
-            skills: ["React Native", "Expo", "DevOps Fundamentals", "Docker Containers", "API Deployment"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: true
-          },
-          {
-            title: "Proyecto Integrador Final: Plataforma E-commerce y Microservicios",
-            date: "May 2022",
-            duration: "80h",
-            skills: ["Microservices", "REST APIs", "CI/CD Pipelines", "React Web & Mobile", "Final Graduation Project"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: true
-          }
-        ]
-      },
-      {
-        id: "habilidades_digitales",
-        title: {
-          es: "Habilidades TIC",
-          en: "ICT Skills"
-        },
-        courses: [
-          {
-            title: "Ciudadanía Digital y Habilidades de Liderazgo",
-            date: "Jun 2022",
-            duration: "30h",
-            skills: ["Digital Communication", "Siglo XXI Skills", "Information Literacy", "Collaboration"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Ciberseguridad para Desarrolladores",
-            date: "Jul 2022",
-            duration: "40h",
-            skills: ["Network Security", "Encryption", "Vulnerability Auditing", "Secure Coding"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Análisis y Visualización de Datos con PowerBI",
-            date: "Aug 2022",
-            duration: "50h",
-            skills: ["PowerBI", "DAX", "Data Modeling", "Business Intelligence Dashboards"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: true
-          },
-          {
-            title: "Fundamentos de Cloud Computing",
-            date: "Sep 2022",
-            duration: "40h",
-            skills: ["AWS Basics", "Microsoft Azure", "Virtual Machines", "Cloud Storage & Security"],
-            credentialUrl: "https://www.mintic.gov.co/",
-            score: "Aprobado",
-            highlight: false
           }
         ]
       }
