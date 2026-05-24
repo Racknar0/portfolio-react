@@ -1,7 +1,137 @@
-import platziLogo from "../assets/logos/platzi.svg";
+import platziLogo from "../assets/logos/platzi.png";
 import coderhouseLogo from "../assets/logos/coderhouse.svg";
+import linkedinLearningLogo from "../assets/logos/linkedin_learning.png";
+import freecodecampLogo from "../assets/logos/freecodecamp.svg";
+import minticLogo from "../assets/logos/mintic.svg";
 
 export const CERTIFICATES_DATA = {
+  coderhouse: {
+    id: "coderhouse",
+    title: "Coderhouse",
+    logo: coderhouseLogo,
+    color: "#35FF69", // Coderhouse Green
+    glowColor: "rgba(53, 255, 105, 0.25)",
+    borderColor: "rgba(53, 255, 105, 0.2)",
+    description: {
+      es: "Carreras y bootcamps en vivo enfocados en proyectos prácticos, trabajo en equipo simulado y mentoría personalizada de nivel profesional.",
+      en: "Live courses and bootcamps focused on hands-on projects, simulated teamwork, and professional-level personalized mentoring."
+    },
+    stats: {
+      coursesCount: 10,
+      completedPercentage: "100%",
+      hoursCount: "180h"
+    },
+    paths: [
+      {
+        id: "fullstack",
+        title: {
+          es: "Carrera Desarrollo Full Stack",
+          en: "Full Stack Development Career"
+        },
+        courses: [
+          {
+            title: "Desarrollo Web Integrado",
+            date: "Mar 2023",
+            duration: "40h",
+            skills: ["HTML5", "CSS3", "Sass (SCSS)", "Bootstrap", "Git/GitHub"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Top 10%",
+            highlight: true
+          },
+          {
+            title: "JavaScript Avanzado y Lógica Asíncrona",
+            date: "Jun 2023",
+            duration: "36h",
+            skills: ["ES6+", "Promises/Async-Await", "DOM Manipulation", "Fetch APIs", "AJAX"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Top 10%",
+            highlight: true
+          },
+          {
+            title: "React JS: Arquitectura de SPA",
+            date: "Sep 2023",
+            duration: "38h",
+            skills: ["React JS", "State Managers", "Routing", "Firebase Integration"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Top 10%",
+            highlight: true
+          },
+          {
+            title: "Programación Backend & NoSQL",
+            date: "Dec 2023",
+            duration: "42h",
+            skills: ["Node.js", "Express.js", "MongoDB", "Mongoose ORM", "Websockets (Socket.io)"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Top 10%",
+            highlight: true
+          },
+          {
+            title: "Proyecto Final Full Stack: E-Commerce Corporativo",
+            date: "Jan 2024",
+            duration: "24h",
+            skills: ["Full Stack Architecture", "Deployment (Vercel/Heroku)", "Secure APIs", "SQL & NoSQL Integration"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Top 10%",
+            highlight: true
+          }
+        ]
+      },
+      {
+        id: "design",
+        title: {
+          es: "Diseño & Herramientas",
+          en: "Design & Tools"
+        },
+        courses: [
+          {
+            title: "Diseño UX/UI Inicial",
+            date: "Apr 2023",
+            duration: "24h",
+            skills: ["Figma", "User Personas", "Wireframing", "UI Prototyping"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Diseño UX/UI Avanzado",
+            date: "Jul 2023",
+            duration: "28h",
+            skills: ["Design Systems", "Usability Testing", "High-Fi Mockups", "Interactive Prototypes"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Product Management y Metodologías Ágiles",
+            date: "Nov 2023",
+            duration: "30h",
+            skills: ["Scrum/Kanban", "Product Roadmap", "KPIs & Analytics", "User Stories"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Marketing Digital & SEO",
+            date: "Aug 2023",
+            duration: "22h",
+            skills: ["SEO Audits", "Google Search Console", "Google Analytics 4", "Semrush"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Optimización de Conversión (CRO)",
+            date: "Sep 2023",
+            duration: "18h",
+            skills: ["A/B Testing", "Heatmaps (Hotjar)", "User Journeys", "Landing Optimization"],
+            credentialUrl: "https://coderhouse.com/",
+            score: "Aprobado",
+            highlight: false
+          }
+        ]
+      }
+    ]
+  },
   platzi: {
     id: "platzi",
     title: "Platzi",
@@ -129,126 +259,371 @@ export const CERTIFICATES_DATA = {
       }
     ]
   },
-  coderhouse: {
-    id: "coderhouse",
-    title: "Coderhouse",
-    logo: coderhouseLogo,
-    color: "#35FF69", // Coderhouse Green
-    glowColor: "rgba(53, 255, 105, 0.25)",
-    borderColor: "rgba(53, 255, 105, 0.2)",
+  linkedin: {
+    id: "linkedin",
+    title: "LinkedIn Learning",
+    logo: linkedinLearningLogo,
+    color: "#0077B5", // LinkedIn Blue
+    glowColor: "rgba(0, 119, 181, 0.25)",
+    borderColor: "rgba(0, 119, 181, 0.2)",
     description: {
-      es: "Carreras y bootcamps en vivo enfocados en proyectos prácticos, trabajo en equipo simulado y mentoría personalizada.",
-      en: "Live courses and bootcamps focused on hands-on projects, simulated teamwork, and personalized mentoring."
+      es: "Cursos enfocados en habilidades de liderazgo, gestión ágil de proyectos, comunicación efectiva y soft skills profesionales.",
+      en: "Courses focused on leadership skills, agile project management, effective communication, and professional soft skills."
     },
     stats: {
-      coursesCount: 4,
+      coursesCount: 10,
       completedPercentage: "100%",
-      hoursCount: "180h"
+      hoursCount: "64h"
     },
     paths: [
       {
-        id: "fullstack",
+        id: "liderazgo",
         title: {
-          es: "Carrera Desarrollo Full Stack",
-          en: "Full Stack Development Career"
+          es: "Liderazgo & Gestión",
+          en: "Leadership & Management"
         },
         courses: [
           {
-            title: "Desarrollo Web Integrado",
-            date: "Mar 2023",
-            duration: "40h",
-            skills: ["HTML5", "CSS3", "Sass (SCSS)", "Bootstrap", "Git/GitHub"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
+            title: "Liderazgo de Equipos de Alto Rendimiento",
+            date: "Jun 2024",
+            duration: "8h",
+            skills: ["Leadership", "Team Motivation", "Conflict Resolution", "KPIs"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
             highlight: true
           },
           {
-            title: "JavaScript Avanzado y Lógica Asíncrona",
-            date: "Jun 2023",
-            duration: "36h",
-            skills: ["ES6+", "Promises/Async-Await", "DOM Manipulation", "Fetch APIs", "AJAX"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
+            title: "Metodologías Ágiles en el Desarrollo de Software",
+            date: "Jul 2024",
+            duration: "10h",
+            skills: ["Agile Development", "Scrum Framework", "Sprint Planning", "Product Backlog"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
             highlight: true
           },
           {
-            title: "React JS: Arquitectura de SPA",
-            date: "Sep 2023",
-            duration: "38h",
-            skills: ["React JS", "State Managers", "Routing", "Firebase Integration"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
-            highlight: true
+            title: "Negociación y Resolución de Conflictos",
+            date: "Aug 2024",
+            duration: "6h",
+            skills: ["Negotiation", "Problem Solving", "Conflict Mitigation", "Active Listening"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: false
           },
           {
-            title: "Programación Backend & NoSQL",
-            date: "Dec 2023",
-            duration: "42h",
-            skills: ["Node.js", "Express.js", "MongoDB", "Mongoose ORM", "Websockets (Socket.io)"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
-            highlight: true
+            title: "Gestión de Proyectos Tecnológicos",
+            date: "Sep 2024",
+            duration: "12h",
+            skills: ["Project Management", "Risk Assessment", "Resource Allocation", "Roadmapping"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: false
           },
           {
-            title: "Proyecto Final Full Stack: E-Commerce Corporativo",
+            title: "Comunicación Asertiva en Equipos Remotos",
+            date: "May 2024",
+            duration: "5h",
+            skills: ["Remote Communication", "Empathy", "Asynchronous Tools", "Feedback Loops"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: false
+          }
+        ]
+      },
+      {
+        id: "habilidades",
+        title: {
+          es: "Habilidades Profesionales",
+          en: "Professional Skills"
+        },
+        courses: [
+          {
+            title: "Fundamentos de la Gestión del Tiempo",
             date: "Jan 2024",
-            duration: "24h",
-            skills: ["Full Stack Architecture", "Deployment (Vercel/Heroku)", "Secure APIs", "SQL & NoSQL Integration"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Top 10%",
+            duration: "4h",
+            skills: ["Time Management", "Productivity", "Prioritization", "Deep Work"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Pensamiento Crítico y Toma de Decisiones",
+            date: "Feb 2024",
+            duration: "6h",
+            skills: ["Critical Thinking", "Decision Making", "Analytical Skills", "Cognitive Bias"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: true
+          },
+          {
+            title: "Scrum Avanzado: Roles y Ceremonias",
+            date: "Apr 2024",
+            duration: "8h",
+            skills: ["Scrum Master", "Agile Retrospectives", "Metrics & Velocity", "Scale Scrum"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: true
+          },
+          {
+            title: "Inteligencia Emocional en el Trabajo",
+            date: "Mar 2024",
+            duration: "5h",
+            skills: ["Emotional Intelligence", "Self-Awareness", "Social Skills", "Stress Management"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Innovación y Resolución Creativa de Problemas",
+            date: "May 2024",
+            duration: "7h",
+            skills: ["Creativity", "Design Thinking", "Brainstorming", "Ideation Models"],
+            credentialUrl: "https://linkedin.com/learning",
+            score: "Aprobado",
+            highlight: false
+          }
+        ]
+      }
+    ]
+  },
+  freecodecamp: {
+    id: "freecodecamp",
+    title: "freeCodeCamp",
+    logo: freecodecampLogo,
+    color: "#FEAC32", // freeCodeCamp Glowing Gold
+    glowColor: "rgba(254, 172, 50, 0.25)",
+    borderColor: "rgba(254, 172, 50, 0.2)",
+    description: {
+      es: "Currículum estructurado e intensivo basado en proyectos y desafíos prácticos de programación con certificación oficial.",
+      en: "Structured, project-based intensive curriculum featuring coding challenges and official developer certifications."
+    },
+    stats: {
+      coursesCount: 10,
+      completedPercentage: "100%",
+      hoursCount: "3000h"
+    },
+    paths: [
+      {
+        id: "webdev",
+        title: {
+          es: "Desarrollo Web & Algoritmos",
+          en: "Web Development & Algorithms"
+        },
+        courses: [
+          {
+            title: "Responsive Web Design Certification",
+            date: "Jul 2022",
+            duration: "300h",
+            skills: ["HTML5", "CSS3 Flexbox/Grid", "Responsive Layouts", "Web Accessibility (a11y)"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: true
+          },
+          {
+            title: "JavaScript Algorithms and Data Structures",
+            date: "Nov 2022",
+            duration: "300h",
+            skills: ["JavaScript ES6", "Algorithms", "Data Structures", "OOP", "Functional Programming"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: true
+          },
+          {
+            title: "Front End Development Libraries",
+            date: "Feb 2023",
+            duration: "300h",
+            skills: ["Bootstrap", "jQuery", "Sass", "React", "Redux"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: true
+          },
+          {
+            title: "Back End Development and APIs",
+            date: "Jun 2023",
+            duration: "300h",
+            skills: ["Node.js", "Express.js", "MongoDB & Mongoose", "Security & Middlewares", "API Testing"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: true
+          },
+          {
+            title: "Relational Database Certification",
+            date: "Sep 2023",
+            duration: "300h",
+            skills: ["PostgreSQL", "SQL Schema Design", "Bash Scripting", "Git", "Command Line"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: false
+          }
+        ]
+      },
+      {
+        id: "data",
+        title: {
+          es: "Análisis de Datos & Ciencia de Datos",
+          en: "Data Analysis & Data Science"
+        },
+        courses: [
+          {
+            title: "Data Analysis with Python Certification",
+            date: "Nov 2023",
+            duration: "300h",
+            skills: ["Python", "Numpy & Pandas", "Data Visualization", "Matplotlib & Seaborn"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: true
+          },
+          {
+            title: "Scientific Computing with Python",
+            date: "Oct 2023",
+            duration: "300h",
+            skills: ["Python Variables", "Loops & Logic", "Data Analysis", "Mathematical Computation"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: false
+          },
+          {
+            title: "Quality Assurance Certification",
+            date: "Jan 2024",
+            duration: "300h",
+            skills: ["Testing with Chai", "Unit & Integration Tests", "Advanced Express", "HelmetJS (Security)"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: false
+          },
+          {
+            title: "Information Security Certification",
+            date: "Feb 2024",
+            duration: "300h",
+            skills: ["OWASP Top 10", "SQL Injection Prevention", "BCrypt Hashing", "CORS policies"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: false
+          },
+          {
+            title: "Machine Learning with Python",
+            date: "Mar 2024",
+            duration: "300h",
+            skills: ["TensorFlow", "Neural Networks", "Natural Language Processing (NLP)", "Reinforcement Learning"],
+            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            score: "Certificado",
+            highlight: true
+          }
+        ]
+      }
+    ]
+  },
+  mintic: {
+    id: "mintic",
+    title: "MinTIC",
+    logo: minticLogo,
+    color: "#E2001A", // MinTIC Colombian Flag Red/Accent
+    glowColor: "rgba(226, 0, 26, 0.25)",
+    borderColor: "rgba(226, 0, 26, 0.2)",
+    description: {
+      es: "Programas de formación especial en desarrollo de software, ciencia de datos y competencias digitales de la Presidencia de la República de Colombia.",
+      en: "Special training programs in software development, data science, and digital skills by the Ministry of ICT of Colombia."
+    },
+    stats: {
+      coursesCount: 9,
+      completedPercentage: "100%",
+      hoursCount: "880h"
+    },
+    paths: [
+      {
+        id: "misiontic",
+        title: {
+          es: "Misión TIC 2022",
+          en: "Mision TIC Bootcamp"
+        },
+        courses: [
+          {
+            title: "Ciclo 1: Fundamentos de Programación en Python",
+            date: "Oct 2021",
+            duration: "200h",
+            skills: ["Python", "Programming Logic", "Data Types", "Conditionals & Loops"],
+            credentialUrl: "https://www.mintic.gov.co/",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Ciclo 2: Programación Básica y OOP en Java",
+            date: "Dec 2021",
+            duration: "200h",
+            skills: ["Java OOP", "Class Hierarchy", "Interfaces & Inheritance", "GUI Design (Swing)"],
+            credentialUrl: "https://www.mintic.gov.co/",
+            score: "Aprobado",
+            highlight: true
+          },
+          {
+            title: "Ciclo 3: Desarrollo de Aplicaciones Web",
+            date: "Feb 2022",
+            duration: "200h",
+            skills: ["JavaScript", "ReactJS", "Node.js", "Express.js", "SQL Databases (MySQL)"],
+            credentialUrl: "https://www.mintic.gov.co/",
+            score: "Aprobado",
+            highlight: true
+          },
+          {
+            title: "Ciclo 4: Desarrollo de Aplicaciones Móviles y Cloud",
+            date: "Apr 2022",
+            duration: "200h",
+            skills: ["React Native", "Expo", "DevOps Fundamentals", "Docker Containers", "API Deployment"],
+            credentialUrl: "https://www.mintic.gov.co/",
+            score: "Aprobado",
+            highlight: true
+          },
+          {
+            title: "Proyecto Integrador Final: Plataforma E-commerce y Microservicios",
+            date: "May 2022",
+            duration: "80h",
+            skills: ["Microservices", "REST APIs", "CI/CD Pipelines", "React Web & Mobile", "Final Graduation Project"],
+            credentialUrl: "https://www.mintic.gov.co/",
+            score: "Aprobado",
             highlight: true
           }
         ]
       },
       {
-        id: "design",
+        id: "habilidades_digitales",
         title: {
-          es: "Diseño & Herramientas",
-          en: "Design & Tools"
+          es: "Habilidades TIC",
+          en: "ICT Skills"
         },
         courses: [
           {
-            title: "Diseño UX/UI Inicial",
-            date: "Apr 2023",
-            duration: "24h",
-            skills: ["Figma", "User Personas", "Wireframing", "UI Prototyping"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Diseño UX/UI Avanzado",
-            date: "Jul 2023",
-            duration: "28h",
-            skills: ["Design Systems", "Usability Testing", "High-Fi Mockups", "Interactive Prototypes"],
-            credentialUrl: "https://coderhouse.com/",
-            score: "Aprobado",
-            highlight: false
-          },
-          {
-            title: "Product Management y Metodologías Ágiles",
-            date: "Nov 2023",
+            title: "Ciudadanía Digital y Habilidades de Liderazgo",
+            date: "Jun 2022",
             duration: "30h",
-            skills: ["Scrum/Kanban", "Product Roadmap", "KPIs & Analytics", "User Stories"],
-            credentialUrl: "https://coderhouse.com/",
+            skills: ["Digital Communication", "Siglo XXI Skills", "Information Literacy", "Collaboration"],
+            credentialUrl: "https://www.mintic.gov.co/",
             score: "Aprobado",
             highlight: false
           },
           {
-            title: "Marketing Digital & SEO",
-            date: "Aug 2023",
-            duration: "22h",
-            skills: ["SEO Audits", "Google Search Console", "Google Analytics 4", "Semrush"],
-            credentialUrl: "https://coderhouse.com/",
+            title: "Ciberseguridad para Desarrolladores",
+            date: "Jul 2022",
+            duration: "40h",
+            skills: ["Network Security", "Encryption", "Vulnerability Auditing", "Secure Coding"],
+            credentialUrl: "https://www.mintic.gov.co/",
             score: "Aprobado",
             highlight: false
           },
           {
-            title: "Optimización de Conversión (CRO)",
-            date: "Sep 2023",
-            duration: "18h",
-            skills: ["A/B Testing", "Heatmaps (Hotjar)", "User Journeys", "Landing Optimization"],
-            credentialUrl: "https://coderhouse.com/",
+            title: "Análisis y Visualización de Datos con PowerBI",
+            date: "Aug 2022",
+            duration: "50h",
+            skills: ["PowerBI", "DAX", "Data Modeling", "Business Intelligence Dashboards"],
+            credentialUrl: "https://www.mintic.gov.co/",
+            score: "Aprobado",
+            highlight: true
+          },
+          {
+            title: "Fundamentos de Cloud Computing",
+            date: "Sep 2022",
+            duration: "40h",
+            skills: ["AWS Basics", "Microsoft Azure", "Virtual Machines", "Cloud Storage & Security"],
+            credentialUrl: "https://www.mintic.gov.co/",
             score: "Aprobado",
             highlight: false
           }

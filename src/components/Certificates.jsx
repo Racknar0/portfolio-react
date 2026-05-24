@@ -139,7 +139,7 @@ const Certificates = ({ lang }) => {
       </motion.p>
 
       {/* Platform Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
         {Object.values(CERTIFICATES_DATA).map((platform, idx) => (
           <motion.div
             key={platform.id}
