@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiX, FiSearch, FiAward, FiClock, FiCalendar, FiExternalLink, FiBookOpen, FiCheck, FiLock, FiPlus } from "react-icons/fi";
+import { FiBookOpen, FiX, FiExternalLink } from "react-icons/fi";
 import { CERTIFICATES_DATA } from "../constants/certificates";
 
+import PlatziModal from "./PlatziModal";
+import CoderhouseModal from "./CoderhouseModal";
+import StandardModal from "./StandardModal";
+
 const Certificates = ({ lang }) => {
-  const [activePlatform, setActivePlatform] = useState(null); // null | 'platzi' | 'coderhouse'
-  const [activePathId, setActivePathId] = useState("");
-  const [searchTerm, setSearchTerm] = useState("");
+  const [activePlatform, setActivePlatform] = useState(null); // null | 'platzi' | 'coderhouse' | 'mintic' | etc.
+  const platziRoutes = CERTIFICATES_DATA.platzi?.routes || [];
+  const [activePlatziRouteId, setActivePlatziRouteId] = useState("frontend-backend-js");
+  const [platziCourses, setPlatziCourses] = useState([]);
+  const [previewUrl, setPreviewUrl] = useState(null);
 
   const content = {
     es: {
@@ -24,7 +30,12 @@ const Certificates = ({ lang }) => {
         hours: "Horas Estimadas"
       },
       close: "Cerrar",
-      noResults: "No se encontraron cursos para tu búsqueda."
+      noResults: "No se encontraron cursos para tu búsqueda.",
+      filterAll: "Todos",
+      filterCompleted: "Completados",
+      filterPending: "Pendientes",
+      pathProgress: "Progreso de la Ruta:",
+      locked: "Bloqueado"
     },
     en: {
       title: "Certifications",
@@ -41,19 +52,33 @@ const Certificates = ({ lang }) => {
         hours: "Estimated Hours"
       },
       close: "Close",
-      noResults: "No courses found matching your search."
+      noResults: "No courses found matching your search.",
+      filterAll: "All",
+      filterCompleted: "Completed",
+      filterPending: "Pending",
+      pathProgress: "Path Progress:",
+      locked: "Locked"
     }
   }[lang || "es"];
 
-  // Set the default path ID when a platform modal is opened
+  // Fetch dynamic platzi courses mapping when selected route changes
+  useEffect(() => {
+    const activeRoute = platziRoutes.find(r => r.id === activePlatziRouteId);
+    if (!activeRoute) return;
+
+    fetch(activeRoute.jsonPath)
+      .then((res) => res.json())
+      .then((data) => {
+        setPlatziCourses(data);
+      })
+      .catch((err) => {
+        console.error("Error fetching platzi route mapping:", err);
+      });
+  }, [activePlatziRouteId]);
+
+  // Prevent body scroll when any modal is open
   useEffect(() => {
     if (activePlatform) {
-      const platformData = CERTIFICATES_DATA[activePlatform];
-      if (platformData && platformData.paths.length > 0) {
-        setActivePathId(platformData.paths[0].id);
-      }
-      setSearchTerm("");
-      // Prevent body scroll when modal is open
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
@@ -65,58 +90,69 @@ const Certificates = ({ lang }) => {
 
   const handleClose = () => {
     setActivePlatform(null);
-    setActivePathId("");
-    setSearchTerm("");
   };
 
-  const getFilteredCourses = () => {
-    if (!activePlatform) return [];
-    const platformData = CERTIFICATES_DATA[activePlatform];
-    if (!platformData) return [];
-
-    let coursesToSearch = [];
-
-    if (searchTerm.trim() !== "") {
-      // Search across ALL paths if there is a search term
-      platformData.paths.forEach((path) => {
-        coursesToSearch.push(...path.courses);
-      });
-    } else {
-      // Otherwise, only search in the active path
-      const currentPath = platformData.paths.find((p) => p.id === activePathId);
-      if (currentPath) {
-        coursesToSearch = currentPath.courses;
-      }
-    }
-
-    return coursesToSearch.filter((course) => {
-      const search = searchTerm.toLowerCase();
-      const matchesTitle = course.title.toLowerCase().includes(search);
-      const matchesSkills = course.skills.some((skill) =>
-        skill.toLowerCase().includes(search)
-      );
-      const matchesDate = course.date.toLowerCase().includes(search);
-      return matchesTitle || matchesSkills || matchesDate;
-    });
-  };
-
-  const filteredCourses = getFilteredCourses();
   const activePlatformData = activePlatform ? CERTIFICATES_DATA[activePlatform] : null;
 
-  // Stagger animation variants for courses
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.05
-      }
+  const getPlatformCoursesCount = (platform) => {
+    if (platform.id === "platzi") {
+      return platziCourses.length > 0 ? platziCourses.length : platform.stats.coursesCount;
     }
+    let count = 0;
+    if (platform.careers) {
+      count += platform.careers.length;
+    }
+    if (platform.paths) {
+      platform.paths.forEach(p => {
+        count += p.courses.length;
+      });
+    }
+    return count || platform.stats.coursesCount;
   };
 
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    show: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100 } }
+  const getPlatformCompletedPercentage = (platform) => {
+    if (platform.id === "platzi") {
+      if (platziCourses.length > 0) {
+        const completed = platziCourses.filter(c => c.completed).length;
+        return `${Math.round((completed / platziCourses.length) * 100)}%`;
+      }
+      return platform.stats.completedPercentage;
+    }
+    
+    let total = 0;
+    let completed = 0;
+    if (platform.careers) {
+      total += platform.careers.length;
+      completed += platform.careers.length;
+    }
+    if (platform.paths) {
+      platform.paths.forEach(p => {
+        total += p.courses.length;
+        p.courses.forEach(c => {
+          if (c.completed !== false && (c.credentialUrl || (c.score && c.score !== "Por iniciar" && c.score !== "En progreso"))) {
+            completed++;
+          }
+        });
+      });
+    }
+    if (total === 0) return platform.stats.completedPercentage;
+    return `${Math.round((completed / total) * 100)}%`;
+  };
+
+  const getPlatformStudyTime = (platform) => {
+    if (platform.id === "platzi") {
+      if (platziCourses.length > 0) {
+        const totalHours = platziCourses.reduce((acc, c) => acc + parseInt(c.duration || 0), 0);
+        return `${totalHours} ${lang === "es" ? "horas" : "hours"}`;
+      }
+      return typeof platform.stats.hoursCount === "object"
+        ? platform.stats.hoursCount[lang || "es"]
+        : platform.stats.hoursCount;
+    }
+    
+    return typeof platform.stats.hoursCount === "object"
+      ? platform.stats.hoursCount[lang || "es"]
+      : platform.stats.hoursCount;
   };
 
   return (
@@ -186,21 +222,21 @@ const Certificates = ({ lang }) => {
               {/* Stats Strip */}
               <div className="grid grid-cols-3 gap-2 bg-neutral-950/40 border border-white/5 rounded-xl p-3.5 mb-6 text-center text-xs relative z-10">
                 <div>
-                  <div className="text-neutral-400 mb-0.5">{lang === "es" ? "Cursos" : "Courses"}</div>
-                  <div className="font-bold text-white text-base">{platform.stats.coursesCount}</div>
+                  <div className="text-neutral-400 mb-0.5">{lang === "es" ? "Certificaciones" : "Certifications"}</div>
+                  <div className="font-bold text-white text-base">
+                    {getPlatformCoursesCount(platform)}
+                  </div>
                 </div>
                 <div className="border-x border-white/5">
                   <div className="text-neutral-400 mb-0.5">{lang === "es" ? "Completado" : "Completed"}</div>
                   <div className="font-bold text-base" style={{ color: platform.color }}>
-                    {platform.stats.completedPercentage}
+                    {getPlatformCompletedPercentage(platform)}
                   </div>
                 </div>
                 <div>
                   <div className="text-neutral-400 mb-0.5">{lang === "es" ? "Estudio" : "Study"}</div>
                   <div className="font-bold text-white text-base">
-                    {typeof platform.stats.hoursCount === "object"
-                      ? platform.stats.hoursCount[lang || "es"]
-                      : platform.stats.hoursCount}
+                    {getPlatformStudyTime(platform)}
                   </div>
                 </div>
               </div>
@@ -223,460 +259,105 @@ const Certificates = ({ lang }) => {
         ))}
       </div>
 
-      {/* Modal Overlay */}
+      {/* Modals Overlay */}
       <AnimatePresence>
-        {activePlatform && activePlatformData && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-hidden">
+        {activePlatform === "platzi" && (
+          <PlatziModal
+            isOpen={!!activePlatform}
+            onClose={handleClose}
+            platziCourses={platziCourses}
+            activePlatformData={activePlatformData}
+            lang={lang || "es"}
+            content={content}
+            activeRouteId={activePlatziRouteId}
+            setActiveRouteId={setActivePlatziRouteId}
+            routes={platziRoutes}
+            onViewCredential={setPreviewUrl}
+          />
+        )}
+        {activePlatform === "coderhouse" && (
+          <CoderhouseModal
+            isOpen={!!activePlatform}
+            onClose={handleClose}
+            activePlatformData={activePlatformData}
+            lang={lang || "es"}
+            content={content}
+            onViewCredential={setPreviewUrl}
+          />
+        )}
+        {activePlatform && activePlatform !== "platzi" && activePlatform !== "coderhouse" && (
+          <StandardModal
+            isOpen={!!activePlatform}
+            onClose={handleClose}
+            activePlatform={activePlatform}
+            activePlatformData={activePlatformData}
+            lang={lang || "es"}
+            content={content}
+            onViewCredential={setPreviewUrl}
+          />
+        )}
+      </AnimatePresence>
+
+      {/* Credential Preview Modal Overlay (Third Modal) */}
+      <AnimatePresence>
+        {previewUrl && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 overflow-hidden">
             {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={handleClose}
-              className="absolute inset-0 bg-black/85 backdrop-blur-lg"
+              onClick={() => setPreviewUrl(null)}
+              className="absolute inset-0 bg-black/95 backdrop-blur-md"
             />
 
-            {/* Modal Body */}
+            {/* Container */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 30 }}
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 30 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 220 }}
-              className="relative w-full max-w-5xl h-[85vh] max-h-[800px] flex flex-col md:flex-row bg-[#0b0615]/95 border rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-10"
-              style={{ borderColor: `${activePlatformData.color}35` }}
+              className="relative w-full max-w-5xl h-[85vh] flex flex-col bg-[#07030e] border border-white/10 rounded-2xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.95)] z-10"
             >
-              {/* Dynamic Background Glow inside modal */}
-              <div
-                className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-10 pointer-events-none"
-                style={{ backgroundColor: activePlatformData.color }}
-              />
-
-              {/* SIDEBAR: Learning Paths (Responsive: shifts to top horizontal list on mobile) */}
-              <div className="w-full md:w-80 border-b md:border-b-0 md:border-r border-white/5 bg-black/30 flex flex-col md:h-full shrink-0">
-                {/* Platform Header info */}
-                <div className="p-6 border-b border-white/5 flex items-center justify-between">
-                  <div className="h-9 w-auto flex items-center">
-                    <img
-                      src={activePlatformData.logo}
-                      alt={activePlatformData.title}
-                      className="h-full object-contain max-h-9"
-                    />
-                  </div>
-                  <button
-                    onClick={handleClose}
-                    className="md:hidden w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white border border-white/10 cursor-pointer"
+              {/* Header */}
+              <div className="p-4 border-b border-white/5 bg-black/45 flex items-center justify-between shrink-0">
+                <span className="text-xs sm:text-sm font-semibold text-neutral-300">
+                  {lang === "es" ? "Vista Previa de Credencial" : "Credential Preview"}
+                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={previewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-neutral-300 hover:text-white hover:bg-white/10 transition-all flex items-center gap-1 font-bold"
                   >
-                    <FiX />
+                    <span>{lang === "es" ? "Abrir en pestaña" : "Open in tab"}</span>
+                    <FiExternalLink className="text-[10px]" />
+                  </a>
+                  <button
+                    onClick={() => setPreviewUrl(null)}
+                    className="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center text-white border border-white/10 transition-all cursor-pointer"
+                  >
+                    <FiX className="text-base" />
                   </button>
-                </div>
-
-                {/* Vertical Tabs (Desktop) / Horizontal Tabs (Mobile) */}
-                <div className="p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-x-visible md:overflow-y-auto scrollbar-none flex-grow">
-                  {activePlatformData.paths.map((path) => {
-                    const isActive = activePathId === path.id && searchTerm.trim() === "";
-                    return (
-                      <button
-                        key={path.id}
-                        onClick={() => {
-                          setActivePathId(path.id);
-                          setSearchTerm("");
-                        }}
-                        className={`px-4 py-3 rounded-xl text-xs sm:text-sm font-medium tracking-wide text-left cursor-pointer transition-all duration-300 shrink-0 md:shrink-0 flex items-center justify-between border ${
-                          isActive
-                            ? "bg-white/5 text-white"
-                            : "bg-transparent border-transparent text-neutral-400 hover:text-neutral-200 hover:bg-white/5"
-                        }`}
-                        style={{
-                          borderColor: isActive ? `${activePlatformData.color}45` : "transparent"
-                        }}
-                      >
-                        <span className="truncate max-w-[150px] md:max-w-none">{path.title[lang] || path.title}</span>
-                        {isActive && (
-                          <div
-                            className="hidden md:block w-1.5 h-1.5 rounded-full shadow-[0_0_8px_currentColor]"
-                            style={{ color: activePlatformData.color, backgroundColor: activePlatformData.color }}
-                          />
-                        )}
-                      </button>
-                    );
-                  })}
-                </div>
-
-                {/* Sidebar Stats Footer (Desktop only) */}
-                <div className="hidden md:block p-6 border-t border-white/5 bg-black/40">
-                  <div className="space-y-3.5 text-xs">
-                    <div className="flex justify-between">
-                      <span className="text-neutral-400">{content.stats.completed}</span>
-                      <span className="font-bold text-white">{activePlatformData.stats.coursesCount}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-neutral-400">{content.stats.progress}</span>
-                      <span className="font-bold" style={{ color: activePlatformData.color }}>
-                        {activePlatformData.stats.completedPercentage}
-                      </span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-neutral-400">{content.stats.hours}</span>
-                      <span className="font-bold text-white">
-                        {typeof activePlatformData.stats.hoursCount === "object"
-                          ? activePlatformData.stats.hoursCount[lang || "es"]
-                          : activePlatformData.stats.hoursCount}
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </div>
 
-              {/* MAIN CONTENT AREA: Courses Grid & Search */}
-              <div className="flex-grow flex flex-col h-full overflow-hidden">
-                {/* Search Bar & Header */}
-                <div className="p-6 border-b border-white/5 flex flex-col sm:flex-row gap-4 items-center justify-between bg-black/10 shrink-0">
-                  <div className="relative w-full sm:max-w-md">
-                    <FiSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400 text-base" />
-                    <input
-                      type="text"
-                      placeholder={content.searchPlaceholder}
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                      className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-neutral-950/60 border border-white/10 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-purple-500/50 transition-colors"
-                    />
-                    {searchTerm && (
-                      <button
-                        onClick={() => setSearchTerm("")}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-white"
-                      >
-                        <FiX />
-                      </button>
-                    )}
-                  </div>
-
-                  <button
-                    onClick={handleClose}
-                    className="hidden md:flex items-center gap-1.5 text-xs text-neutral-400 hover:text-white bg-white/5 hover:bg-white/10 px-4.5 py-2.5 rounded-xl border border-white/10 transition-colors cursor-pointer"
-                  >
-                    <FiX className="text-sm" />
-                    {content.close}
-                  </button>
-                </div>
-
-                {/* Courses Grid Scroll Container */}
-                <div className="flex-grow overflow-y-auto p-6 scrollbar-thin">
-                  {filteredCourses.length > 0 ? (
-                    activePlatform === "platzi" && searchTerm.trim() === "" ? (
-                      /* Render the Learning Road! */
-                      <div className="relative w-full max-w-3xl mx-auto px-2 py-4">
-                        {/* Winding path line */}
-                        <div className="absolute left-[30px] md:left-1/2 top-0 bottom-0 w-1 -translate-x-1/2 bg-gradient-to-b from-[#00BFB2] via-[#00BFB2]/60 to-purple-900/10 shadow-[0_0_8px_rgba(0,191,178,0.3)] pointer-events-none" />
-
-                        {filteredCourses.map((course, idx) => (
-                          <div
-                            key={idx}
-                            className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-8 ${
-                              idx % 2 === 0 ? "md:flex-row-reverse" : ""
-                            }`}
-                          >
-                            {/* Spacer */}
-                            <div className="hidden md:block w-1/2 px-8" />
-
-                            {/* Node on line */}
-                            <div
-                              className="absolute left-[30px] md:left-1/2 w-12 h-12 rounded-full border-2 flex items-center justify-center -translate-x-1/2 z-10 bg-[#0c0718] transition-all duration-300 hover:scale-110 cursor-pointer group"
-                              style={{
-                                borderColor: activePlatformData.color,
-                                boxShadow: `0 0 12px ${activePlatformData.glowColor}`
-                              }}
-                            >
-                              <img
-                                src={course.badge || activePlatformData.logo}
-                                alt=""
-                                className="w-8 h-8 object-contain rounded-full"
-                              />
-                              {/* Step Number Badge */}
-                              <div
-                                className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-[9px] font-bold border border-white/10"
-                                style={{
-                                  backgroundColor: activePlatformData.color,
-                                  color: "#000"
-                                }}
-                              >
-                                {course.stepNumber}
-                              </div>
-                            </div>
-
-                            {/* Card content */}
-                            <div className={`w-full md:w-1/2 pl-14 z-20 ${
-                              idx % 2 === 0 ? "md:pl-0 md:pr-10" : "md:pl-10 md:pr-0"
-                            }`}>
-                              <motion.div
-                                whileHover={{ y: -5, scale: 1.01 }}
-                                className="glass-panel p-4 relative border border-white/5 bg-neutral-950/40 rounded-2xl hover:border-white/15 transition-all duration-300"
-                                style={{
-                                  boxShadow: `0 4px 20px -5px ${activePlatformData.glowColor}`,
-                                  borderColor: `${activePlatformData.color}20`
-                                }}
-                              >
-                                <div>
-                                  <div className="flex items-start justify-between gap-3 mb-2">
-                                    <h3 className="font-semibold text-white text-xs sm:text-sm leading-snug group-hover:text-purple-300 transition-colors duration-300">
-                                      {course.title}
-                                    </h3>
-                                    <span
-                                      className="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 border"
-                                      style={{
-                                        backgroundColor: `${activePlatformData.color}15`,
-                                        color: activePlatformData.color,
-                                        borderColor: `${activePlatformData.color}35`
-                                      }}
-                                    >
-                                      {course.score}
-                                    </span>
-                                  </div>
-
-                                  <div className="flex flex-wrap gap-3 text-[11px] text-neutral-400 mb-2.5 font-light">
-                                    <span className="flex items-center gap-1">
-                                      <FiCalendar className="text-[10px]" />
-                                      {course.date}
-                                    </span>
-                                    <span className="flex items-center gap-1">
-                                      <FiClock className="text-[10px]" />
-                                      {course.duration}
-                                    </span>
-                                    <span className="flex items-center gap-1 text-emerald-400 font-medium">
-                                      <FiCheck className="text-[10px]" />
-                                      {content.completed}
-                                    </span>
-                                  </div>
-
-                                  <div className="flex flex-wrap gap-1.5 mb-3">
-                                    {course.skills.map((skill, sIdx) => (
-                                      <span
-                                        key={sIdx}
-                                        className="text-[9px] px-2 py-0.5 rounded bg-neutral-900 border border-white/5 text-neutral-300 font-medium"
-                                      >
-                                        {skill}
-                                      </span>
-                                    ))}
-                                  </div>
-                                </div>
-
-                                <a
-                                  href={course.credentialUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="w-full py-1.5 px-3 rounded-lg bg-neutral-950 border border-white/5 text-[11px] text-neutral-300 hover:text-white hover:bg-neutral-900 hover:border-white/20 transition-all flex items-center justify-center gap-1.5 font-medium cursor-pointer"
-                                >
-                                  {content.viewCredential}
-                                  <FiExternalLink className="text-[10px] text-purple-400" />
-                                </a>
-                              </motion.div>
-                            </div>
-                          </div>
-                        ))}
-
-                        {/* Motivational Locked Nodes */}
-                        {[
-                          {
-                            step: 59,
-                            title: lang === "es" ? "Próximo Objetivo: Backend Avanzado en NestJS" : "Next Goal: Advanced NestJS Backend",
-                            duration: "18h",
-                            skills: ["NestJS", "Microservices", "Redis", "Websockets"],
-                            text: lang === "es" ? "¡Espacio para tu próximo curso!" : "Space for your next course!"
-                          },
-                          {
-                            step: 60,
-                            title: lang === "es" ? "Especialización: Inteligencia Artificial para Developers" : "Specialization: IA for Developers",
-                            duration: "24h",
-                            skills: ["TensorFlow", "Python", "LLMs", "Vector DBs"],
-                            text: lang === "es" ? "En camino al siguiente nivel" : "On the way to the next level"
-                          },
-                          {
-                            step: 61,
-                            title: lang === "es" ? "Arquitectura de Software y DevOps" : "Software Architecture & DevOps",
-                            duration: "30h",
-                            skills: ["Docker", "Kubernetes", "AWS", "CI/CD Pipelines"],
-                            text: lang === "es" ? "Planificado para maestría" : "Planned for mastery"
-                          }
-                        ].map((locked, idx) => {
-                          const stepIdx = filteredCourses.length + idx;
-                          return (
-                            <div
-                              key={stepIdx}
-                              className={`relative flex flex-col md:flex-row items-start md:items-center w-full my-8 opacity-55 hover:opacity-80 transition-opacity duration-300 ${
-                                stepIdx % 2 === 0 ? "md:flex-row-reverse" : ""
-                              }`}
-                            >
-                              {/* Spacer */}
-                              <div className="hidden md:block w-1/2 px-8" />
-
-                              {/* Node on line */}
-                              <div
-                                className="absolute left-[30px] md:left-1/2 w-12 h-12 rounded-full border-2 border-dashed flex items-center justify-center -translate-x-1/2 z-10 bg-[#080410] border-neutral-600 shadow-[0_0_8px_rgba(255,255,255,0.05)] animate-pulse"
-                              >
-                                <FiLock className="text-neutral-500 text-lg" />
-                                {/* Step Number Badge */}
-                                <div
-                                  className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-[9px] font-bold border border-white/10 bg-neutral-800 text-neutral-400"
-                                >
-                                  {locked.step}
-                                </div>
-                              </div>
-
-                              {/* Card content */}
-                              <div className={`w-full md:w-1/2 pl-14 z-20 ${
-                                stepIdx % 2 === 0 ? "md:pl-0 md:pr-10" : "md:pl-10 md:pr-0"
-                              }`}>
-                                <div
-                                  className="glass-panel p-4 relative border border-dashed border-white/10 bg-neutral-950/20 rounded-2xl"
-                                >
-                                  <div>
-                                    <div className="flex items-start justify-between gap-3 mb-2">
-                                      <h3 className="font-semibold text-neutral-400 text-xs sm:text-sm leading-snug">
-                                        {locked.title}
-                                      </h3>
-                                      <span
-                                        className="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 border border-neutral-700 bg-neutral-800 text-neutral-400"
-                                      >
-                                        {lang === "es" ? "Por Iniciar" : "To Start"}
-                                      </span>
-                                    </div>
-
-                                    <div className="flex flex-wrap gap-3 text-[11px] text-neutral-500 mb-2.5 font-light">
-                                      <span className="flex items-center gap-1">
-                                        <FiClock className="text-[10px]" />
-                                        {locked.duration}
-                                      </span>
-                                      <span className="flex items-center gap-1 text-purple-400 font-medium">
-                                        <FiPlus className="text-[10px]" />
-                                        {locked.text}
-                                      </span>
-                                    </div>
-
-                                    <div className="flex flex-wrap gap-1.5">
-                                      {locked.skills.map((skill, sIdx) => (
-                                        <span
-                                          key={sIdx}
-                                          className="text-[9px] px-2 py-0.5 rounded bg-neutral-900/50 border border-white/5 text-neutral-500 font-medium"
-                                        >
-                                          {skill}
-                                        </span>
-                                      ))}
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    ) : (
-                      /* Render standard Grid layout for other platforms or when searching */
-                      <motion.div
-                        key={`${activePlatform}-${activePathId}`}
-                        variants={containerVariants}
-                        initial="hidden"
-                        animate="show"
-                        className="grid grid-cols-1 lg:grid-cols-2 gap-4"
-                      >
-                        {filteredCourses.map((course, idx) => (
-                          <motion.div
-                            key={idx}
-                            variants={itemVariants}
-                            className="glass-panel p-5 flex flex-col justify-between hover:border-white/15 transition-all duration-300 relative group overflow-hidden border border-white/5 bg-neutral-950/20"
-                            style={{
-                              boxShadow: course.highlight
-                                ? `0 4px 20px -5px ${activePlatformData.glowColor}`
-                                : "none",
-                              borderColor: course.highlight
-                                ? `${activePlatformData.color}25`
-                                : "rgba(255,255,255,0.05)"
-                            }}
-                          >
-                            {/* Top row */}
-                            <div>
-                              <div className="flex items-start justify-between gap-3 mb-2.5">
-                                <div className="flex gap-2">
-                                  <div
-                                    className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
-                                    style={{ backgroundColor: `${activePlatformData.color}15` }}
-                                  >
-                                    <FiAward style={{ color: activePlatformData.color }} className="text-base" />
-                                  </div>
-                                  <h3 className="font-semibold text-white text-sm sm:text-base leading-snug group-hover:text-purple-300 transition-colors duration-300">
-                                    {course.title}
-                                  </h3>
-                                </div>
-
-                                {/* Grade/Badge */}
-                                {course.score && (
-                                  <span
-                                    className="text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full shrink-0 border"
-                                    style={{
-                                      backgroundColor: `${activePlatformData.color}15`,
-                                      color: activePlatformData.color,
-                                      borderColor: `${activePlatformData.color}35`
-                                    }}
-                                  >
-                                    {course.score}
-                                  </span>
-                                )}
-                              </div>
-
-                              {/* Details meta */}
-                              <div className="flex flex-wrap gap-4 text-xs text-neutral-400 mb-4 font-light">
-                                <span className="flex items-center gap-1">
-                                  <FiCalendar className="text-[10px]" />
-                                  {course.date}
-                                </span>
-                                <span className="flex items-center gap-1">
-                                  <FiClock className="text-[10px]" />
-                                  {typeof course.duration === "object"
-                                    ? course.duration[lang || "es"]
-                                    : course.duration}
-                                </span>
-                                <span className="flex items-center gap-1 text-emerald-400">
-                                  <FiCheck className="text-[10px]" />
-                                  {content.completed}
-                                </span>
-                              </div>
-
-                              {/* Skills Tag Cloud */}
-                              <div className="flex flex-wrap gap-1.5 mb-5">
-                                {course.skills.map((skill, sIdx) => (
-                                  <span
-                                    key={sIdx}
-                                    className="text-[10px] px-2 py-0.5 rounded bg-neutral-900 border border-white/5 text-neutral-300 font-medium"
-                                  >
-                                    {skill}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-
-                            {/* Action button */}
-                            <a
-                              href={course.credentialUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="w-full py-2 px-4 rounded-lg bg-neutral-900 border border-white/5 text-xs text-neutral-300 hover:text-white hover:bg-neutral-950 hover:border-white/20 transition-all flex items-center justify-center gap-1.5 font-medium cursor-pointer"
-                            >
-                              {content.viewCredential}
-                              <FiExternalLink className="text-[10px] text-purple-400 group-hover:text-purple-300 transition-colors" />
-                            </a>
-                          </motion.div>
-                        ))}
-                      </motion.div>
-                    )
-                  ) : (
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      className="h-64 flex flex-col items-center justify-center text-center p-6 border border-white/5 rounded-xl bg-neutral-950/20"
-                    >
-                      <FiSearch className="text-4xl text-neutral-600 mb-3" />
-                      <p className="text-sm text-neutral-400 max-w-sm">{content.noResults}</p>
-                    </motion.div>
-                  )}
-                </div>
+              {/* Content Area */}
+              <div className="flex-grow p-4 bg-black/20 flex items-center justify-center overflow-auto">
+                {previewUrl.toLowerCase().endsWith(".pdf") ? (
+                  <iframe
+                    src={`${previewUrl}#toolbar=0`}
+                    title="Credential PDF"
+                    className="w-full h-full border-none rounded-lg bg-white"
+                  />
+                ) : (
+                  <img
+                    src={previewUrl}
+                    alt="Credential Preview"
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                  />
+                )}
               </div>
             </motion.div>
           </div>

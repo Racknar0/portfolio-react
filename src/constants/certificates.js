@@ -4,61 +4,9 @@ import linkedinLearningLogo from "../assets/logos/linkedin_learning.png";
 import freecodecampLogo from "../assets/logos/freecodecamp.svg";
 import minticLogo from "../assets/logos/mintic.svg";
 import udemyLogo from "../assets/logos/udemy.svg";
+import otherLogo from "../assets/logos/other.svg";
 
 // Platzi Badge Imports
-import badge_01 from "../assets/logos/platzi/badge_01.png";
-import badge_04 from "../assets/logos/platzi/badge_04.png";
-import badge_05 from "../assets/logos/platzi/badge_05.png";
-import badge_06 from "../assets/logos/platzi/badge_06.png";
-import badge_07 from "../assets/logos/platzi/badge_07.png";
-import badge_08 from "../assets/logos/platzi/badge_08.png";
-import badge_09 from "../assets/logos/platzi/badge_09.png";
-import badge_10 from "../assets/logos/platzi/badge_10.png";
-import badge_11 from "../assets/logos/platzi/badge_11.png";
-import badge_12 from "../assets/logos/platzi/badge_12.png";
-import badge_13 from "../assets/logos/platzi/badge_13.png";
-import badge_14 from "../assets/logos/platzi/badge_14.png";
-import badge_15 from "../assets/logos/platzi/badge_15.png";
-import badge_16 from "../assets/logos/platzi/badge_16.png";
-import badge_17 from "../assets/logos/platzi/badge_17.png";
-import badge_18 from "../assets/logos/platzi/badge_18.png";
-import badge_19 from "../assets/logos/platzi/badge_19.png";
-import badge_20 from "../assets/logos/platzi/badge_20.png";
-import badge_21 from "../assets/logos/platzi/badge_21.png";
-import badge_22 from "../assets/logos/platzi/badge_22.png";
-import badge_23 from "../assets/logos/platzi/badge_23.png";
-import badge_24 from "../assets/logos/platzi/badge_24.png";
-import badge_25 from "../assets/logos/platzi/badge_25.png";
-import badge_26 from "../assets/logos/platzi/badge_26.png";
-import badge_27 from "../assets/logos/platzi/badge_27.png";
-import badge_28 from "../assets/logos/platzi/badge_28.png";
-import badge_29 from "../assets/logos/platzi/badge_29.png";
-import badge_30 from "../assets/logos/platzi/badge_30.png";
-import badge_31 from "../assets/logos/platzi/badge_31.png";
-import badge_32 from "../assets/logos/platzi/badge_32.png";
-import badge_33 from "../assets/logos/platzi/badge_33.png";
-import badge_35 from "../assets/logos/platzi/badge_35.png";
-import badge_36 from "../assets/logos/platzi/badge_36.png";
-import badge_37 from "../assets/logos/platzi/badge_37.png";
-import badge_38 from "../assets/logos/platzi/badge_38.png";
-import badge_39 from "../assets/logos/platzi/badge_39.png";
-import badge_40 from "../assets/logos/platzi/badge_40.png";
-import badge_41 from "../assets/logos/platzi/badge_41.png";
-import badge_42 from "../assets/logos/platzi/badge_42.png";
-import badge_44 from "../assets/logos/platzi/badge_44.png";
-import badge_45 from "../assets/logos/platzi/badge_45.png";
-import badge_46 from "../assets/logos/platzi/badge_46.png";
-import badge_47 from "../assets/logos/platzi/badge_47.png";
-import badge_48 from "../assets/logos/platzi/badge_48.png";
-import badge_49 from "../assets/logos/platzi/badge_49.png";
-import badge_50 from "../assets/logos/platzi/badge_50.png";
-import badge_51 from "../assets/logos/platzi/badge_51.png";
-import badge_52 from "../assets/logos/platzi/badge_52.png";
-import badge_53 from "../assets/logos/platzi/badge_53.png";
-import badge_54 from "../assets/logos/platzi/badge_54.png";
-import badge_55 from "../assets/logos/platzi/badge_55.png";
-import badge_56 from "../assets/logos/platzi/badge_56.png";
-import badge_57 from "../assets/logos/platzi/badge_57.png";
 
 export const CERTIFICATES_DATA = {
   coderhouse: {
@@ -80,6 +28,47 @@ export const CERTIFICATES_DATA = {
         en: "22 months"
       }
     },
+    careers: [
+      {
+        id: "carrera-fullstack",
+        title: {
+          es: "Carrera Desarrollo Full Stack",
+          en: "Full Stack Development Career"
+        },
+        credentialUrl: "/CURSOS/CODERHOUSE/CODER Carrera Full Stack.png",
+        status: {
+          es: "Graduado",
+          en: "Graduated"
+        },
+        skills: ["HTML5", "CSS3", "JavaScript", "React JS", "Node.js", "Express.js", "MongoDB"]
+      },
+      {
+        id: "carrera-frontend-react",
+        title: {
+          es: "Carrera Frontend React",
+          en: "Frontend React Career"
+        },
+        credentialUrl: "/CURSOS/CODERHOUSE/CODER Carrera Desarrollo Front react.png",
+        status: {
+          es: "Graduado",
+          en: "Graduated"
+        },
+        skills: ["HTML5", "CSS3", "JavaScript", "React JS", "Sass", "Web Performance"]
+      },
+      {
+        id: "carrera-angular",
+        title: {
+          es: "Carrera Angular",
+          en: "Angular Career"
+        },
+        credentialUrl: "/CURSOS/CODERHOUSE/CODER Carrera Angular.png",
+        status: {
+          es: "Graduado",
+          en: "Graduated"
+        },
+        skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Angular", "RxJS"]
+      }
+    ],
     paths: [
       {
         id: "fullstack",
@@ -281,7 +270,7 @@ export const CERTIFICATES_DATA = {
       }
     ]
   },
-  platzi: {
+      platzi: {
     id: "platzi",
     title: "Platzi",
     logo: platziLogo,
@@ -289,604 +278,1252 @@ export const CERTIFICATES_DATA = {
     glowColor: "rgba(0, 191, 178, 0.25)",
     borderColor: "rgba(0, 191, 178, 0.2)",
     description: {
-      es: "Carrera de Desarrollo JavaScript y especializaciones en tecnologías frontend y backend en Platzi.",
-      en: "JavaScript Development Career and specializations in frontend and backend technologies at Platzi."
+      es: "Ruta de aprendizaje completa en Desarrollo Frontend y Backend con Javascript, incluyendo certificaciones aprobadas y objetivos pendientes.",
+      en: "Complete learning path in Frontend and Backend Development with Javascript, including approved certifications and pending goals."
     },
     stats: {
-      coursesCount: 58,
-      completedPercentage: "100%",
+      coursesCount: 110,
+      completedPercentage: "35%",
       hoursCount: {
-        es: "650 horas",
-        en: "650 hours"
+        es: "1314 horas",
+        en: "1314 hours"
       }
     },
+    routes: [
+      {
+        id: "frontend-backend-js",
+        title: {
+          es: "Ruta Frontend y Backend con Javascript para Desarrollo Web",
+          en: "Frontend & Backend Javascript Route for Web Development"
+        },
+        jsonPath: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/platzi_route_mapping.json"
+      },
+      {
+        id: "backend-csharp-net",
+        title: {
+          es: "Backend con C# y .NET",
+          en: "Backend with C# & .NET"
+        },
+        jsonPath: "/CURSOS/PLATZI/Backend con C-Sharp y .NET/platzi_route_mapping.json"
+      }
+    ],
     paths: [
       {
         id: "javascript-road",
         title: {
-          es: "Ruta de Desarrollo con JavaScript",
-          en: "JavaScript Development Road"
+          es: "Ruta Frontend y Backend con JavaScript",
+          en: "Frontend & Backend JavaScript Path"
         },
         courses: [
+          {
+            title: "Curso de Frameworks y Librerías de JavaScript",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 1
+          },
+          {
+            title: "Curso de React.js: Patrones de Render y Composición",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 2
+          },
+          {
+            title: "Curso de React.js: Manejo Profesional del Estado",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 3
+          },
+          {
+            title: "Curso de React.js: Navegación con React Router",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 4
+          },
+          {
+            title: "Curso Profesional de React.js y Redux",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 5
+          },
+          {
+            title: "Curso de State Machines en React.js",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 6
+          },
+          {
+            title: "Curso de Fundamentos de Angular",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 7
+          },
+          {
+            title: "Curso de Angular: Componentes y Servicios",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 8
+          },
+          {
+            title: "Curso de Consumo de APIs REST con Angular",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["APIs", "REST APIs", "Fetch API"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 9
+          },
+          {
+            title: "Curso de Angular Router: Lazy Loading y Programación Modular",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 10
+          },
+          {
+            title: "Curso de Angular: Unit Testing para Servicios",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 11
+          },
+          {
+            title: "Curso de Angular: Unit Testing para Componentes",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 12
+          },
+          {
+            title: "Curso de Angular: Unit Testing para Formularios",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 13
+          },
+          {
+            title: "Curso de Angular: Unit Testing para Rutas",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 14
+          },
+          {
+            title: "Curso de Rendimiento en Angular",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 15
+          },
+          {
+            title: "Curso de Angular Forms: Creación y Optimización de Formularios Web",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Development", "Web Performance"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 16
+          },
+          {
+            title: "Curso de Vue.js: Introducción y Fundamentos",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 17
+          },
+          {
+            title: "Curso de Vue.js: Componentes y Composition API",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "APIs", "REST APIs", "Fetch API"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 18
+          },
+          {
+            title: "Curso Práctico de Vue.js",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 19
+          },
+          {
+            title: "Curso de Vue.js: Navegación con Vue Router",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 20
+          },
+          {
+            title: "Curso de Vue.js: Manejo del Estado con  Vuex",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 21
+          },
+          {
+            title: "Curso de Vue.js: Manejo del Estado con Pinia",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 22
+          },
+          {
+            title: "Curso de Reactividad con Vue.js 3",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 23
+          },
+          {
+            title: "Curso de Unit Testing en Vue.js 3",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Software Testing", "QA", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 24
+          },
+          {
+            title: "Curso Profesional de Vue.js 2",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 25
+          },
+          {
+            title: "Curso Avanzado de Vue.js 2",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Vue.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 26
+          },
+          {
+            title: "Curso de Svelte",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 27
+          },
+          {
+            title: "Curso de Introducción a Jamstack",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 28
+          },
+          {
+            title: "Curso de GitHub Actions",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Git", "GitHub", "Version Control"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 29
+          },
+          {
+            title: "Curso para Conseguir Trabajo como Frontend Developer",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Frontend Dev"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 30
+          },
+          {
+            title: "Curso para Conseguir Trabajo en Tecnología",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 31
+          },
           {
             title: "Curso Básico de Computadores e Informática",
             date: "Apr 2022",
             duration: "12h",
             skills: ["Computer Basics", "Hardware", "Operating Systems", "Fundamentals"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_01_computacion basica.png",
-            badge: badge_01,
-            score: "Aprobado",
-            stepNumber: 1
-          },
-          {
-            title: "Curso de Algoritmos y Diagramas de Flujo",
-            date: "Apr 2022",
-            duration: "12h",
-            skills: ["Algorithms", "Logic", "Problem Solving", "Flowcharts", "System Design"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_02_Algoritmos y Diagramas de flujo.png",
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso B\u00e1sico de Computadores e Inform\u00e1tica.pdf",
             badge: platziLogo,
             score: "Aprobado",
-            stepNumber: 2
-          },
-          {
-            title: "Curso de Manejo de Datos, Estructuras y Funciones en JavaScript",
-            date: "Apr 2022",
-            duration: "12h",
-            skills: ["Data Structures", "Data Management", "Arrays", "Functions", "JavaScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_03_Manejo de Datos, Estructuras y Funciones.png",
-            badge: platziLogo,
-            score: "Aprobado",
-            stepNumber: 3
-          },
-          {
-            title: "Curso de Pensamiento Lógico: Lenguajes de Programación",
-            date: "May 2022",
-            duration: "12h",
-            skills: ["Logic", "Programming Fundamentals"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_04_Pensamiento_Logico Lenguajes _de_Programación.png",
-            badge: badge_04,
-            score: "Aprobado",
-            stepNumber: 4
-          },
-          {
-            title: "Curso Gratis de Programación Básica",
-            date: "May 2022",
-            duration: "12h",
-            skills: ["Fundamentals"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_05_Programacion_Basica.png",
-            badge: badge_05,
-            score: "Aprobado",
-            stepNumber: 5
-          },
-          {
-            title: "Curso de Introducción a la Web: Historia y Funcionamiento de Internet",
-            date: "Jun 2022",
-            duration: "12h",
-            skills: ["Web Development", "HTTP/HTTPS", "DNS", "Web History"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_06_Historia_y_Funcionamiento_de_Internet.png",
-            badge: badge_06,
-            score: "Aprobado",
-            stepNumber: 6
-          },
-          {
-            title: "Curso de Fundamentos de Ingeniería de Software",
-            date: "Jun 2022",
-            duration: "12h",
-            skills: ["Software Engineering", "System Architecture"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_07_Fundamentos_de_Ingenieria_de_Software.png",
-            badge: badge_07,
-            score: "Aprobado",
-            stepNumber: 7
-          },
-          {
-            title: "Curso de Prework: Configuración de Entorno de Desarrollo en Windows",
-            date: "Jun 2022",
-            duration: "12h",
-            skills: ["Environment Setup", "Terminal"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_08_Curso_de_Prework.png",
-            badge: badge_08,
-            score: "Aprobado",
-            stepNumber: 8
-          },
-          {
-            title: "Curso de Configuración de Entorno en Linux",
-            date: "Jul 2022",
-            duration: "12h",
-            skills: ["Linux OS", "Shell Scripting"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_09_Curso de Prework en Linux.png",
-            badge: badge_09,
-            score: "Aprobado",
-            stepNumber: 9
-          },
-          {
-            title: "Curso de Configuración de Entorno de Desarrollo en macOS",
-            date: "Jul 2022",
-            duration: "12h",
-            skills: ["macOS", "CLI Tools"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_10_Curso de Prework en macOS.png",
-            badge: badge_10,
-            score: "Aprobado",
-            stepNumber: 10
-          },
-          {
-            title: "Curso de Introducción a la Web: Historia y Funcionamiento de Internet",
-            date: "Aug 2022",
-            duration: "12h",
-            skills: ["Web Development", "HTTP/HTTPS", "DNS", "Web History"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_11_Introduccion a la terminal y linea de comandos.png",
-            badge: badge_11,
-            score: "Aprobado",
-            stepNumber: 11
-          },
-          {
-            title: "Curso Profesional de Git y GitHub",
-            date: "Aug 2022",
-            duration: "12h",
-            skills: ["Git", "GitHub", "Version Control"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_12_Curso Profesional de Git y GitHub.png",
-            badge: badge_12,
-            score: "Aprobado",
-            stepNumber: 12
-          },
-          {
-            title: "Curso de Flujo de Desarrollo Moderno CodeStream",
-            date: "Aug 2022",
-            duration: "12h",
-            skills: ["Flowcharts", "System Design", "Collaboration Tools"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_13_Flujo_de_Desarrollo_Moderno_CodeStream.png",
-            badge: badge_13,
-            score: "Aprobado",
-            stepNumber: 13
-          },
-          {
-            title: "Curso de Frontend Developer",
-            date: "Sep 2022",
-            duration: "12h",
-            skills: ["Frontend Dev"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_14_Front_end_dev.png",
-            badge: badge_14,
-            score: "Aprobado",
-            stepNumber: 14
-          },
-          {
-            title: "Curso Práctico de Frontend Developer",
-            date: "Sep 2022",
-            duration: "12h",
-            skills: ["Frontend Dev"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_15_Practico-Front_end_dev.png",
-            badge: badge_15,
-            score: "Aprobado",
-            stepNumber: 15
-          },
-          {
-            title: "Curso Práctico de HTML y CSS",
-            date: "Oct 2022",
-            duration: "12h",
-            skills: ["HTML5", "CSS3"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_16_Curso Definitivo de HTML y CSS.png",
-            badge: badge_16,
-            score: "Aprobado",
-            stepNumber: 16
-          },
-          {
-            title: "Curso Práctico de HTML y CSS",
-            date: "Oct 2022",
-            duration: "12h",
-            skills: ["HTML5", "CSS3"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_17_Curso Práctico de HTML y CSS.png",
-            badge: badge_17,
-            score: "Aprobado",
-            stepNumber: 17
-          },
-          {
-            title: "Curso de Responsive Design: Maquetación Mobile First",
-            date: "Oct 2022",
-            duration: "12h",
-            skills: ["Responsive Design", "Mobile First"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_18_Responsive Design Maquetación Mobile First.png",
-            badge: badge_18,
-            score: "Aprobado",
-            stepNumber: 18
-          },
-          {
-            title: "Curso de Diseño para Developers",
-            date: "Nov 2022",
-            duration: "12h",
-            skills: ["UI/UX Design"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_19_Diseño-programadores.png",
-            badge: badge_19,
-            score: "Aprobado",
-            stepNumber: 19
-          },
-          {
-            title: "Curso de Diseño para Developers",
-            date: "Nov 2022",
-            duration: "12h",
-            skills: ["UI/UX Design"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_20_Sistemas de diseño.png",
-            badge: badge_20,
-            score: "Aprobado",
-            stepNumber: 20
-          },
-          {
-            title: "Curso de CSS Grid Básico",
-            date: "Dec 2022",
-            duration: "12h",
-            skills: ["Fundamentals", "CSS3", "CSS Grid"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_21_CSS Grid Básico.png",
-            badge: badge_21,
-            score: "Aprobado",
-            stepNumber: 21
-          },
-          {
-            title: "Curso Práctico de Maquetación en CSS",
-            date: "Dec 2022",
-            duration: "12h",
-            skills: ["CSS3"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_22_Curso Practico Maquetacion en CSS.png",
-            badge: badge_22,
-            score: "Aprobado",
-            stepNumber: 22
-          },
-          {
-            title: "Curso Profesional de CSS Grid Layout",
-            date: "Dec 2022",
-            duration: "12h",
-            skills: ["CSS3", "CSS Grid"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_23_Curso Profesional de CSS Grid Layout.png",
-            badge: badge_23,
-            score: "Aprobado",
-            stepNumber: 23
-          },
-          {
-            title: "Curso de Diseño Web con CSS Grid y Flexbox",
-            date: "Jan 2023",
-            duration: "12h",
-            skills: ["Web Development", "CSS3", "UI/UX Design", "CSS Grid", "CSS Flexbox"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_24_Diseño Web con CSS Grid y Flexbox.png",
-            badge: badge_24,
-            score: "Aprobado",
-            stepNumber: 24
-          },
-          {
-            title: "Curso de Transformaciones y Transiciones en CSS",
-            date: "Jan 2023",
-            duration: "12h",
-            skills: ["CSS3"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_25_Transformaciones y Transiciones en CSS.png",
-            badge: badge_25,
-            score: "Aprobado",
-            stepNumber: 25
-          },
-          {
-            title: "Curso de Animaciones con CSS",
-            date: "Feb 2023",
-            duration: "12h",
-            skills: ["CSS3", "CSS Animations"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_26_Curso de Animaciones con CSS.png",
-            badge: badge_26,
-            score: "Aprobado",
-            stepNumber: 26
-          },
-          {
-            title: "Curso Básico de JavaScript",
-            date: "Feb 2023",
-            duration: "12h",
-            skills: ["Fundamentals", "JavaScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_27_Curso basico de javascript.png",
-            badge: badge_27,
-            score: "Aprobado",
-            stepNumber: 27
-          },
-          {
-            title: "Curso Práctico de JavaScript",
-            date: "Feb 2023",
-            duration: "12h",
-            skills: ["JavaScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_28_Curso practico de javascript.png",
-            badge: badge_28,
-            score: "Aprobado",
-            stepNumber: 28
-          },
-          {
-            title: "Taller Práctico de JavaScript: Matemáticas y Estadística Básica",
-            date: "Mar 2023",
-            duration: "12h",
-            skills: ["Fundamentals", "JavaScript", "Math", "Statistics"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_29_Javascript Matematicas y estadistica.png",
-            badge: badge_29,
-            score: "Aprobado",
-            stepNumber: 29
-          },
-          {
-            title: "Curso de Closures y Scope en JavaScript",
-            date: "Mar 2023",
-            duration: "12h",
-            skills: ["JavaScript", "Scope", "Closures", "JS Engine"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_30_Curso de Closures y Scope en JavaScript.png",
-            badge: badge_30,
-            score: "Aprobado",
-            stepNumber: 30
-          },
-          {
-            title: "Curso de Closures y Scope en JavaScript",
-            date: "Apr 2023",
-            duration: "12h",
-            skills: ["JavaScript", "Scope", "Closures", "JS Engine"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_31_Curso de Closures y Scope en JavaScript.png",
-            badge: badge_31,
-            score: "Aprobado",
-            stepNumber: 31
-          },
-          {
-            title: "Curso de Programación Orientada a Objetos: POO",
-            date: "Apr 2023",
-            duration: "12h",
-            skills: ["OOP (Object Oriented)"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_32_Programación Orientada a Objetos - POO.png",
-            badge: badge_32,
-            score: "Aprobado",
+            completed: true,
             stepNumber: 32
           },
           {
-            title: "Curso de Programación Orientada a Objetos con JavaScript",
-            date: "Apr 2023",
+            title: "Curso de Pensamiento Lógico",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["JavaScript", "OOP (Object Oriented)"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_33_Programación Orientada a Objetos con JavaScript.png",
-            badge: badge_33,
-            score: "Aprobado",
+            skills: ["Logic", "Programming Fundamentals"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
             stepNumber: 33
           },
           {
-            title: "Curso de ECMAScript: Historia y Versiones de JavaScript",
-            date: "May 2023",
+            title: "Curso Gratis de Programación Básica 2022",
+            date: "Apr 2022",
             duration: "12h",
-            skills: ["JavaScript", "ES6+"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_35_Historia y Versiones de JavaScript.png",
-            badge: badge_35,
+            skills: ["Fundamentals"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Gratis de Programaci\u00f3n B\u00e1sica 2022.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 34
           },
           {
-            title: "Curso de Manipulación de Arrays en JavaScript",
-            date: "May 2023",
+            title: "Curso de Introducción a la Web: Historia y Funcionamiento de Internet",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["JavaScript", "Array Methods"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_36_Curso de Manipulación de Arrays en JavaScript.png",
-            badge: badge_36,
-            score: "Aprobado",
+            skills: ["Web Development", "HTTP/HTTPS", "DNS", "Web History"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
             stepNumber: 35
           },
           {
-            title: "Curso de JavaScript Engine (V8) y el Navegador",
-            date: "Jun 2023",
+            title: "Curso de Fundamentos de Ingeniería de Software",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["JavaScript", "V8 Engine"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_37_Curso de JavaScript Engine (V8) y el Navegador.png",
-            badge: badge_37,
-            score: "Aprobado",
+            skills: ["Software Engineering", "System Architecture"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
             stepNumber: 36
           },
           {
-            title: "Curso de Frameworks y Librerías de JavaScript",
-            date: "Jun 2023",
+            title: "Curso de Configuración de Entorno en Linux",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["JavaScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_38_Curso de Asincronismo con JavaScript.png",
-            badge: badge_38,
-            score: "Aprobado",
+            skills: ["Linux OS", "Shell Scripting"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
             stepNumber: 37
           },
           {
-            title: "Curso de API REST con Javascript: Fundamentos",
-            date: "Jun 2023",
+            title: "Curso de Configuración de Entorno de Desarrollo en Windows",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["JavaScript", "APIs", "REST APIs", "Fetch API"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_39_Consumo de API REST con JavaScript.png",
-            badge: badge_39,
-            score: "Aprobado",
+            skills: ["Web Technologies", "Platzi Course"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
             stepNumber: 38
           },
           {
-            title: "Curso de API REST con Javascript: Fundamentos",
-            date: "Jul 2023",
+            title: "Curso de Configuración de Entorno de Desarrollo en macOS",
+            date: "May 2022",
             duration: "12h",
-            skills: ["JavaScript", "APIs", "REST APIs", "Fetch API"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_40_Curso Práctico de Consumo de API REST con JavaScript.png",
-            badge: badge_40,
+            skills: ["macOS", "CLI Tools"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Configuraci\u00f3n de Entorno de Desarrollo en macOS.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 39
           },
           {
-            title: "Curso de API REST con Javascript: Fundamentos",
-            date: "Jul 2023",
+            title: "Curso de Flujo de Desarrollo Moderno CodeStream",
+            date: "May 2022",
             duration: "12h",
-            skills: ["JavaScript", "APIs", "REST APIs", "Fetch API"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_41_Curso Profesional de Consumo de API REST con JavaScript.png",
-            badge: badge_41,
+            skills: ["Flowcharts", "System Design", "Collaboration Tools"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Flujo de Desarrollo Moderno CodeStream.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 40
           },
           {
-            title: "Curso de NPM: Gestión de Paquetes y Dependencias en JavaScript",
-            date: "Aug 2023",
+            title: "Curso de Frontend Developer",
+            date: "Jun 2022",
             duration: "12h",
-            skills: ["JavaScript", "NPM", "Package Managers"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_42_Curso de NPM_Gestión de Paquetes y Dependencias en JavaScript.png",
-            badge: badge_42,
+            skills: ["Frontend Dev"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Frontend Developer.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 41
           },
           {
-            title: "Curso de Fundamentos de TypeScript",
-            date: "Aug 2023",
+            title: "Curso Práctico de Frontend Developer",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["TypeScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_43_Curso de Fundamentos de TypeScript.png",
+            skills: ["Frontend Dev"],
+            credentialUrl: null,
             badge: platziLogo,
-            score: "Aprobado",
+            score: "Por iniciar",
+            completed: false,
             stepNumber: 42
           },
           {
-            title: "Curso de TypeScript: Tipos Avanzados y Funciones",
-            date: "Aug 2023",
+            title: "Curso Práctico de HTML y CSS",
+            date: "Jun 2022",
             duration: "12h",
-            skills: ["Functions", "TypeScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_44_TypeScript  Tipos Avanzados y Funciones.png",
-            badge: badge_44,
+            skills: ["HTML5", "CSS3"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Pr\u00e1ctico de HTML y CSS.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 43
           },
           {
-            title: "Curso de TypeScript: Programación Orientada a Objetos y Asincronismo",
-            date: "Sep 2023",
+            title: "Curso de Responsive Design: Maquetación Mobile First",
+            date: "Jul 2022",
             duration: "12h",
-            skills: ["OOP (Object Oriented)", "Asynchronous JS", "Promises", "TypeScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_45_Typescript Programacion Orientada a Objetos y Asincronismo.png",
-            badge: badge_45,
+            skills: ["Responsive Design", "Mobile First"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Responsive Design Maquetaci\u00f3n Mobile First.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 44
           },
           {
-            title: "Curso de Introducción a Empaquetadores Web",
-            date: "Sep 2023",
+            title: "Curso de Diseño para Developers",
+            date: "Aug 2022",
             duration: "12h",
-            skills: ["Web Development", "Web Bundlers"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_46_Introducción a Empaquetadores Web.png",
-            badge: badge_46,
+            skills: ["UI/UX Design"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Dise\u00f1o para Developers.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 45
           },
           {
-            title: "Curso de Webpack",
-            date: "Oct 2023",
+            title: "Curso de Fundamentos de Design Systems",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["Web Development", "Webpack"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_47_Webpack.png",
-            badge: badge_47,
-            score: "Aprobado",
+            skills: ["Design Systems"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
             stepNumber: 46
           },
           {
-            title: "Curso de Vite.js",
-            date: "Oct 2023",
+            title: "Curso de CSS Grid Básico",
+            date: "Aug 2022",
             duration: "12h",
-            skills: ["JavaScript", "ViteJS"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_48_ViteJS.png",
-            badge: badge_48,
+            skills: ["Fundamentals", "CSS3", "CSS Grid"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de CSS Grid B\u00e1sico.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 47
           },
           {
-            title: "Curso de Single Page Application con JavaScript Vanilla",
-            date: "Oct 2023",
+            title: "Curso Práctico de Maquetación en CSS",
+            date: "Sep 2022",
             duration: "12h",
-            skills: ["JavaScript", "SPA Architecture"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_49_Curso de Single Page Application con JavaScript Vanilla.png",
-            badge: badge_49,
+            skills: ["CSS3"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Pr\u00e1ctico de Maquetaci\u00f3n en CSS.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 48
           },
           {
-            title: "Curso Práctico de Maquetación y Animaciones con CSS",
-            date: "Nov 2023",
+            title: "Curso Profesional de CSS Grid Layout",
+            date: "Sep 2022",
             duration: "12h",
-            skills: ["CSS3", "CSS Animations"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_50_Curso Práctico de Maquetación y Animaciones con CSS.png",
-            badge: badge_50,
+            skills: ["CSS3", "CSS Grid"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Profesional de CSS Grid Layout.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 49
           },
           {
-            title: "Curso de Debugging con Chrome DevTools",
-            date: "Nov 2023",
+            title: "Curso de Diseño Web con CSS Grid y Flexbox",
+            date: "Oct 2022",
             duration: "12h",
-            skills: ["Debugging", "Chrome DevTools"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_51_Curso de Debugging con Chrome DevTools.png",
-            badge: badge_51,
+            skills: ["Web Development", "CSS3", "UI/UX Design", "CSS Grid"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Dise\u00f1o Web con CSS Grid y Flexbox.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 50
           },
           {
-            title: "Curso de Manipulación del DOM",
-            date: "Dec 2023",
+            title: "Curso de Transformaciones y Transiciones en CSS",
+            date: "Oct 2022",
             duration: "12h",
-            skills: ["DOM Manipulation"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_52_Curso de Manipulación del DOM.png",
-            badge: badge_52,
+            skills: ["CSS3"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Transformaciones y Transiciones en CSS.pdf",
+            badge: platziLogo,
             score: "Aprobado",
+            completed: true,
             stepNumber: 51
           },
           {
+            title: "Curso de Animaciones con CSS",
+            date: "Nov 2022",
+            duration: "12h",
+            skills: ["CSS3", "CSS Animations"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Animaciones con CSS.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 52
+          },
+          {
+            title: "Taller Práctico de JavaScript: Matemáticas y Estadística Básica",
+            date: "Dec 2022",
+            duration: "12h",
+            skills: ["Fundamentals", "JavaScript", "Math", "Statistics"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Taller Pr\u00e1ctico de JavaScript Matem\u00e1ticas y Estad\u00edstica B\u00e1sica.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 53
+          },
+          {
+            title: "Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!",
+            date: "Dec 2022",
+            duration: "12h",
+            skills: ["JavaScript"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Taller Pr\u00e1ctico de JavaScript \u00a1Crea tu Primer Videojuego!.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 54
+          },
+          {
+            title: "Curso de Closures y Scope en JavaScript",
+            date: "Jan 2023",
+            duration: "12h",
+            skills: ["JavaScript", "Scope", "Closures", "JS Engine"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Closures y Scope en JavaScript.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 55
+          },
+          {
+            title: "Curso Básico de Programación Orientada a Objetos con JavaScript",
+            date: "Jan 2023",
+            duration: "12h",
+            skills: ["Fundamentals", "JavaScript", "OOP (Object Oriented)"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso B\u00e1sico de Programaci\u00f3n Orientada a Objetos con JavaScript.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 56
+          },
+          {
+            title: "Curso Intermedio de Programación Orientada a Objetos en JavaScript",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "OOP (Object Oriented)"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 57
+          },
+          {
+            title: "Curso de ECMAScript: Historia y Versiones de JavaScript",
+            date: "Feb 2023",
+            duration: "12h",
+            skills: ["JavaScript", "ES6+"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de ECMAScript Historia y Versiones de JavaScript.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 58
+          },
+          {
+            title: "Curso de Manipulación de Arrays en JavaScript",
+            date: "Mar 2023",
+            duration: "12h",
+            skills: ["JavaScript", "Array Methods"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Manipulaci\u00f3n de Arrays en JavaScript.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 59
+          },
+          {
+            title: "Curso de JavaScript Engine (V8) y el Navegador",
+            date: "Mar 2023",
+            duration: "12h",
+            skills: ["JavaScript", "V8 Engine"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de JavaScript Engine (V8) y el Navegador.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 60
+          },
+          {
+            title: "Curso de API REST con Javascript: Fundamentos",
+            date: "Apr 2023",
+            duration: "12h",
+            skills: ["JavaScript", "APIs", "REST APIs", "Fetch API"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de API REST con Javascript Fundamentos.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 61
+          },
+          {
+            title: "Curso de API REST con Javascript: Ejemplos con APIs reales",
+            date: "Apr 2023",
+            duration: "12h",
+            skills: ["JavaScript", "APIs", "REST APIs", "Fetch API"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de API REST con Javascript Ejemplos con APIs reales.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 62
+          },
+          {
+            title: "Curso de API REST con Javascript: Performance y Usabilidad",
+            date: "May 2023",
+            duration: "12h",
+            skills: ["JavaScript", "APIs", "REST APIs", "Fetch API"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de API REST con Javascript Performance y Usabilidad.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 63
+          },
+          {
+            title: "Curso de NPM: Gestión de Paquetes y Dependencias en JavaScript",
+            date: "May 2023",
+            duration: "12h",
+            skills: ["JavaScript", "NPM", "Package Managers"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de NPM Gesti\u00f3n de Paquetes y Dependencias en JavaScript.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 64
+          },
+          {
+            title: "Curso de TypeScript: Tipos Avanzados y Funciones",
+            date: "Jun 2023",
+            duration: "12h",
+            skills: ["Functions", "TypeScript"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de TypeScript Tipos Avanzados y Funciones.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 65
+          },
+          {
+            title: "Curso de TypeScript: Programación Orientada a Objetos y Asincronismo",
+            date: "Jul 2023",
+            duration: "12h",
+            skills: ["OOP (Object Oriented)", "Asynchronous JS", "Promises", "TypeScript"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de TypeScript Programaci\u00f3n Orientada a Objetos y Asincronismo.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 66
+          },
+          {
+            title: "Curso de Introducción a Empaquetadores Web",
+            date: "Jul 2023",
+            duration: "12h",
+            skills: ["Web Development", "Web Bundlers"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Introducci\u00f3n a Empaquetadores Web.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 67
+          },
+          {
+            title: "Curso de Webpack",
+            date: "Aug 2023",
+            duration: "12h",
+            skills: ["Web Development", "Webpack"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Webpack.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 68
+          },
+          {
+            title: "Curso de Vite.js",
+            date: "Aug 2023",
+            duration: "12h",
+            skills: ["JavaScript", "ViteJS"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Vite.js.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 69
+          },
+          {
+            title: "Curso de Single Page Application con JavaScript Vanilla",
+            date: "Sep 2023",
+            duration: "12h",
+            skills: ["JavaScript", "SPA Architecture"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Single Page Application con JavaScript Vanilla.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 70
+          },
+          {
+            title: "Curso Práctico de Maquetación y Animaciones con CSS",
+            date: "Sep 2023",
+            duration: "12h",
+            skills: ["CSS3", "CSS Animations"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Pr\u00e1ctico de Maquetaci\u00f3n y Animaciones con CSS.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 71
+          },
+          {
+            title: "Curso de Debugging con Chrome DevTools",
+            date: "Oct 2023",
+            duration: "12h",
+            skills: ["Debugging", "Chrome DevTools"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Debugging con Chrome DevTools.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 72
+          },
+          {
+            title: "Curso de Manipulación del DOM",
+            date: "Nov 2023",
+            duration: "12h",
+            skills: ["DOM Manipulation"],
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Manipulaci\u00f3n del DOM.pdf",
+            badge: platziLogo,
+            score: "Aprobado",
+            completed: true,
+            stepNumber: 73
+          },
+          {
             title: "Curso de Optimización Web",
-            date: "Dec 2023",
+            date: "Nov 2023",
             duration: "12h",
             skills: ["Web Development", "Web Performance"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_53_Curso de Optimización Web.png",
-            badge: badge_53,
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Optimizaci\u00f3n Web.pdf",
+            badge: platziLogo,
             score: "Aprobado",
-            stepNumber: 52
+            completed: true,
+            stepNumber: 74
           },
           {
             title: "Audiocurso de Accesibilidad Web: Casos de Estudio",
             date: "Dec 2023",
             duration: "6h",
             skills: ["Web Development", "Web Accessibility", "WCAG"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_54_Audiocurso de Accesibilidad Web.png",
-            badge: badge_54,
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Audiocurso de Accesibilidad Web Casos de Estudio.pdf",
+            badge: platziLogo,
             score: "Aprobado",
-            stepNumber: 53
+            completed: true,
+            stepNumber: 75
           },
           {
             title: "Curso de Accesibilidad Web",
-            date: "Jan 2024",
+            date: "Dec 2023",
             duration: "12h",
             skills: ["Web Development", "Web Accessibility", "WCAG"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_55_Curso de Accesibilidad Web.png",
-            badge: badge_55,
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Accesibilidad Web.pdf",
+            badge: platziLogo,
             score: "Aprobado",
-            stepNumber: 54
+            completed: true,
+            stepNumber: 76
           },
           {
             title: "Curso de JavaScript: Web Components",
             date: "Jan 2024",
             duration: "12h",
             skills: ["Web Development", "JavaScript", "Web Components"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_56_Curso Básico de Web Components con JavaScript.png",
-            badge: badge_56,
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de JavaScript Web Components.pdf",
+            badge: platziLogo,
             score: "Aprobado",
-            stepNumber: 55
+            completed: true,
+            stepNumber: 77
           },
           {
             title: "Curso de Estructuras de Datos con JavaScript",
             date: "Feb 2024",
             duration: "12h",
             skills: ["Data Structures", "Data Management", "Arrays", "JavaScript"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZPLATZI_57_Eestructuras-de-datos.png",
-            badge: badge_57,
-            score: "Aprobado",
-            stepNumber: 56
-          },
-          {
-            title: "Curso de Introducción a C#",
-            date: "Feb 2024",
-            duration: "12h",
-            skills: ["C# .NET"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZXPLATZI_01_Introduccion a C#.png",
+            credentialUrl: "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Estructuras de Datos con JavaScript.pdf",
             badge: platziLogo,
             score: "Aprobado",
-            stepNumber: 57
+            completed: true,
+            stepNumber: 78
           },
           {
-            title: "Curso de Fundamentos de C#",
-            date: "Mar 2024",
+            title: "Curso de Complejidad Algorítmica con JavaScript",
+            date: "Pendiente",
             duration: "12h",
-            skills: ["C# .NET"],
-            credentialUrl: "/CURSOS/PLATZI/PLATZI/ZXPLATZI_02_Fundamientos Variables y operadores C#.png",
+            skills: ["JavaScript"],
+            credentialUrl: null,
             badge: platziLogo,
-            score: "Aprobado",
-            stepNumber: 58
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 79
+          },
+          {
+            title: "Curso de Fundamentos de Pruebas de Software",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Engineering", "System Architecture", "Software Testing", "QA"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 80
+          },
+          {
+            title: "Curso de Introducción al Testing con JavaScript",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Software Testing", "QA"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 81
+          },
+          {
+            title: "Curso de Introducción a la Automatización de Pruebas",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 82
+          },
+          {
+            title: "Curso de Automatización de Pruebas UI con Cypress",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA", "Cypress"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 83
+          },
+          {
+            title: "Curso de Automatización de Pruebas con Puppeteer",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA", "Puppeteer"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 84
+          },
+          {
+            title: "Curso Avanzado de Automatización de Pruebas con Puppeteer",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA", "Puppeteer"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 85
+          },
+          {
+            title: "Curso de SQL y MySQL 2018",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["SQL", "Relational Databases"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 86
+          },
+          {
+            title: "Curso Práctico de SQL",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["SQL", "Relational Databases"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 87
+          },
+          {
+            title: "Curso de Backend con Node.js: Base de Datos con PostgreSQL",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Data Structures", "Data Management", "JavaScript", "SQL"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 88
+          },
+          {
+            title: "Curso de Backend con Node.js: Autenticación con Passport.js y JWT",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Authentication", "JWT", "Security"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 89
+          },
+          {
+            title: "Curso de Aplicaciones en Tiempo Real con Socket.io",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Socket.io"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 90
+          },
+          {
+            title: "Curso de Webpack con Express.js, React.js y TypeScript",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Development", "JavaScript", "TypeScript", "Webpack"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 91
+          },
+          {
+            title: "Curso Práctico de GraphQL con JavaScript",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "GraphQL"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 92
+          },
+          {
+            title: "Curso de Supabase",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Supabase"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 93
+          },
+          {
+            title: "Curso Avanzado de Node.js con GraphQL, Apollo Server y Prisma",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "GraphQL"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 94
+          },
+          {
+            title: "Curso de Automatización de Pruebas de Backend con Cypress",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Testing", "QA", "Cypress"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 95
+          },
+          {
+            title: "Curso de Fundamentos de Arquitectura de Software",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Engineering", "System Architecture"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 96
+          },
+          {
+            title: "Curso Profesional de Arquitectura de Software",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Software Engineering", "System Architecture"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 97
+          },
+          {
+            title: "Curso de Backend con NestJS",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "NestJS"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 98
+          },
+          {
+            title: "Curso de NestJS: Programación Modular, Documentación con Swagger y Deploy",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "NestJS"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 99
+          },
+          {
+            title: "Curso de NestJS: Persistencia de Datos con MongoDB",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Data Structures", "Data Management", "JavaScript", "NestJS"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 100
+          },
+          {
+            title: "Curso de NestJS: Persistencia de Datos con TypeORM",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Data Structures", "Data Management", "JavaScript", "NestJS"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 101
+          },
+          {
+            title: "Curso de NestJS: Autenticación con Passport y JWT",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Authentication", "JWT", "Security"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 102
+          },
+          {
+            title: "Curso de Next.js con GraphQL",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "GraphQL", "Next.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 103
+          },
+          {
+            title: "Curso de Next.js: Sitios Estáticos y Jamstack",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Next.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 104
+          },
+          {
+            title: "Curso de Next.js: Optimización y Deploy a Producción",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Web Performance", "Next.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 105
+          },
+          {
+            title: "Curso de Next.js: Internacionalización de Aplicaciones Web con i18n",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Development", "JavaScript", "Next.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 106
+          },
+          {
+            title: "Curso de Next.js: Optimización y Manejo de Grandes Datasets",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Web Performance", "Next.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 107
+          },
+          {
+            title: "Curso de Next.js: Autenticación",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["JavaScript", "Authentication", "JWT", "Security"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 108
+          },
+          {
+            title: "Curso de Next.js: Seguridad Web con OWASP",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Web Development", "JavaScript", "Next.js"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 109
+          },
+          {
+            title: "Curso Gratis de Programación Básica",
+            date: "Pendiente",
+            duration: "12h",
+            skills: ["Fundamentals"],
+            credentialUrl: null,
+            badge: platziLogo,
+            score: "Por iniciar",
+            completed: false,
+            stepNumber: 110
           }
         ]
       }
@@ -900,118 +1537,166 @@ export const CERTIFICATES_DATA = {
     glowColor: "rgba(0, 119, 181, 0.25)",
     borderColor: "rgba(0, 119, 181, 0.2)",
     description: {
-      es: "Cursos enfocados en habilidades de liderazgo, gestión ágil de proyectos, comunicación efectiva y soft skills profesionales.",
-      en: "Courses focused on leadership skills, agile project management, effective communication, and professional soft skills."
+      es: "Especialización en desarrollo de software frontend (React, Angular, TypeScript) y metodologías ágiles/productivas de LinkedIn Learning.",
+      en: "Specialization in frontend software development (React, Angular, TypeScript) and agile/productivity methodologies from LinkedIn Learning."
     },
     stats: {
-      coursesCount: 10,
+      coursesCount: 15,
       completedPercentage: "100%",
-      hoursCount: "64h"
+      hoursCount: {
+        es: "46.5 horas",
+        en: "46.5 hours"
+      }
     },
     paths: [
       {
-        id: "liderazgo",
+        id: "frontend-linkedin",
         title: {
-          es: "Liderazgo & Gestión",
-          en: "Leadership & Management"
+          es: "Desarrollo Frontend",
+          en: "Frontend Development"
         },
         courses: [
           {
-            title: "Liderazgo de Equipos de Alto Rendimiento",
-            date: "Jun 2024",
-            duration: "8h",
-            skills: ["Leadership", "Team Motivation", "Conflict Resolution", "KPIs"],
-            credentialUrl: "https://linkedin.com/learning",
-            score: "Aprobado",
+            title: "Conviértete en desarrollador web front-end",
+            date: "Feb 2023",
+            duration: "40h 41m",
+            skills: ["Frontend Development", "HTML5", "CSS3", "JavaScript", "Responsive Design", "Web Performance"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/00 Prograoamc ompletado Daesarrollador web front-end Linkedin.png",
+            score: "Graduado",
             highlight: true
           },
           {
-            title: "Metodologías Ágiles en el Desarrollo de Software",
-            date: "Jul 2024",
-            duration: "10h",
-            skills: ["Agile Development", "Scrum Framework", "Sprint Planning", "Product Backlog"],
-            credentialUrl: "https://linkedin.com/learning",
-            score: "Aprobado",
-            highlight: true
-          },
-          {
-            title: "Negociación y Resolución de Conflictos",
-            date: "Aug 2024",
-            duration: "6h",
-            skills: ["Negotiation", "Problem Solving", "Conflict Mitigation", "Active Listening"],
-            credentialUrl: "https://linkedin.com/learning",
+            title: "HTML esencial",
+            date: "Feb 2023",
+            duration: "4h 29m",
+            skills: ["HTML5", "Web Semantics", "SEO Basics"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 01 - Linkedin - Html Avanzado.png",
             score: "Aprobado",
             highlight: false
           },
           {
-            title: "Gestión de Proyectos Tecnológicos",
-            date: "Sep 2024",
-            duration: "12h",
-            skills: ["Project Management", "Risk Assessment", "Resource Allocation", "Roadmapping"],
-            credentialUrl: "https://linkedin.com/learning",
+            title: "HTML avanzado",
+            date: "Feb 2023",
+            duration: "3h 44m",
+            skills: ["HTML5", "Forms", "Media Integration"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 02 Linkedin - Html Avanzado.png",
             score: "Aprobado",
             highlight: false
           },
           {
-            title: "Comunicación Asertiva en Equipos Remotos",
-            date: "May 2024",
-            duration: "5h",
-            skills: ["Remote Communication", "Empathy", "Asynchronous Tools", "Feedback Loops"],
-            credentialUrl: "https://linkedin.com/learning",
+            title: "Aprende semántica web",
+            date: "Feb 2023",
+            duration: "56m",
+            skills: ["HTML5 Semantics", "Web Accessibility", "SEO"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 03 Linkedin - Semantica HTML.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "CSS esencial",
+            date: "Feb 2023",
+            duration: "2h 39m",
+            skills: ["CSS3", "Selectors", "Layouts", "Flexbox"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 04 Linkedin - CSS Essencial.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "CSS avanzado",
+            date: "Feb 2023",
+            duration: "2h 3m",
+            skills: ["CSS Grid", "CSS Transitions", "Advanced Layouts"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 05 Linkedin - CSS Avanzado.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "JavaScript esencial",
+            date: "Feb 2023",
+            duration: "5h 27m",
+            skills: ["JavaScript ES6+", "DOM Manipulation", "Async Programming"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 06 Linkedin - JavaScript esencial.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "CSS con SASS esencial",
+            date: "Feb 2023",
+            duration: "2h 11m",
+            skills: ["Sass", "CSS Preprocessors", "Nesting", "Variables"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 07 Linkedin - SASS esencial.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Angular esencial",
+            date: "Feb 2023",
+            duration: "4h 14m",
+            skills: ["Angular", "TypeScript", "SPA", "Components"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 08 Linkedin - ANGULAR esencial.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "React esencial",
+            date: "Feb 2023",
+            duration: "2h 48m",
+            skills: ["React JS", "Hooks", "Components", "JSX"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 09 Linkedin - REACT esencial.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "TypeScript esencial",
+            date: "Feb 2023",
+            duration: "2h 21m",
+            skills: ["TypeScript", "Static Typing", "Interfaces", "Classes"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 10 Linkedin - TYPESCRIPT esencial.png",
             score: "Aprobado",
             highlight: false
           }
         ]
       },
       {
-        id: "habilidades",
+        id: "metodologias-linkedin",
         title: {
-          es: "Habilidades Profesionales",
-          en: "Professional Skills"
+          es: "Productividad & Ágil",
+          en: "Productivity & Agile"
         },
         courses: [
           {
-            title: "Fundamentos de la Gestión del Tiempo",
-            date: "Jan 2024",
-            duration: "4h",
-            skills: ["Time Management", "Productivity", "Prioritization", "Deep Work"],
-            credentialUrl: "https://linkedin.com/learning",
+            title: "Aprende SCRUM",
+            date: "Feb 2023",
+            duration: "1h 32m",
+            skills: ["Scrum Framework", "Agile Methodologies", "Sprint Planning"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 11 Linkedin - Aprende Scrum.png",
             score: "Aprobado",
             highlight: false
           },
           {
-            title: "Pensamiento Crítico y Toma de Decisiones",
-            date: "Feb 2024",
-            duration: "6h",
-            skills: ["Critical Thinking", "Decision Making", "Analytical Skills", "Cognitive Bias"],
-            credentialUrl: "https://linkedin.com/learning",
-            score: "Aprobado",
-            highlight: true
-          },
-          {
-            title: "Scrum Avanzado: Roles y Ceremonias",
-            date: "Apr 2024",
-            duration: "8h",
-            skills: ["Scrum Master", "Agile Retrospectives", "Metrics & Velocity", "Scale Scrum"],
-            credentialUrl: "https://linkedin.com/learning",
-            score: "Aprobado",
-            highlight: true
-          },
-          {
-            title: "Inteligencia Emocional en el Trabajo",
-            date: "Mar 2024",
-            duration: "5h",
-            skills: ["Emotional Intelligence", "Self-Awareness", "Social Skills", "Stress Management"],
-            credentialUrl: "https://linkedin.com/learning",
+            title: "SCRUM: Roles",
+            date: "Feb 2023",
+            duration: "1h 30m",
+            skills: ["Scrum Master", "Product Owner", "Development Team"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 12 Linkedin - Scrum Roles.png",
             score: "Aprobado",
             highlight: false
           },
           {
-            title: "Innovación y Resolución Creativa de Problemas",
-            date: "May 2024",
-            duration: "7h",
-            skills: ["Creativity", "Design Thinking", "Brainstorming", "Ideation Models"],
-            credentialUrl: "https://linkedin.com/learning",
+            title: "Getting Things Done. Organízate con eficacia",
+            date: "Feb 2023",
+            duration: "1h 32m",
+            skills: ["Time Management", "Productivity Systems", "GTD Methodology"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 13 Linkedin - Getting Things Done Organízate con eficacia.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Fundamentos del teletrabajo",
+            date: "Feb 2023",
+            duration: "1h 21m",
+            skills: ["Remote Collaboration", "Communication Tools", "Productivity"],
+            credentialUrl: "/CURSOS/LINKEDIN-LEARNING/ZZ 14 Linkedin - Fundamentos del teletrabajo.png",
             score: "Aprobado",
             highlight: false
           }
@@ -1031,114 +1716,36 @@ export const CERTIFICATES_DATA = {
       en: "Structured, project-based intensive curriculum featuring coding challenges and official developer certifications."
     },
     stats: {
-      coursesCount: 10,
+      coursesCount: 2,
       completedPercentage: "100%",
-      hoursCount: "3000h"
+      hoursCount: {
+        es: "600 horas",
+        en: "600 hours"
+      }
     },
     paths: [
       {
-        id: "webdev",
+        id: "fcc-certificados",
         title: {
-          es: "Desarrollo Web & Algoritmos",
-          en: "Web Development & Algorithms"
+          es: "Certificaciones Oficiales",
+          en: "Official Certifications"
         },
         courses: [
           {
-            title: "Responsive Web Design Certification",
-            date: "Jul 2022",
+            title: "Responsive Web Design",
+            date: "Jan 2022",
             duration: "300h",
             skills: ["HTML5", "CSS3 Flexbox/Grid", "Responsive Layouts", "Web Accessibility (a11y)"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            credentialUrl: "/CURSOS/FREE CODECAMP/FreeCodeCamp - Certificado Responsive Web Design.png",
             score: "Certificado",
             highlight: true
           },
           {
             title: "JavaScript Algorithms and Data Structures",
-            date: "Nov 2022",
+            date: "Mar 2022",
             duration: "300h",
             skills: ["JavaScript ES6", "Algorithms", "Data Structures", "OOP", "Functional Programming"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: true
-          },
-          {
-            title: "Front End Development Libraries",
-            date: "Feb 2023",
-            duration: "300h",
-            skills: ["Bootstrap", "jQuery", "Sass", "React", "Redux"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: true
-          },
-          {
-            title: "Back End Development and APIs",
-            date: "Jun 2023",
-            duration: "300h",
-            skills: ["Node.js", "Express.js", "MongoDB & Mongoose", "Security & Middlewares", "API Testing"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: true
-          },
-          {
-            title: "Relational Database Certification",
-            date: "Sep 2023",
-            duration: "300h",
-            skills: ["PostgreSQL", "SQL Schema Design", "Bash Scripting", "Git", "Command Line"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: false
-          }
-        ]
-      },
-      {
-        id: "data",
-        title: {
-          es: "Análisis de Datos & Ciencia de Datos",
-          en: "Data Analysis & Data Science"
-        },
-        courses: [
-          {
-            title: "Data Analysis with Python Certification",
-            date: "Nov 2023",
-            duration: "300h",
-            skills: ["Python", "Numpy & Pandas", "Data Visualization", "Matplotlib & Seaborn"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: true
-          },
-          {
-            title: "Scientific Computing with Python",
-            date: "Oct 2023",
-            duration: "300h",
-            skills: ["Python Variables", "Loops & Logic", "Data Analysis", "Mathematical Computation"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: false
-          },
-          {
-            title: "Quality Assurance Certification",
-            date: "Jan 2024",
-            duration: "300h",
-            skills: ["Testing with Chai", "Unit & Integration Tests", "Advanced Express", "HelmetJS (Security)"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: false
-          },
-          {
-            title: "Information Security Certification",
-            date: "Feb 2024",
-            duration: "300h",
-            skills: ["OWASP Top 10", "SQL Injection Prevention", "BCrypt Hashing", "CORS policies"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
-            score: "Certificado",
-            highlight: false
-          },
-          {
-            title: "Machine Learning with Python",
-            date: "Mar 2024",
-            duration: "300h",
-            skills: ["TensorFlow", "Neural Networks", "Natural Language Processing (NLP)", "Reinforcement Learning"],
-            credentialUrl: "https://www.freecodecamp.org/certification/fcc-username",
+            credentialUrl: "/CURSOS/FREE CODECAMP/FreeCodeCamp - JavaScript Algorithms and Data Structures.png",
             score: "Certificado",
             highlight: true
           }
@@ -1158,115 +1765,239 @@ export const CERTIFICATES_DATA = {
       en: "Practical courses focused on software development specializations, programming languages, libraries, and specific tools."
     },
     stats: {
-      coursesCount: 15,
+      coursesCount: 18,
       completedPercentage: "100%",
-      hoursCount: "220h"
+      hoursCount: {
+        es: "346.5 horas",
+        en: "346.5 hours"
+      }
     },
     paths: [
       {
-        id: "webdev",
+        id: "frontend-web-udemy",
         title: {
-          es: "Desarrollo Web",
-          en: "Web Development"
+          es: "Desarrollo Frontend & Web",
+          en: "Frontend & Web Development"
         },
         courses: [
           {
-            title: "React - La Guía Completa: Hooks, Redux y Next.js",
-            date: "Oct 2023",
-            duration: "45h",
-            skills: ["ReactJS", "Hooks", "Redux Toolkit", "Next.js App Router", "Tailwind CSS"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "Universidad Angular - De Cero a Experto en Angular!",
+            date: "Mar 2024",
+            duration: "43h",
+            skills: ["Angular", "TypeScript", "RxJS", "Components", "Directives"],
+            credentialUrl: "/CURSOS/UDEMY/Universidad_angular de cero a experto.jpg",
             score: "100%",
             highlight: true
           },
           {
-            title: "Node: De Cero a Experto (Express, Sockets, MongoDB)",
-            date: "Nov 2023",
-            duration: "32h",
-            skills: ["Node.js", "Express.js", "MongoDB", "Websockets (Socket.io)", "JWT Authentication"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "React - La Guía Completa: Hooks Context Redux MERN +15 Apps",
+            date: "Aug 2022",
+            duration: "67.5h",
+            skills: ["React JS", "Hooks", "Context API", "Redux", "MERN Stack"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - React - La Guía Completa _ Hooks Context Redux MERN.png",
             score: "100%",
             highlight: true
           },
           {
-            title: "JavaScript Moderno: Guía para Dominar el Lenguaje",
-            date: "Aug 2023",
-            duration: "28h",
-            skills: ["ES6+", "Async-Await", "Callbacks", "Webpack", "Prototypes & OOP"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "React Desde Cero",
+            date: "Apr 2022",
+            duration: "38.5h",
+            skills: ["React JS", "Hooks", "Components", "JSX"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - React desde Cero.png",
             score: "100%",
             highlight: false
           },
           {
-            title: "CSS y Maquetación Web: Flexbox, Grid y Animaciones",
-            date: "Jul 2023",
-            duration: "20h",
-            skills: ["CSS Grid", "Flexbox", "Keyframes", "Responsive layouts", "Sass"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "JavaScript Moderno Guía Definitiva Construye +15 Proyectos",
+            date: "Mar 2022",
+            duration: "46.5h",
+            skills: ["JavaScript ES6+", "DOM", "Events", "OOP", "Async Programming"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - JavaScript Moderno.png",
+            score: "100%",
+            highlight: true
+          },
+          {
+            title: "JavaScript for Beginners - The Complete introduction to JS",
+            date: "Mar 2022",
+            duration: "4h",
+            skills: ["JavaScript Basics", "Variables", "Functions", "Logic"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - JavaScript Begginers.png",
             score: "100%",
             highlight: false
           },
           {
-            title: "Git y GitHub: Control de Versiones desde Cero",
-            date: "Jun 2023",
-            duration: "12h",
-            skills: ["Git Branches", "Merges & Rebase", "Pull Requests", "GitHub Workflows"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "Bootstrap 5 y SASS - La Guía Práctica - Crea 10 Sitios Web",
+            date: "Feb 2022",
+            duration: "12.5h",
+            skills: ["Sass", "Bootstrap 5", "Web Layouts", "Responsive Design"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Certificado SASS y Boostrap 5 Intensivo.png",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "Bootstrap 4 Ultimate Course",
+            date: "Jun 2022",
+            duration: "5.5h",
+            skills: ["Bootstrap 4", "CSS Frameworks", "Responsive Design"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Boostrap4 Ultimate Course.png",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "CSS3 and Bootstrap for Absolute Beginners : 4 courses in 1",
+            date: "Feb 2022",
+            duration: "3h",
+            skills: ["CSS3", "Bootstrap", "Web Design Basics"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Certificado CSS3 - Bootstrap 01.png",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "Aprende CSS Completo 2021",
+            date: "Feb 2022",
+            duration: "7.5h",
+            skills: ["CSS3", "Box Model", "Flexbox", "Selectors"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Certificado CSS Completo.png",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "HTML with CSS and JavaScript",
+            date: "Mar 2022",
+            duration: "2.5h",
+            skills: ["HTML5", "CSS3", "JavaScript Intro"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - .png",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "Practical HTML5 Mastery Course",
+            date: "Feb 2022",
+            duration: "2.5h",
+            skills: ["HTML5", "Web Layouts", "Tags & Elements"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Certificado MasteryHTML5 Course.png",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "Learn HTML - For Beginners",
+            date: "Mar 2022",
+            duration: "2.5h",
+            skills: ["HTML Basics", "Web Documents"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - HTML for Begginers.png",
             score: "100%",
             highlight: false
           }
         ]
       },
       {
-        id: "frameworks",
+        id: "backend-data-udemy",
         title: {
-          es: "Frameworks & Devops",
-          en: "Frameworks & Devops"
+          es: "Backend & Bases de Datos",
+          en: "Backend & Databases"
         },
         courses: [
           {
-            title: "Angular: De Cero a Experto (Angular 17+)",
-            date: "Dec 2023",
-            duration: "38h",
-            skills: ["Angular", "RxJS", "State Management", "Signals", "Directives & Pipes"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "Crea Aplicaciones Java Web. Completísimo y Desde Cero!",
+            date: "Aug 2022",
+            duration: "51h",
+            skills: ["Java Web", "Servlets & JSP", "MVC", "JDBC", "Java EE"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Crea Aplicaciones Java Web Completísimo y Desde Cero.png",
             score: "100%",
             highlight: true
           },
           {
-            title: "C# y .NET Core: Creación de Web APIs Empresariales",
-            date: "Jan 2024",
-            duration: "30h",
-            skills: ["C#", ".NET Core API", "Entity Framework", "SQL Server", "Clean Architecture"],
-            credentialUrl: "https://www.udemy.com/",
-            score: "100%",
-            highlight: true
-          },
-          {
-            title: "Python y Django: Desarrollo Web Profesional",
-            date: "Feb 2024",
-            duration: "25h",
-            skills: ["Python OOP", "Django Admin", "Django Rest Framework", "SQLite/Postgres"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "Curso Maestro de Python 3: Aprende Desde Cero",
+            date: "Jun 2022",
+            duration: "27h",
+            skills: ["Python 3", "OOP", "File Handling", "Database Integration"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - CursoMaestroDePython.png",
             score: "100%",
             highlight: false
           },
           {
-            title: "Docker y Kubernetes: Contenedores y Orquestación",
-            date: "Mar 2024",
-            duration: "18h",
-            skills: ["Docker", "Images & Volumes", "Docker Compose", "Kubernetes Pods", "Deployments"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "Programacion con Python",
+            date: "Jun 2022",
+            duration: "23.5h",
+            skills: ["Python Programming", "Algorithms", "Control Flow"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Programacion con Phyton.png",
             score: "100%",
-            highlight: true
+            highlight: false
           },
           {
-            title: "Estructuras de Datos y Algoritmos en JavaScript",
-            date: "Apr 2024",
-            duration: "15h",
-            skills: ["Big O Notation", "Sorting Algorithms", "Binary Trees", "Graphs", "Recursion"],
-            credentialUrl: "https://www.udemy.com/",
+            title: "Data Manipulation in Python: Master Python, Numpy & Pandas",
+            date: "Jun 2022",
+            duration: "4h",
+            skills: ["Numpy", "Pandas", "Data Cleaning", "Data Manipulation"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - Data Manupulation in Python.png",
             score: "100%",
+            highlight: false
+          },
+          {
+            title: "Python - Básico",
+            date: "Jun 2022",
+            duration: "3.5h",
+            skills: ["Python Basics", "Syntax"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - PythonBasico.png",
+            score: "100%",
+            highlight: false
+          },
+          {
+            title: "SQL: Creación de Bases de Datos (De cero a profesional)",
+            date: "Jul 2022",
+            duration: "2h",
+            skills: ["SQL", "Relational Databases", "Table Design", "Queries"],
+            credentialUrl: "/CURSOS/UDEMY/Udemy - sql_creacion_de_bases_de_datos.jpg",
+            score: "100%",
+            highlight: false
+          }
+        ]
+      }
+    ]
+  },
+  other: {
+    id: "other",
+    title: "Otros",
+    logo: otherLogo,
+    color: "#9CA3AF", // Slate Gray
+    glowColor: "rgba(156, 163, 175, 0.25)",
+    borderColor: "rgba(156, 163, 175, 0.2)",
+    description: {
+      es: "Certificaciones complementarias obtenidas de diferentes plataformas como Open Bootcamp y DevCode en Git, GitHub y lógica.",
+      en: "Complementary certifications obtained from different platforms like Open Bootcamp and DevCode in Git, GitHub, and logic."
+    },
+    stats: {
+      coursesCount: 2,
+      completedPercentage: "100%",
+      hoursCount: {
+        es: "20 horas",
+        en: "20 hours"
+      }
+    },
+    paths: [
+      {
+        id: "otros-cursos",
+        title: {
+          es: "Cursos Complementarios",
+          en: "Complementary Courses"
+        },
+        courses: [
+          {
+            title: "Introducción a la programación",
+            date: "Aug 2022",
+            duration: "15h",
+            skills: ["Logic", "Pseudocode", "Basic Programming Concepts"],
+            credentialUrl: "/CURSOS/OTHER/Open Bootcamp - Introduccion a la Programacion.png",
+            score: "Aprobado",
+            highlight: false
+          },
+          {
+            title: "Curso de Fundamentos de Git y GitHub",
+            date: "Feb 2022",
+            duration: "5h",
+            skills: ["Git", "GitHub", "Version Control", "Collaboration"],
+            credentialUrl: "/CURSOS/OTHER/certificado Git y GitHub Fundamentos.png",
+            score: "Aprobado",
             highlight: false
           }
         ]

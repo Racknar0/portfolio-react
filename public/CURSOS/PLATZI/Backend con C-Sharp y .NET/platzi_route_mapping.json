@@ -1,0 +1,177 @@
+[
+  {
+    "stepNumber": 1,
+    "id": "platzi_csharp_1",
+    "title": "Curso Básico de Programación con C#",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/Curso Básico de Programación con CSharp.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso Básico de Programación con CSharp.png"
+  },
+  {
+    "stepNumber": 2,
+    "id": "platzi_csharp_2",
+    "title": "Curso de Programación Orientada a Objetos con C#",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "OOP",
+      "Object-Oriented Programming"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Programación Orientada a Objetos con CSharp.png"
+  },
+  {
+    "stepNumber": 3,
+    "id": "platzi_csharp_3",
+    "title": "Curso de Buenas Prácticas y Código Limpio en C#",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "Clean Code",
+      "Best Practices"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/Curso de Buenas Prácticas y Código Limpio en CSharp.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Buenas Prácticas y Código Limpio en CSharp.png"
+  },
+  {
+    "stepNumber": 4,
+    "id": "platzi_csharp_4",
+    "title": "Curso de Principios SOLID en C# y .NET",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "SOLID",
+      "Design Patterns"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/Curso de Principios SOLID en CSharp y .NET.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Principios SOLID en CSharp y .NET.png"
+  },
+  {
+    "stepNumber": 5,
+    "id": "platzi_csharp_5",
+    "title": "Curso de Fundamentos de .NET",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Fundamentos de .NET.png"
+  },
+  {
+    "stepNumber": 6,
+    "id": "platzi_csharp_6",
+    "title": "Curso de Manejo de Datos en C# con LINQ",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "LINQ",
+      "Data Querying"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/Curso de Manejo de Datos en CSharp con LINQ.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Manejo de Datos en CSharp con LINQ.png"
+  },
+  {
+    "stepNumber": 7,
+    "id": "platzi_csharp_7",
+    "title": "Curso de Fundamentos de Entity Framework",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "Entity Framework",
+      "ORM",
+      "Databases"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Fundamentos de Entity Framework.png"
+  },
+  {
+    "stepNumber": 8,
+    "id": "platzi_csharp_8",
+    "title": "Curso de Unit Testing con C# y .NET",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "Unit Testing",
+      "Software Quality"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Unit Testing con CSharp y .NET.png"
+  },
+  {
+    "stepNumber": 9,
+    "id": "platzi_csharp_9",
+    "title": "Curso de Aplicaciones Web con Blazor WebAssembly y .NET",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "Blazor",
+      "WebAssembly",
+      "Frontend"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Aplicaciones Web con Blazor WebAssembly y .NET.png"
+  },
+  {
+    "stepNumber": 10,
+    "id": "platzi_csharp_10",
+    "title": "Curso de Azure DevOps: Flujos de CI/CD",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "Azure DevOps",
+      "CI/CD",
+      "Cloud"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso de Azure DevOps Flujos de CI-CD.png"
+  },
+  {
+    "stepNumber": 11,
+    "id": "platzi_csharp_11",
+    "title": "Curso Práctico de Arquitectura Backend",
+    "duration": "12h",
+    "skills": [
+      "C#",
+      ".NET",
+      "Platzi Route",
+      "Backend Architecture",
+      "System Design"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Backend con C-Sharp y .NET/ICONS/Curso Práctico de Arquitectura Backend.png"
+  }
+]

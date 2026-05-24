@@ -1,0 +1,1542 @@
+[
+  {
+    "stepNumber": 1,
+    "id": "platzi_1",
+    "title": "Curso de Frameworks y Librerías de JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Frameworks y Librerías de JavaScript.png"
+  },
+  {
+    "stepNumber": 2,
+    "id": "platzi_2",
+    "title": "Curso de React.js: Patrones de Render y Composición",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de React.js Patrones de Render y Composición.png"
+  },
+  {
+    "stepNumber": 3,
+    "id": "platzi_3",
+    "title": "Curso de React.js: Manejo Profesional del Estado",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de React.js Manejo Profesional del Estado.png"
+  },
+  {
+    "stepNumber": 4,
+    "id": "platzi_4",
+    "title": "Curso de React.js: Navegación con React Router",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de React.js Navegación con React Router.png"
+  },
+  {
+    "stepNumber": 5,
+    "id": "platzi_5",
+    "title": "Curso Profesional de React.js y Redux",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Profesional de React.js y Redux.png"
+  },
+  {
+    "stepNumber": 6,
+    "id": "platzi_6",
+    "title": "Curso de State Machines en React.js",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de State Machines en React.js.png"
+  },
+  {
+    "stepNumber": 7,
+    "id": "platzi_7",
+    "title": "Curso de Fundamentos de Angular",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Fundamentos de Angular.png"
+  },
+  {
+    "stepNumber": 8,
+    "id": "platzi_8",
+    "title": "Curso de Angular: Componentes y Servicios",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Angular Componentes y Servicios.png"
+  },
+  {
+    "stepNumber": 9,
+    "id": "platzi_9",
+    "title": "Curso de Consumo de APIs REST con Angular",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Consumo de APIs REST con Angular.png"
+  },
+  {
+    "stepNumber": 10,
+    "id": "platzi_10",
+    "title": "Curso de Angular Router: Lazy Loading y Programación Modular",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Angular Router Lazy Loading y Programación Modular.png"
+  },
+  {
+    "stepNumber": 11,
+    "id": "platzi_11",
+    "title": "Curso de Angular: Unit Testing para Servicios",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Angular Unit Testing para Servicios.png"
+  },
+  {
+    "stepNumber": 12,
+    "id": "platzi_12",
+    "title": "Curso de Angular: Unit Testing para Componentes",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Angular Unit Testing para Componentes.png"
+  },
+  {
+    "stepNumber": 13,
+    "id": "platzi_13",
+    "title": "Curso de Angular: Unit Testing para Formularios",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Angular Unit Testing para Formularios.png"
+  },
+  {
+    "stepNumber": 14,
+    "id": "platzi_14",
+    "title": "Curso de Angular: Unit Testing para Rutas",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Angular Unit Testing para Rutas.png"
+  },
+  {
+    "stepNumber": 15,
+    "id": "platzi_15",
+    "title": "Curso de Rendimiento en Angular",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Rendimiento en Angular.png"
+  },
+  {
+    "stepNumber": 16,
+    "id": "platzi_16",
+    "title": "Curso de Angular Forms: Creación y Optimización de Formularios Web",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Angular Forms Creación y Optimización de Formularios Web.png"
+  },
+  {
+    "stepNumber": 17,
+    "id": "platzi_17",
+    "title": "Curso de Vue.js: Introducción y Fundamentos",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Vue.js Introducción y Fundamentos.png"
+  },
+  {
+    "stepNumber": 18,
+    "id": "platzi_18",
+    "title": "Curso de Vue.js: Componentes y Composition API",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Vue.js Componentes y Composition API.png"
+  },
+  {
+    "stepNumber": 19,
+    "id": "platzi_19",
+    "title": "Curso Práctico de Vue.js",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Práctico de Vue.js.png"
+  },
+  {
+    "stepNumber": 20,
+    "id": "platzi_20",
+    "title": "Curso de Vue.js: Navegación con Vue Router",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Vue.js Navegación con Vue Router.png"
+  },
+  {
+    "stepNumber": 21,
+    "id": "platzi_21",
+    "title": "Curso de Vue.js: Manejo del Estado con  Vuex",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Vue.js Manejo del Estado con Vuex.png"
+  },
+  {
+    "stepNumber": 22,
+    "id": "platzi_22",
+    "title": "Curso de Vue.js: Manejo del Estado con Pinia",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Vue.js Manejo del Estado con Pinia.png"
+  },
+  {
+    "stepNumber": 23,
+    "id": "platzi_23",
+    "title": "Curso de Reactividad con Vue.js 3",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Reactividad con Vue.js 3.png"
+  },
+  {
+    "stepNumber": 24,
+    "id": "platzi_24",
+    "title": "Curso de Unit Testing en Vue.js 3",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Unit Testing en Vue.js 3.png"
+  },
+  {
+    "stepNumber": 25,
+    "id": "platzi_25",
+    "title": "Curso Profesional de Vue.js 2",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Profesional de Vue.js 2.png"
+  },
+  {
+    "stepNumber": 26,
+    "id": "platzi_26",
+    "title": "Curso Avanzado de Vue.js 2",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Avanzado de Vue.js 2.png"
+  },
+  {
+    "stepNumber": 27,
+    "id": "platzi_27",
+    "title": "Curso de Svelte",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Svelte.png"
+  },
+  {
+    "stepNumber": 28,
+    "id": "platzi_28",
+    "title": "Curso de Introducción a Jamstack",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Introducción a Jamstack.png"
+  },
+  {
+    "stepNumber": 29,
+    "id": "platzi_29",
+    "title": "Curso de GitHub Actions",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de GitHub Actions.png"
+  },
+  {
+    "stepNumber": 30,
+    "id": "platzi_30",
+    "title": "Curso para Conseguir Trabajo como Frontend Developer",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso para Conseguir Trabajo como Frontend Developer.png"
+  },
+  {
+    "stepNumber": 31,
+    "id": "platzi_31",
+    "title": "Curso para Conseguir Trabajo en Tecnología",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso para Conseguir Trabajo en Tecnología.png"
+  },
+  {
+    "stepNumber": 32,
+    "id": "platzi_32",
+    "title": "Curso Básico de Computadores e Informática",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Básico de Computadores e Informática.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Básico de Computadores e Informática.png"
+  },
+  {
+    "stepNumber": 33,
+    "id": "platzi_33",
+    "title": "Curso de Pensamiento Lógico",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Pensamiento Lógico.png"
+  },
+  {
+    "stepNumber": 34,
+    "id": "platzi_34",
+    "title": "Curso Gratis de Programación Básica 2022",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Gratis de Programación Básica 2022.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Gratis de Programación Básica 2022.png"
+  },
+  {
+    "stepNumber": 35,
+    "id": "platzi_35",
+    "title": "Curso de Introducción a la Web: Historia y Funcionamiento de Internet",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Introducción a la Web Historia y Funcionamiento de Internet.png"
+  },
+  {
+    "stepNumber": 36,
+    "id": "platzi_36",
+    "title": "Curso de Fundamentos de Ingeniería de Software",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Fundamentos de Ingeniería de Software.png"
+  },
+  {
+    "stepNumber": 37,
+    "id": "platzi_37",
+    "title": "Curso de Configuración de Entorno en Linux",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Configuración de Entorno en Linux.png"
+  },
+  {
+    "stepNumber": 38,
+    "id": "platzi_38",
+    "title": "Curso de Configuración de Entorno de Desarrollo en Windows",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Configuración de Entorno de Desarrollo en Windows.png"
+  },
+  {
+    "stepNumber": 39,
+    "id": "platzi_39",
+    "title": "Curso de Configuración de Entorno de Desarrollo en macOS",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Configuración de Entorno de Desarrollo en macOS.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Configuración de Entorno de Desarrollo en macOS.png"
+  },
+  {
+    "stepNumber": 40,
+    "id": "platzi_40",
+    "title": "Curso de Flujo de Desarrollo Moderno CodeStream",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Flujo de Desarrollo Moderno CodeStream.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Flujo de Desarrollo Moderno CodeStream.png"
+  },
+  {
+    "stepNumber": 41,
+    "id": "platzi_41",
+    "title": "Curso de Frontend Developer",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Frontend Developer.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Frontend Developer.png"
+  },
+  {
+    "stepNumber": 42,
+    "id": "platzi_42",
+    "title": "Curso Práctico de Frontend Developer",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Práctico de Frontend Developer.png"
+  },
+  {
+    "stepNumber": 43,
+    "id": "platzi_43",
+    "title": "Curso Práctico de HTML y CSS",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Práctico de HTML y CSS.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Práctico de HTML y CSS.png"
+  },
+  {
+    "stepNumber": 44,
+    "id": "platzi_44",
+    "title": "Curso de Responsive Design: Maquetación Mobile First",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Responsive Design Maquetación Mobile First.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Responsive Design Maquetación Mobile First.png"
+  },
+  {
+    "stepNumber": 45,
+    "id": "platzi_45",
+    "title": "Curso de Diseño para Developers",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Diseño para Developers.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Diseño para Developers.png"
+  },
+  {
+    "stepNumber": 46,
+    "id": "platzi_46",
+    "title": "Curso de Fundamentos de Design Systems",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Fundamentos de Design Systems.png"
+  },
+  {
+    "stepNumber": 47,
+    "id": "platzi_47",
+    "title": "Curso de CSS Grid Básico",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de CSS Grid Básico.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de CSS Grid Básico.png"
+  },
+  {
+    "stepNumber": 48,
+    "id": "platzi_48",
+    "title": "Curso Práctico de Maquetación en CSS",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Práctico de Maquetación en CSS.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Práctico de Maquetación en CSS.png"
+  },
+  {
+    "stepNumber": 49,
+    "id": "platzi_49",
+    "title": "Curso Profesional de CSS Grid Layout",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Profesional de CSS Grid Layout.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Profesional de CSS Grid Layout.png"
+  },
+  {
+    "stepNumber": 50,
+    "id": "platzi_50",
+    "title": "Curso de Diseño Web con CSS Grid y Flexbox",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Diseño Web con CSS Grid y Flexbox.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Diseño Web con CSS Grid y Flexbox.png"
+  },
+  {
+    "stepNumber": 51,
+    "id": "platzi_51",
+    "title": "Curso de Transformaciones y Transiciones en CSS",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Transformaciones y Transiciones en CSS.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Transformaciones y Transiciones en CSS.png"
+  },
+  {
+    "stepNumber": 52,
+    "id": "platzi_52",
+    "title": "Curso de Animaciones con CSS",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Animaciones con CSS.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Animaciones con CSS.png"
+  },
+  {
+    "stepNumber": 53,
+    "id": "platzi_53",
+    "title": "Taller Práctico de JavaScript: Matemáticas y Estadística Básica",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Taller Práctico de JavaScript Matemáticas y Estadística Básica.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Taller Práctico de JavaScript Matemáticas y Estadística Básica.png"
+  },
+  {
+    "stepNumber": 54,
+    "id": "platzi_54",
+    "title": "Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Taller Práctico de JavaScript ¡Crea tu Primer Videojuego!.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Taller Práctico de JavaScript ¡Crea tu Primer Videojuego!.png"
+  },
+  {
+    "stepNumber": 55,
+    "id": "platzi_55",
+    "title": "Curso de Closures y Scope en JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Closures y Scope en JavaScript.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Closures y Scope en JavaScript.png"
+  },
+  {
+    "stepNumber": 56,
+    "id": "platzi_56",
+    "title": "Curso Básico de Programación Orientada a Objetos con JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Básico de Programación Orientada a Objetos con JavaScript.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Básico de Programación Orientada a Objetos con JavaScript.png"
+  },
+  {
+    "stepNumber": 57,
+    "id": "platzi_57",
+    "title": "Curso Intermedio de Programación Orientada a Objetos en JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Intermedio de Programación Orientada a Objetos en JavaScript.png"
+  },
+  {
+    "stepNumber": 58,
+    "id": "platzi_58",
+    "title": "Curso de ECMAScript: Historia y Versiones de JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de ECMAScript Historia y Versiones de JavaScript.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de ECMAScript Historia y Versiones de JavaScript.png"
+  },
+  {
+    "stepNumber": 59,
+    "id": "platzi_59",
+    "title": "Curso de Manipulación de Arrays en JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Manipulación de Arrays en JavaScript.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Manipulación de Arrays en JavaScript.png"
+  },
+  {
+    "stepNumber": 60,
+    "id": "platzi_60",
+    "title": "Curso de JavaScript Engine (V8) y el Navegador",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de JavaScript Engine (V8) y el Navegador.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de JavaScript Engine (V8) y el Navegador.png"
+  },
+  {
+    "stepNumber": 61,
+    "id": "platzi_61",
+    "title": "Curso de API REST con Javascript: Fundamentos",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de API REST con Javascript Fundamentos.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de API REST con Javascript Fundamentos.png"
+  },
+  {
+    "stepNumber": 62,
+    "id": "platzi_62",
+    "title": "Curso de API REST con Javascript: Ejemplos con APIs reales",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de API REST con Javascript Ejemplos con APIs reales.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de API REST con Javascript Ejemplos con APIs reales.png"
+  },
+  {
+    "stepNumber": 63,
+    "id": "platzi_63",
+    "title": "Curso de API REST con Javascript: Performance y Usabilidad",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de API REST con Javascript Performance y Usabilidad.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de API REST con Javascript Performance y Usabilidad.png"
+  },
+  {
+    "stepNumber": 64,
+    "id": "platzi_64",
+    "title": "Curso de NPM: Gestión de Paquetes y Dependencias en JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de NPM Gestión de Paquetes y Dependencias en JavaScript.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de NPM Gestión de Paquetes y Dependencias en JavaScript.png"
+  },
+  {
+    "stepNumber": 65,
+    "id": "platzi_65",
+    "title": "Curso de TypeScript: Tipos Avanzados y Funciones",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de TypeScript Tipos Avanzados y Funciones.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de TypeScript Tipos Avanzados y Funciones.png"
+  },
+  {
+    "stepNumber": 66,
+    "id": "platzi_66",
+    "title": "Curso de TypeScript: Programación Orientada a Objetos y Asincronismo",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de TypeScript Programación Orientada a Objetos y Asincronismo.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de TypeScript Programación Orientada a Objetos y Asincronismo.png"
+  },
+  {
+    "stepNumber": 67,
+    "id": "platzi_67",
+    "title": "Curso de Introducción a Empaquetadores Web",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Introducción a Empaquetadores Web.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Introducción a Empaquetadores Web.png"
+  },
+  {
+    "stepNumber": 68,
+    "id": "platzi_68",
+    "title": "Curso de Webpack",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Webpack.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Webpack.png"
+  },
+  {
+    "stepNumber": 69,
+    "id": "platzi_69",
+    "title": "Curso de Vite.js",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Vite.js.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Vite.js.png"
+  },
+  {
+    "stepNumber": 70,
+    "id": "platzi_70",
+    "title": "Curso de Single Page Application con JavaScript Vanilla",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Single Page Application con JavaScript Vanilla.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Single Page Application con JavaScript Vanilla.png"
+  },
+  {
+    "stepNumber": 71,
+    "id": "platzi_71",
+    "title": "Curso Práctico de Maquetación y Animaciones con CSS",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso Práctico de Maquetación y Animaciones con CSS.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Práctico de Maquetación y Animaciones con CSS.png"
+  },
+  {
+    "stepNumber": 72,
+    "id": "platzi_72",
+    "title": "Curso de Debugging con Chrome DevTools",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Debugging con Chrome DevTools.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Debugging con Chrome DevTools.png"
+  },
+  {
+    "stepNumber": 73,
+    "id": "platzi_73",
+    "title": "Curso de Manipulación del DOM",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Manipulación del DOM.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Manipulación del DOM.png"
+  },
+  {
+    "stepNumber": 74,
+    "id": "platzi_74",
+    "title": "Curso de Optimización Web",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Optimización Web.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Optimización Web.png"
+  },
+  {
+    "stepNumber": 75,
+    "id": "platzi_75",
+    "title": "Audiocurso de Accesibilidad Web: Casos de Estudio",
+    "duration": "6h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Audiocurso de Accesibilidad Web Casos de Estudio.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Audiocurso de Accesibilidad Web Casos de Estudio.png"
+  },
+  {
+    "stepNumber": 76,
+    "id": "platzi_76",
+    "title": "Curso de Accesibilidad Web",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Accesibilidad Web.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Accesibilidad Web.png"
+  },
+  {
+    "stepNumber": 77,
+    "id": "platzi_77",
+    "title": "Curso de JavaScript: Web Components",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de JavaScript Web Components.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de JavaScript Web Components.png"
+  },
+  {
+    "stepNumber": 78,
+    "id": "platzi_78",
+    "title": "Curso de Estructuras de Datos con JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": true,
+    "credentialUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/Curso de Estructuras de Datos con JavaScript.pdf",
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Estructuras de Datos con JavaScript.png"
+  },
+  {
+    "stepNumber": 79,
+    "id": "platzi_79",
+    "title": "Curso de Complejidad Algorítmica con JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Complejidad Algorítmica con JavaScript.png"
+  },
+  {
+    "stepNumber": 80,
+    "id": "platzi_80",
+    "title": "Curso de Fundamentos de Pruebas de Software",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Fundamentos de Pruebas de Software.png"
+  },
+  {
+    "stepNumber": 81,
+    "id": "platzi_81",
+    "title": "Curso de Introducción al Testing con JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Introducción al Testing con JavaScript.png"
+  },
+  {
+    "stepNumber": 82,
+    "id": "platzi_82",
+    "title": "Curso de Introducción a la Automatización de Pruebas",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Introducción a la Automatización de Pruebas.png"
+  },
+  {
+    "stepNumber": 83,
+    "id": "platzi_83",
+    "title": "Curso de Automatización de Pruebas UI con Cypress",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Automatización de Pruebas UI con Cypress.png"
+  },
+  {
+    "stepNumber": 84,
+    "id": "platzi_84",
+    "title": "Curso de Automatización de Pruebas con Puppeteer",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Automatización de Pruebas con Puppeteer.png"
+  },
+  {
+    "stepNumber": 85,
+    "id": "platzi_85",
+    "title": "Curso Avanzado de Automatización de Pruebas con Puppeteer",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Avanzado de Automatización de Pruebas con Puppeteer.png"
+  },
+  {
+    "stepNumber": 86,
+    "id": "platzi_86",
+    "title": "Curso de SQL y MySQL 2018",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de SQL y MySQL 2018.png"
+  },
+  {
+    "stepNumber": 87,
+    "id": "platzi_87",
+    "title": "Curso Práctico de SQL",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Práctico de SQL.png"
+  },
+  {
+    "stepNumber": 88,
+    "id": "platzi_88",
+    "title": "Curso de Backend con Node.js: Base de Datos con PostgreSQL",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Backend con Node.js Base de Datos con PostgreSQL.png"
+  },
+  {
+    "stepNumber": 89,
+    "id": "platzi_89",
+    "title": "Curso de Backend con Node.js: Autenticación con Passport.js y JWT",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Backend con Node.js Autenticación con Passport.js y JWT.png"
+  },
+  {
+    "stepNumber": 90,
+    "id": "platzi_90",
+    "title": "Curso de Aplicaciones en Tiempo Real con Socket.io",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Aplicaciones en Tiempo Real con Socket.io.png"
+  },
+  {
+    "stepNumber": 91,
+    "id": "platzi_91",
+    "title": "Curso de Webpack con Express.js, React.js y TypeScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Webpack con Express.js, React.js y TypeScript.png"
+  },
+  {
+    "stepNumber": 92,
+    "id": "platzi_92",
+    "title": "Curso Práctico de GraphQL con JavaScript",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Práctico de GraphQL con JavaScript.png"
+  },
+  {
+    "stepNumber": 93,
+    "id": "platzi_93",
+    "title": "Curso de Supabase",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Supabase.png"
+  },
+  {
+    "stepNumber": 94,
+    "id": "platzi_94",
+    "title": "Curso Avanzado de Node.js con GraphQL, Apollo Server y Prisma",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Avanzado de Node.js con GraphQL, Apollo Server y Prisma.png"
+  },
+  {
+    "stepNumber": 95,
+    "id": "platzi_95",
+    "title": "Curso de Automatización de Pruebas de Backend con Cypress",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Automatización de Pruebas de Backend con Cypress.png"
+  },
+  {
+    "stepNumber": 96,
+    "id": "platzi_96",
+    "title": "Curso de Fundamentos de Arquitectura de Software",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Fundamentos de Arquitectura de Software.png"
+  },
+  {
+    "stepNumber": 97,
+    "id": "platzi_97",
+    "title": "Curso Profesional de Arquitectura de Software",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Profesional de Arquitectura de Software.png"
+  },
+  {
+    "stepNumber": 98,
+    "id": "platzi_98",
+    "title": "Curso de Backend con NestJS",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Backend con NestJS.png"
+  },
+  {
+    "stepNumber": 99,
+    "id": "platzi_99",
+    "title": "Curso de NestJS: Programación Modular, Documentación con Swagger y Deploy",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de NestJS Programación Modular, Documentación con Swagger y Deploy.png"
+  },
+  {
+    "stepNumber": 100,
+    "id": "platzi_100",
+    "title": "Curso de NestJS: Persistencia de Datos con MongoDB",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de NestJS Persistencia de Datos con MongoDB.png"
+  },
+  {
+    "stepNumber": 101,
+    "id": "platzi_101",
+    "title": "Curso de NestJS: Persistencia de Datos con TypeORM",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de NestJS Persistencia de Datos con TypeORM.png"
+  },
+  {
+    "stepNumber": 102,
+    "id": "platzi_102",
+    "title": "Curso de NestJS: Autenticación con Passport y JWT",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de NestJS Autenticación con Passport y JWT.png"
+  },
+  {
+    "stepNumber": 103,
+    "id": "platzi_103",
+    "title": "Curso de Next.js con GraphQL",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Next.js con GraphQL.png"
+  },
+  {
+    "stepNumber": 104,
+    "id": "platzi_104",
+    "title": "Curso de Next.js: Sitios Estáticos y Jamstack",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Next.js Sitios Estáticos y Jamstack.png"
+  },
+  {
+    "stepNumber": 105,
+    "id": "platzi_105",
+    "title": "Curso de Next.js: Optimización y Deploy a Producción",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Next.js Optimización y Deploy a Producción.png"
+  },
+  {
+    "stepNumber": 106,
+    "id": "platzi_106",
+    "title": "Curso de Next.js: Internacionalización de Aplicaciones Web con i18n",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Next.js Internacionalización de Aplicaciones Web con i18n.png"
+  },
+  {
+    "stepNumber": 107,
+    "id": "platzi_107",
+    "title": "Curso de Next.js: Optimización y Manejo de Grandes Datasets",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Next.js Optimización y Manejo de Grandes Datasets.png"
+  },
+  {
+    "stepNumber": 108,
+    "id": "platzi_108",
+    "title": "Curso de Next.js: Autenticación",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Next.js Autenticación.png"
+  },
+  {
+    "stepNumber": 109,
+    "id": "platzi_109",
+    "title": "Curso de Next.js: Seguridad Web con OWASP",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso de Next.js Seguridad Web con OWASP.png"
+  },
+  {
+    "stepNumber": 110,
+    "id": "platzi_110",
+    "title": "Curso Gratis de Programación Básica",
+    "duration": "12h",
+    "skills": [
+      "Web Development",
+      "JavaScript",
+      "Platzi Route"
+    ],
+    "completed": false,
+    "credentialUrl": null,
+    "iconUrl": "/CURSOS/PLATZI/Frontend y Backend con Javascript para Desarrollo Web/ICONS/Curso Gratis de Programación Básica.png"
+  }
+]
